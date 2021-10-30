@@ -1,0 +1,48 @@
+// For all
+* {
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+// For head background image
+.background-image img {
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	margin: -20px 0 0 0;
+}
+
+// For all sections on header
+.header {
+	margin: 20px 0;
+	text-transform: uppercase;
+	position: relative;
+
+	// For left logo text
+	.logo-text {
+		padding: 0;
+		margin: 0;
+		font-size: 40px;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	// For right navigation menu and their sections
+	.navigation-menu,
+	.navigation-menu-section {
+		padding: 0;
+		margin: 0;
+		display: inline;
+
+		// For section's text
+		.navigation-menu-text {
+			margin: 0 0 0 60px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #fff;
+			font-weight: normal;
+			text-align: center;
+		}
+	}
+}
