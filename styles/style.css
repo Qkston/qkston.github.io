@@ -16,7 +16,6 @@
   .header .logo-text {
     padding: 0;
     margin: 0;
-    font-size: 40px;
     font-weight: bold;
     color: #fff; }
   .header .navigation-menu,
@@ -26,11 +25,31 @@
     display: inline; }
     .header .navigation-menu .navigation-menu-text,
     .header .navigation-menu-section .navigation-menu-text {
-      margin: 0 0 0 60px;
       text-decoration: none;
-      font-size: 20px;
       color: #fff;
-      font-weight: normal;
-      text-align: center; }
+      font-weight: normal; }
+
+@media screen and (max-width: 375px) {
+  .navigation-menu-text {
+    font-size: 10px;
+    margin: 10px 4px; } }
+@media screen and (min-width: 375px) {
+  .navigation-menu-text {
+    font-size: 10px;
+    margin: 0 10px; } }
+@media screen and (min-width: 425px) {
+  .logo-text {
+    font-size: 20px; }
+
+  .navigation-menu-text {
+    font-size: 12px;
+    margin: auto 10px; } }
+@media screen and (min-width: 1440px) {
+  .logo-text {
+    font-size: 40px; }
+
+  .navigation-menu-text {
+    font-size: 20px;
+    margin: 0 0 0 60px; } }
 
 /*# sourceMappingURL=style.css.map */
