@@ -3,11 +3,14 @@
   padding: 0;
   margin: 0; }
 
-.background-image img {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  margin: -20px 0 0 0; }
+.background-image {
+  background: url(../img/head-bg.jpg);
+  width: auto;
+  max-width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  margin: -20px 0 -20px 0; }
 
 .header {
   margin: 20px 0;
@@ -15,7 +18,7 @@
   position: relative; }
   .header .logo-text {
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
     font-weight: bold;
     color: #fff; }
   .header .navigation-menu,
@@ -28,6 +31,15 @@
       text-decoration: none;
       color: #fff;
       font-weight: normal; }
+
+.about-me-section {
+  background-color: #eff0f1;
+  padding: 10px 0 10px 100px; }
+  .about-me-section .my-photo {
+    width: 380px;
+    height: 480px; }
+  .about-me-section .about-me-main-text {
+    padding: 20px 0; }
 
 @media screen and (max-width: 375px) {
   .navigation-menu-text {
