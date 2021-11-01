@@ -1,21 +1,19 @@
 * {
   font-family: "Montserrat", sans-serif;
-  padding: 0;
-  margin: 0; }
+  overflow-x: hidden; }
 
 .background-image {
   background: url(../img/head-bg.jpg);
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   height: 500px;
   background-size: cover;
-  position: relative;
-  margin: -20px 0 -20px 0; }
+  margin: -20px 0; }
 
 .header {
   margin: 20px 0;
-  text-transform: uppercase;
-  position: relative; }
+  text-transform: uppercase; }
+  .header .head {
+    background-color: #31353875; }
   .header .logo-text {
     padding: 0;
     margin-top: 20px;
@@ -33,11 +31,13 @@
       font-weight: normal; }
 
 .about-me-section {
-  background-color: #eff0f1;
-  padding: 10px 0 10px 100px; }
+  background-color: #eff0f1; }
   .about-me-section .my-photo {
     width: 380px;
-    height: 480px; }
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #000000;
+    padding: 0; }
   .about-me-section .about-me-main-text {
     padding: 20px 0; }
 
@@ -58,7 +58,7 @@
 
   .navigation-menu-text {
     font-size: 15px;
-    margin: auto 10px; } }
+    margin: 0 10px; } }
 @media screen and (min-width: 1440px) {
   .logo-text {
     font-size: 40px; }
