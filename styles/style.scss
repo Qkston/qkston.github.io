@@ -48,25 +48,28 @@
 @media screen and (max-width: 375px) {
 	.navigation-menu-text {
 		font-size: 10px;
-		margin: 10px 4px;
+		margin: 0 4px;
 	}
 }
 
 // For Mobile M
 @media screen and (min-width: 375px) {
-	.navigation-menu-text {
-		font-size: 10px;
-		margin: 0 10px;
-	}
-}
-
-// For Mobile L
-@media screen and (min-width: 425px) {
 	.logo-text {
 		font-size: 20px;
 	}
 	.navigation-menu-text {
-		font-size: 12px;
+		font-size: 13px;
+		margin: 0 10px 0 0;
+	}
+}
+
+// For Mobile L
+@media screen and (min-width: 1024px) {
+	.logo-text {
+		font-size: 30px;
+	}
+	.navigation-menu-text {
+		font-size: 15px;
 		margin: auto 10px;
 	}
 }
