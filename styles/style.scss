@@ -6,41 +6,54 @@
 
 // For head background image
 .background-image {
-	background: url(../img/head-bg.jpg);
+	background: center / cover no-repeat url(../img/head-bg.jpg);
 	width: 100%;
 	height: 500px;
-	background-size: cover;
-	margin: -20px 0;
 }
 
 // For all sections on header
 .header {
-	margin: 20px 0;
+	background-color: #31353875;
 	text-transform: uppercase;
-	.head {
-		background-color: #31353875;
-	}
 
 	// For left logo text
 	.logo-text {
-		padding: 0;
-		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
 		font-weight: bold;
 		color: #fff;
 	}
 
 	// For right navigation menu and their sections
-	.navigation-menu,
-	.navigation-menu-section {
+	.navigation-menu {
+		height: 100%;
 		padding: 0;
 		margin: 0;
-		display: inline;
+	}
+	.navigation-menu-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 200px;
+		transition: all 0.2s;
 
 		// For section's text
 		.navigation-menu-text {
 			text-decoration: none;
 			color: #fff;
 			font-weight: normal;
+			text-align: center;
+		}
+	}
+
+	// Animation for right navigation menu
+	.navigation-menu-section:hover {
+		background-color: #1e1f2075;
+		.navigation-menu-text {
+			font-weight: 500;
+			text-decoration: underline;
 		}
 	}
 }
@@ -48,61 +61,134 @@
 // For about me section
 .about-me-section {
 	background-color: #eff0f1;
-	// padding: 40px;
-
+	padding: 40px 0;
 	// For my main photo
-	.my-photo {
-		width: 380px;
-		border: 4px solid #fff;
-		border-radius: 10px;
-		box-shadow: 0px 0px 20px 0px #000000;
-		padding: 0;
+	.my-photo-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.my-photo {
+			margin: 20px;
+			width: 380px;
+			border: 4px solid #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px 0px #000000;
+			padding: 0;
+		}
 	}
-
 	// For text about me
-	.about-me-main-text {
-		padding: 20px 0;
+	.about-me-box-for-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
 // Media requests
 // For Mobile S
 @media screen and (max-width: 375px) {
-	.navigation-menu-text {
-		font-size: 10px;
-		margin: 0 4px;
+	// For navigation menu
+	.navigation-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.navigation-menu-text {
+			font-size: 10px;
+			margin: 0 8px;
+			align-content: center;
+		}
+	}
+	// For about me
+	.about-me-box-for-text {
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		.about-me-text {
+			font-size: 12px;
+			padding: 20px;
+		}
 	}
 }
 
 // For Mobile M
 @media screen and (min-width: 375px) {
+	// For logo
 	.logo-text {
-		font-size: 20px;
+		font-size: 25px;
 	}
-	.navigation-menu-text {
-		font-size: 13px;
-		margin: 0 10px 0 0;
+	// For navigation menu
+	.navigation-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.navigation-menu-text {
+			font-size: 14px;
+			margin: 0 10px;
+		}
+	}
+	// For about me
+	.about-me-box-for-text {
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		.about-me-text {
+			font-size: 14px;
+			padding: 20px;
+		}
 	}
 }
 
 // For Mobile L
 @media screen and (min-width: 1024px) {
+	// For logo
 	.logo-text {
-		font-size: 30px;
+		font-size: 35px;
 	}
-	.navigation-menu-text {
-		font-size: 15px;
-		margin: 0 10px;
+	// For navigation menu
+	.navigation-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.navigation-menu-text {
+			font-size: 18px;
+			margin: 0 15px;
+		}
+	}
+	// For about me
+	.about-me-box-for-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px;
+		.about-me-text {
+			font-size: 15px;
+		}
 	}
 }
 
 // For Laptop L
 @media screen and (min-width: 1440px) {
+	// For logo
 	.logo-text {
 		font-size: 40px;
 	}
-	.navigation-menu-text {
-		font-size: 20px;
-		margin: 0 0 0 60px;
+	// For navigation menu
+	.navigation-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.navigation-menu-text {
+			font-size: 20px;
+			margin: 0 30px;
+		}
+	}
+	// For about me
+	.about-me-box-for-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.about-me-text {
+			font-size: 18px;
+		}
 	}
 }
