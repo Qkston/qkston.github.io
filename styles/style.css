@@ -13,7 +13,6 @@
   .header .logo-text {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
     font-weight: bold;
     color: #fff; }
   .header .navigation-menu {
@@ -36,7 +35,7 @@
     background-color: #1e1f2075; }
     .header .navigation-menu-section:hover .navigation-menu-text {
       font-weight: 500;
-      text-decoration: underline; }
+      text-decoration: underlinez; }
 
 .about-me-section {
   background-color: #eff0f1;
@@ -57,14 +56,18 @@
     justify-content: center;
     align-items: center; }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
+  .logo-text {
+    margin-top: 20px;
+    font-size: 15px; }
+
   .navigation-menu {
     display: flex;
     align-items: center;
     justify-content: center; }
     .navigation-menu .navigation-menu-text {
       font-size: 10px;
-      margin: 0 8px;
+      margin: 0 15px 10px 15px;
       align-content: center; }
 
   .about-me-box-for-text {
@@ -74,8 +77,29 @@
     .about-me-box-for-text .about-me-text {
       font-size: 12px;
       padding: 20px; } }
-@media screen and (min-width: 375px) {
+@media (min-width: 375px) {
   .logo-text {
+    margin-top: 20px;
+    font-size: 25px; }
+
+  .navigation-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navigation-menu .navigation-menu-text {
+      font-size: 14px;
+      margin: 0 15px 10px 15px; }
+
+  .about-me-box-for-text {
+    display: flex;
+    justify-content: start;
+    align-items: start; }
+    .about-me-box-for-text .about-me-text {
+      font-size: 14px;
+      padding: 20px; } }
+@media (min-width: 768px) {
+  .logo-text {
+    margin: 20px 20px;
     font-size: 25px; }
 
   .navigation-menu {
@@ -93,8 +117,9 @@
     .about-me-box-for-text .about-me-text {
       font-size: 14px;
       padding: 20px; } }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .logo-text {
+    margin: 20px 0;
     font-size: 35px; }
 
   .navigation-menu {
@@ -112,8 +137,9 @@
     margin: 20px; }
     .about-me-box-for-text .about-me-text {
       font-size: 15px; } }
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .logo-text {
+    margin: 20px 0;
     font-size: 40px; }
 
   .navigation-menu {
