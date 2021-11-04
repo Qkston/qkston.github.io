@@ -61,6 +61,7 @@
 .about-me-section {
 	background-color: #eff0f1;
 	padding: 40px 0;
+	position: absolute;
 	// For my main photo
 	.my-photo-box {
 		display: flex;
@@ -80,6 +81,58 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+}
+
+// For arrow up
+.upper-block {
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+
+	// Show block
+	.show {
+		display: flex;
+	}
+
+	// Don't show block
+	.not-show {
+		display: none;
+	}
+
+	// Wrap for block
+	.wrap-block {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 64px;
+
+		// Box for image in block
+		.image-box-for-arrow {
+			position: fixed;
+			align-items: center;
+			justify-content: center;
+			width: 64px;
+			height: 64px;
+			background-color: #fff;
+			border: 1px solid #000000;
+			border-radius: 180px;
+			transform: translate(-50%, 500%);
+			transition: all 0.2s;
+
+			// Image
+			img {
+				transition: all 0.2s;
+			}
+		}
+
+		// Animation for lift up block
+		.image-box-for-arrow:hover {
+			background-color: darken($color: #fff, $amount: 10%);
+			img {
+				transform: translateY(-20%) scale(110%);
+			}
+		}
 	}
 }
 
@@ -172,7 +225,7 @@
 	}
 }
 
-// For Mobile L
+// For Laptop S
 @media (min-width: 1024px) {
 	// For logo
 	.logo-text {

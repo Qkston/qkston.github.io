@@ -39,7 +39,8 @@
 
 .about-me-section {
   background-color: #eff0f1;
-  padding: 40px 0; }
+  padding: 40px 0;
+  position: absolute; }
   .about-me-section .my-photo-box {
     display: flex;
     justify-content: center;
@@ -55,6 +56,37 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.upper-block {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%; }
+  .upper-block .show {
+    display: flex; }
+  .upper-block .not-show {
+    display: none; }
+  .upper-block .wrap-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 64px; }
+    .upper-block .wrap-block .image-box-for-arrow {
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background-color: #fff;
+      border: 1px solid #000000;
+      border-radius: 180px;
+      transform: translate(-50%, 500%);
+      transition: all 0.2s; }
+      .upper-block .wrap-block .image-box-for-arrow img {
+        transition: all 0.2s; }
+    .upper-block .wrap-block .image-box-for-arrow:hover {
+      background-color: #e6e6e6; }
+      .upper-block .wrap-block .image-box-for-arrow:hover img {
+        transform: translateY(-20%) scale(110%); }
 
 @media (max-width: 375px) {
   .logo-text {
