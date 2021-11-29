@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Revalia", cursive;
+}
+/*# sourceMappingURL=style.css.map */
