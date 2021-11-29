@@ -3,6 +3,7 @@ $bg-color: #eeeff1;
 $light: #ffffff;
 $navy-blue: #34547a;
 $dark: #000000;
+$silver-text: #727272;
 
 body {
 	margin: 0;
@@ -15,7 +16,7 @@ body {
 }
 
 .header {
-	height: 700px;
+	// height: 700px;
 	background: $bg-color;
 	&-up-block {
 		display: flex;
@@ -25,7 +26,6 @@ body {
 		&-logo {
 			margin: 0;
 			font-family: "Revalia", cursive;
-			font-style: normal;
 			font-weight: normal;
 			font-size: 48px;
 			line-height: 60px;
@@ -38,6 +38,7 @@ body {
 			color: $dark;
 			text-decoration: none;
 			text-transform: uppercase;
+			letter-spacing: 0.1em;
 
 			transition: 0.2s;
 			-webkit-transition: 0.2s;
@@ -48,6 +49,43 @@ body {
 			&:hover {
 				color: $navy-blue;
 				font-weight: 500;
+			}
+		}
+	}
+	&-main-block {
+		display: flex;
+		align-items: center;
+		padding: 0px 400px;
+
+		&-image {
+			margin-top: 80px;
+		}
+
+		&-info {
+			margin: 140px 0 0 130px;
+
+			&-title {
+				margin-bottom: 60px;
+				font-weight: 500;
+				font-size: 48px;
+				line-height: 79px;
+			}
+
+			&-text {
+				color: $silver-text;
+				margin-bottom: 60px;
+			}
+
+			&-button {
+				width: 225px;
+				height: 65px;
+				margin-bottom: 150px;
+				background: $navy-blue;
+				color: $light;
+				border: 0;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				cursor: pointer;
 			}
 		}
 	}
