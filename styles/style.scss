@@ -2,12 +2,13 @@
 $bg-color: #eeeff1;
 $light: #ffffff;
 $navy-blue: #34547a;
+$dark: #000000;
 
 body {
 	margin: 0;
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.1em;
@@ -17,6 +18,9 @@ body {
 	height: 700px;
 	background: $bg-color;
 	&-up-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		padding: 60px 400px 0 400px;
 		&-logo {
 			margin: 0;
@@ -26,6 +30,25 @@ body {
 			font-size: 48px;
 			line-height: 60px;
 			color: $navy-blue;
+		}
+	}
+	&-navigation {
+		&-item {
+			margin-right: 40px;
+			color: $dark;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			transition: 0.2s;
+			-webkit-transition: 0.2s;
+			-moz-transition: 0.2s;
+			-ms-transition: 0.2s;
+			-o-transition: 0.2s;
+
+			&:hover {
+				color: $navy-blue;
+				font-weight: 500;
+			}
 		}
 	}
 }
