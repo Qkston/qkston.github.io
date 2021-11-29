@@ -27,11 +27,11 @@ body {
 
 .header-up-block-logo {
   margin: 0;
+  color: #34547a;
   font-family: "Revalia", cursive;
   font-weight: normal;
   font-size: 48px;
   line-height: 60px;
-  color: #34547a;
 }
 
 .header-navigation-item {
