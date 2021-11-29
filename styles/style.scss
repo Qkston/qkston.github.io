@@ -6,8 +6,26 @@ $navy-blue: #34547a;
 body {
 	margin: 0;
 	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
 }
 
-.logo {
-	font-family: "Revalia", cursive;
+.header {
+	height: 700px;
+	background: $bg-color;
+	&-up-block {
+		padding: 60px 400px 0 400px;
+		&-logo {
+			margin: 0;
+			font-family: "Revalia", cursive;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 48px;
+			line-height: 60px;
+			color: $navy-blue;
+		}
+	}
 }
