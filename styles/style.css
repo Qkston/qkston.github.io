@@ -129,4 +129,51 @@ body {
   margin-bottom: 100px;
   color: #727272;
 }
+
+.main .about-me-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 250px;
+  background-color: #34547a;
+  color: #ffffff;
+}
+
+.main .about-me-statistics-list {
+  list-style: none;
+}
+
+.main .about-me-statistics-list-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 50px;
+}
+
+.main .about-me-statistics-list-item-icon {
+  margin: 0;
+  font-size: 52px;
+}
+
+.main .about-me-statistics-list-item-text {
+  margin: 0;
+  margin-left: 20px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main .about-me-statistics-list-item-text-number {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
 /*# sourceMappingURL=style.css.map */

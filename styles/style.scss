@@ -135,5 +135,43 @@ body {
 			margin-bottom: 100px;
 			color: $silver-text;
 		}
+
+		&-statistics {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 250px;
+			background-color: $navy-blue;
+			color: $light;
+
+			&-list {
+				list-style: none;
+
+				&-item {
+					display: inline-flex;
+					margin-left: 50px;
+
+					&-icon {
+						margin: 0;
+						font-size: 52px;
+					}
+					&-text {
+						margin: 0;
+						margin-left: 20px;
+						text-align: left;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 26px;
+
+						&-number {
+							font-weight: 500;
+							font-size: 21px;
+							line-height: 25px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
