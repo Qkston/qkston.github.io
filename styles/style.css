@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -109,10 +113,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  height: 370px;
 }
 
 .main .about-me-title {
+  margin: 0;
+  margin-top: 120px;
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 32px;
   line-height: 37px;
@@ -120,6 +126,7 @@ body {
 
 .main .about-me-text {
   width: 540px;
+  margin-bottom: 100px;
   color: #727272;
 }
 /*# sourceMappingURL=style.css.map */

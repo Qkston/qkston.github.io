@@ -5,6 +5,11 @@ $navy-blue: #34547a;
 $dark: #000000;
 $silver-text: #727272;
 
+html {
+	// Scrolling
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 
@@ -115,9 +120,11 @@ body {
 		align-items: center;
 		flex-direction: column;
 		text-align: center;
-		height: 370px;
 
 		&-title {
+			margin: 0;
+			margin-top: 120px;
+			margin-bottom: 50px;
 			font-weight: 500;
 			font-size: 32px;
 			line-height: 37px;
@@ -125,6 +132,7 @@ body {
 
 		&-text {
 			width: 540px;
+			margin-bottom: 100px;
 			color: $silver-text;
 		}
 	}
