@@ -23,6 +23,13 @@ body {
 	letter-spacing: 0.1em;
 }
 
+input,
+textarea {
+	&:focus {
+		outline: 0;
+	}
+}
+
 // Header
 .header {
 	height: 930px;
@@ -317,6 +324,87 @@ body {
 					display: inline-flex;
 					padding: 0;
 				}
+			}
+		}
+	}
+	// #endregion
+
+	// #region Section Form
+	.form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: $bg-color;
+
+		// Title of section
+		&-title {
+			margin: 0;
+			margin-top: 100px;
+			margin-bottom: 50px;
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 37px;
+		}
+
+		// Text of section
+		&-text {
+			width: 540px;
+			margin-bottom: 65px;
+			text-align: center;
+			color: $silver-text;
+		}
+
+		// Form
+		&-main {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			width: 750px;
+			margin-bottom: 100px;
+
+			&-input-name {
+				width: 255px;
+				height: 50px;
+				padding: 20px 0 20px 20px;
+				margin-right: 30px;
+				border: 0;
+				box-sizing: border-box;
+			}
+
+			&-input-email {
+				width: 255px;
+				height: 50px;
+				padding: 20px 0 20px 20px;
+				margin-right: 30px;
+				border: 0;
+				box-sizing: border-box;
+			}
+
+			&-input-message {
+				width: 540px;
+				height: 175px;
+				padding: 20px 0 20px 20px;
+				margin-top: 20px;
+				margin-right: 30px;
+				resize: none;
+				border: 0;
+				box-sizing: border-box;
+			}
+
+			&-input-btn {
+				margin-top: 50px;
+				width: 190px;
+				height: 55px;
+				background: $navy-blue;
+				color: $light;
+				border: 0;
+
+				font-size: 14px;
+				line-height: 23px;
+				text-align: center;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
 			}
 		}
 	}
