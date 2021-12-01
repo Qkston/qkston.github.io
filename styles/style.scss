@@ -295,18 +295,30 @@ body {
 	}
 	// #endregion
 
+	// #region Section My projects
 	.my-projects {
 		display: flex;
 		justify-content: center;
 
+		// Table of section
 		&-table {
 			margin-top: 30px;
 			margin-bottom: 70px;
 
-			&-column {
-				display: inline-flex;
-				padding: 0;
+			// Body of table
+			&-body {
+				text-align: center;
+
+				&-row {
+					display: inline-flex;
+				}
+
+				&-column {
+					display: inline-flex;
+					padding: 0;
+				}
 			}
 		}
 	}
+	// #endregion
 }

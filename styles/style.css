@@ -319,7 +319,17 @@ body {
   margin-bottom: 70px;
 }
 
-.main .my-projects-table-column {
+.main .my-projects-table-body {
+  text-align: center;
+}
+
+.main .my-projects-table-body-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.main .my-projects-table-body-column {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
