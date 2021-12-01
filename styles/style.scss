@@ -181,6 +181,7 @@ body {
 	}
 	// #endregion
 
+	// #region My skills
 	.my-skills {
 		display: flex;
 		justify-content: center;
@@ -188,12 +189,14 @@ body {
 		flex-direction: row;
 		height: 650px;
 
+		// Block for my skills
 		&-block {
 			display: flex;
 			justify-content: start;
 			flex-direction: column;
 			margin-right: 150px;
 
+			// Title of block
 			&-title {
 				margin: 0;
 				margin-bottom: 50px;
@@ -202,6 +205,7 @@ body {
 				line-height: 37px;
 			}
 
+			// Text of block
 			&-text {
 				margin: 0;
 				margin-bottom: 10px;
@@ -211,6 +215,7 @@ body {
 				color: $silver-text;
 			}
 
+			// Long grey line
 			&-rectangles {
 				position: relative;
 				width: 450px;
@@ -223,6 +228,7 @@ body {
 				-ms-border-radius: 20px;
 				-o-border-radius: 20px;
 
+				// Short navy-blue line
 				&-fill {
 					position: absolute;
 					height: 100%;
@@ -233,6 +239,8 @@ body {
 					-ms-border-radius: 20px;
 					-o-border-radius: 20px;
 				}
+
+				// #region percents
 				.perc100 {
 					width: 100%;
 				}
@@ -248,7 +256,9 @@ body {
 				.perc20 {
 					width: 20%;
 				}
+				// #endregion
 			}
 		}
 	}
+	// #endregion
 }
