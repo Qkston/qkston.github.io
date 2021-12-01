@@ -269,4 +269,39 @@ body {
 .main .my-skills-block-rectangles .perc20 {
   width: 20%;
 }
+
+.main .working {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1000px;
+  background: #eeeff1;
+}
+
+.main .working-title {
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.main .working-text {
+  margin: 0;
+  margin-bottom: 60px;
+  width: 550px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+}
 /*# sourceMappingURL=style.css.map */
