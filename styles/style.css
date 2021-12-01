@@ -304,4 +304,25 @@ body {
   text-align: center;
   color: #727272;
 }
+
+.main .my-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .my-projects-table {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.main .my-projects-table-column {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+}
 /*# sourceMappingURL=style.css.map */
