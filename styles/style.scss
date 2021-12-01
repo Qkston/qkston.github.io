@@ -4,6 +4,7 @@ $light: #ffffff;
 $navy-blue: #34547a;
 $dark: #000000;
 $silver-text: #727272;
+$rectagle: #c4c4c4c4;
 
 html {
 	// Scrolling
@@ -179,4 +180,75 @@ body {
 		}
 	}
 	// #endregion
+
+	.my-skills {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		height: 650px;
+
+		&-block {
+			display: flex;
+			justify-content: start;
+			flex-direction: column;
+			margin-right: 150px;
+
+			&-title {
+				margin: 0;
+				margin-bottom: 50px;
+				font-weight: 500;
+				font-size: 32px;
+				line-height: 37px;
+			}
+
+			&-text {
+				margin: 0;
+				margin-bottom: 10px;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 26px;
+				color: $silver-text;
+			}
+
+			&-rectangles {
+				position: relative;
+				width: 450px;
+				height: 5px;
+				margin-bottom: 20px;
+				background: $rectagle;
+				border-radius: 20px;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				-ms-border-radius: 20px;
+				-o-border-radius: 20px;
+
+				&-fill {
+					position: absolute;
+					height: 100%;
+					background: $navy-blue;
+					border-radius: 20px;
+					-webkit-border-radius: 20px;
+					-moz-border-radius: 20px;
+					-ms-border-radius: 20px;
+					-o-border-radius: 20px;
+				}
+				.perc100 {
+					width: 100%;
+				}
+				.perc80 {
+					width: 80%;
+				}
+				.perc60 {
+					width: 60%;
+				}
+				.perc40 {
+					width: 40%;
+				}
+				.perc20 {
+					width: 20%;
+				}
+			}
+		}
+	}
 }
