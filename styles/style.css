@@ -432,4 +432,43 @@ textarea:focus {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  background: #34547a;
+  color: #ffffff;
+  padding: 0px 400px;
+}
+
+.footer-left-side {
+  margin: 50px 0;
+}
+
+.footer-left-side-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.footer-left-side-text {
+  margin: 20px 0 0 0;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.footer-right-side-links {
+  color: #ffffff;
+  margin-right: 20px;
+  font-size: 28px;
+}
 /*# sourceMappingURL=style.css.map */

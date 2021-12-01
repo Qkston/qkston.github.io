@@ -410,3 +410,43 @@ textarea {
 	}
 	// #endregion
 }
+
+.footer {
+	// #region Footer
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	background: $navy-blue;
+	color: $light;
+	padding: 0px 400px;
+
+	// Footer's left-side
+	&-left-side {
+		margin: 50px 0;
+
+		&-title {
+			margin: 0;
+			font-weight: 500;
+			font-size: 21px;
+			line-height: 25px;
+		}
+
+		&-text {
+			margin: 20px 0 0 0;
+			font-size: 13px;
+			line-height: 21px;
+		}
+	}
+
+	// Footer's right-side
+	&-right-side {
+		&-links {
+			color: $light;
+			margin-right: 20px;
+			font-size: 28px;
+		}
+	}
+	// #endregion
+}
