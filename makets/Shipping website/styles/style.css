@@ -2,4 +2,84 @@ body {
   margin: 0;
   font-family: "Manrope", sans-serif;
 }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 150px;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo-title {
+  margin: 0;
+  margin-left: 12px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 82px;
+  text-transform: lowercase;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav-items {
+  margin-right: 60px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header-nav-items:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-login-log-in {
+  margin-right: 25px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.header-login-get-started {
+  width: 130px;
+  height: 50px;
+  padding: 15px;
+  background: #000000;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
