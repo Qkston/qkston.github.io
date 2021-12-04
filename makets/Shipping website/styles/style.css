@@ -1,11 +1,9 @@
-html {
-  width: 100%;
-  overflow: hidden;
-}
-
 body {
   margin: 0;
+  width: 100%;
+  overflow: hidden;
   font-family: "Manrope", sans-serif;
+  background: #e5e5e5;
 }
 
 .header {
@@ -70,12 +68,16 @@ body {
 }
 
 .header-login-log-in {
+  padding: 0;
   margin-right: 175px;
+  background: none;
+  border: 0;
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #000000;
+  cursor: pointer;
 }
 
 .header-login-get-started {
@@ -89,6 +91,7 @@ body {
   border: none;
   border-radius: 50px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .shadow .upper {

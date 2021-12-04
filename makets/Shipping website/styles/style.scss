@@ -7,21 +7,24 @@ $orange-rectangle: #ffc04d;
 $red-rectangle: #fe351f;
 $blue-rectangle: #71c3fd;
 
-html {
-	width: 100%;
-	overflow: hidden;
-}
-
+// General settings
 body {
 	margin: 0;
+	width: 100%;
+	overflow: hidden;
 	font-family: "Manrope", sans-serif;
+	background: $bg-color;
 }
 
+// Styles for header
 .header {
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 150px;
 
+	// #region Header's elements
+
+	// Logo of header
 	&-logo {
 		display: flex;
 		align-items: center;
@@ -35,6 +38,7 @@ body {
 		}
 	}
 
+	// Center navigation menu of header
 	&-nav {
 		display: flex;
 		align-items: center;
@@ -56,17 +60,22 @@ body {
 		}
 	}
 
+	// Right-side buttons of header
 	&-login {
 		display: flex;
 		align-items: center;
 
 		&-log-in {
+			padding: 0;
 			margin-right: 175px;
+			background: none;
+			border: 0;
 			text-decoration: none;
 			font-weight: normal;
 			font-size: 14px;
 			line-height: 19px;
 			color: $black;
+			cursor: pointer;
 		}
 
 		&-get-started {
@@ -80,21 +89,27 @@ body {
 			border: none;
 			border-radius: 50px;
 			color: $light;
+			cursor: pointer;
 		}
 	}
+	// #endregion
 }
 
+// Style for shadows of page
 .shadow {
+	// Upper-right orange shadow
 	.upper {
 		top: -20%;
 		left: 85%;
 	}
 
+	// Center orange shadow
 	.centring {
 		top: 45%;
 		left: 25%;
 	}
 
+	// General styles for orange shadow
 	.orange-rectangle {
 		position: absolute;
 		width: 200px;
@@ -104,6 +119,7 @@ body {
 		background: $orange-rectangle;
 	}
 
+	// Blue shadow
 	.blue-rectangle {
 		position: absolute;
 		width: 300px;
@@ -115,6 +131,7 @@ body {
 		background: $blue-rectangle;
 	}
 
+	// Red shadow
 	.red-rectangle {
 		position: absolute;
 		width: 300px;
