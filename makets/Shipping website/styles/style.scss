@@ -3,6 +3,14 @@ $bg-color: #e5e5e5;
 $red-color: #ff4229;
 $black: #000000;
 $light: #ffffff;
+$orange-rectangle: #ffc04d;
+$red-rectangle: #fe351f;
+$blue-rectangle: #71c3fd;
+
+html {
+	width: 100%;
+	overflow: hidden;
+}
 
 body {
 	margin: 0;
@@ -53,7 +61,7 @@ body {
 		align-items: center;
 
 		&-log-in {
-			margin-right: 25px;
+			margin-right: 175px;
 			text-decoration: none;
 			font-weight: normal;
 			font-size: 14px;
@@ -62,6 +70,9 @@ body {
 		}
 
 		&-get-started {
+			position: absolute;
+			right: 150px;
+			z-index: 1;
 			width: 130px;
 			height: 50px;
 			padding: 15px;
@@ -70,5 +81,48 @@ body {
 			border-radius: 50px;
 			color: $light;
 		}
+	}
+}
+
+.shadow {
+	.upper {
+		top: -20%;
+		left: 85%;
+	}
+
+	.centring {
+		top: 45%;
+		left: 25%;
+	}
+
+	.orange-rectangle {
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		filter: blur(50px);
+		border-radius: 150px;
+		background: $orange-rectangle;
+	}
+
+	.blue-rectangle {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		top: 10%;
+		left: 90%;
+		filter: blur(100px);
+		border-radius: 150px;
+		background: $blue-rectangle;
+	}
+
+	.red-rectangle {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		top: 20%;
+		left: 30%;
+		filter: blur(80px);
+		border-radius: 150px;
+		background: $red-rectangle;
 	}
 }

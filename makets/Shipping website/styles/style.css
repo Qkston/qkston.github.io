@@ -1,3 +1,8 @@
+html {
+  width: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
@@ -65,7 +70,7 @@ body {
 }
 
 .header-login-log-in {
-  margin-right: 25px;
+  margin-right: 175px;
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -74,6 +79,9 @@ body {
 }
 
 .header-login-get-started {
+  position: absolute;
+  right: 150px;
+  z-index: 1;
   width: 130px;
   height: 50px;
   padding: 15px;
@@ -81,5 +89,49 @@ body {
   border: none;
   border-radius: 50px;
   color: #ffffff;
+}
+
+.shadow .upper {
+  top: -20%;
+  left: 85%;
+}
+
+.shadow .centring {
+  top: 45%;
+  left: 25%;
+}
+
+.shadow .orange-rectangle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  border-radius: 150px;
+  background: #ffc04d;
+}
+
+.shadow .blue-rectangle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 90%;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+  border-radius: 150px;
+  background: #71c3fd;
+}
+
+.shadow .red-rectangle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 30%;
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+  border-radius: 150px;
+  background: #fe351f;
 }
 /*# sourceMappingURL=style.css.map */
