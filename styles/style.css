@@ -353,6 +353,12 @@ textarea:focus {
   padding: 0;
 }
 
+.main .my-projects-table-body-column-link {
+  height: 240px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .main .form {
   display: -webkit-box;
   display: -ms-flexbox;

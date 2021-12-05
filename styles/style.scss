@@ -339,6 +339,12 @@ textarea {
 				&-column {
 					display: inline-flex;
 					padding: 0;
+
+					&-link {
+						height: 240px;
+						text-decoration: none;
+						cursor: pointer;
+					}
 				}
 			}
 		}
