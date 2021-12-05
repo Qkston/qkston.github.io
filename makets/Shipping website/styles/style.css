@@ -1,8 +1,11 @@
+* {
+  font-family: "Manrope", sans-serif;
+}
+
 body {
   margin: 0;
   width: 100%;
   overflow: hidden;
-  font-family: "Manrope", sans-serif;
 }
 
 .header {
@@ -12,7 +15,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 150px;
+  margin: 40px 150px 0 150px;
 }
 
 .header-logo {
@@ -68,7 +71,7 @@ body {
 
 .header-login-log-in {
   padding: 0;
-  margin-right: 175px;
+  margin-right: 25px;
   background: none;
   border: 0;
   text-decoration: none;
@@ -80,9 +83,6 @@ body {
 }
 
 .header-login-get-started {
-  position: absolute;
-  right: 150px;
-  z-index: 1;
   width: 130px;
   height: 50px;
   padding: 15px;
@@ -91,6 +91,247 @@ body {
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px;
+}
+
+.main-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 610px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-info-block-title {
+  margin: 0;
+  margin-top: 160px;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 82px;
+}
+
+.main-info-block-text {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.main-info-block-inputs-input {
+  width: 470px;
+  height: 80px;
+  padding: 25px 0px 25px 35px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 20px 10px 100px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 10px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.main-info-block-inputs-input:focus {
+  outline: none;
+}
+
+.main-info-block-inputs-input::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  opacity: 0.2;
+}
+
+.main-info-block-inputs-input:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  opacity: 0.2;
+}
+
+.main-info-block-inputs-input::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  opacity: 0.2;
+}
+
+.main-info-block-inputs-input::placeholder {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  opacity: 0.2;
+}
+
+.main-info-block-inputs-btn {
+  position: absolute;
+  top: 620px;
+  left: 460px;
+  width: 150px;
+  height: 60px;
+  background: #ff4229;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.main-info-block-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 110px;
+  margin-bottom: 130px;
+}
+
+.main-info-block-group-triangle {
+  margin-left: -10px;
+  margin-right: 30px;
+}
+
+.main-info-block-group-text {
+  margin-right: 30px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.main-info-block-group-pink-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background-color: #fddde2;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.main-info-block-group-pink-element img {
+  width: 60px;
+  height: 45px;
+}
+
+.main-info-block-group-green-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background: #c6f8e7;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.main-info-block-group-green-element img {
+  width: 65px;
+  height: 45px;
+}
+
+.main-info-block-group-yellow-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background: #fedfc0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.main-info-block-group-yellow-element img {
+  width: 67px;
+  height: 62px;
+}
+
+.main-info-block-group-right-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background: #ff4229;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.main-info-block-group-right-arrow img {
+  width: 30px;
+  height: 15px;
+}
+
+.main-image-block {
+  position: absolute;
+  z-index: -1;
+  left: 1070px;
+  top: 150px;
+}
+
+.main-image-block img {
+  width: 700px;
+  height: 810px;
 }
 
 .shadow .upper {
@@ -105,6 +346,7 @@ body {
 
 .shadow .orange-rectangle {
   position: absolute;
+  z-index: -1;
   width: 200px;
   height: 200px;
   -webkit-filter: blur(50px);
@@ -115,6 +357,7 @@ body {
 
 .shadow .blue-rectangle {
   position: absolute;
+  z-index: -1;
   width: 300px;
   height: 300px;
   top: 10%;
@@ -127,6 +370,7 @@ body {
 
 .shadow .red-rectangle {
   position: absolute;
+  z-index: -1;
   width: 300px;
   height: 300px;
   top: 20%;
