@@ -212,6 +212,7 @@ body {
 
 .main-info-block-group-text {
   margin-right: 30px;
+  cursor: pointer;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;

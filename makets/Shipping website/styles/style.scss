@@ -98,15 +98,18 @@ body {
 	// #endregion
 }
 
+// Styles for main section
 .main {
 	display: flex;
 	margin-left: 150px;
 
+	// #region Main section's elements
 	&-info-block {
 		display: flex;
 		width: 610px;
 		flex-wrap: wrap;
 
+		// Title of section
 		&-title {
 			margin: 0;
 			margin-top: 160px;
@@ -115,6 +118,7 @@ body {
 			line-height: 82px;
 		}
 
+		// Text of section
 		&-text {
 			width: 400px;
 			margin-top: 30px;
@@ -124,6 +128,7 @@ body {
 			line-height: 32px;
 		}
 
+		// Mini-form of section
 		&-inputs {
 			&-input {
 				width: 470px;
@@ -175,6 +180,7 @@ body {
 			}
 		}
 
+		// Group with some elements
 		&-group {
 			display: flex;
 			align-items: center;
@@ -188,6 +194,7 @@ body {
 
 			&-text {
 				margin-right: 30px;
+				cursor: pointer;
 				font-style: normal;
 				font-weight: 800;
 				font-size: 14px;
@@ -275,6 +282,7 @@ body {
 			}
 		}
 	}
+	// Right side image
 	&-image-block {
 		position: absolute;
 		z-index: -1;
@@ -286,6 +294,8 @@ body {
 			height: 810px;
 		}
 	}
+
+	// #endregion
 }
 
 // Style for shadows of page
