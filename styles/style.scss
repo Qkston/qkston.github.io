@@ -324,31 +324,14 @@ textarea {
 	.my-projects {
 		display: flex;
 		justify-content: center;
+		padding: 50px;
 
-		// Table of section
-		&-table {
-			margin-top: 30px;
-			margin-bottom: 70px;
-
-			// Body of table
-			&-body {
-				text-align: center;
-
-				&-row {
-					display: inline-flex;
-				}
-
-				&-column {
-					display: inline-flex;
-					padding: 0;
-
-					&-link {
-						height: 240px;
-						text-decoration: none;
-						cursor: pointer;
-					}
-				}
-			}
+		.carousel-inner {
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
 		}
 	}
 	// #endregion
