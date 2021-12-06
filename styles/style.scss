@@ -511,7 +511,8 @@ textarea {
 	// #endregion
 }
 
-// Media requests
+// #region Media requests
+// Full screen window
 @media screen and (min-width: 1440px) and (max-width: 1820px) {
 	.header {
 		&-up-block {
@@ -524,6 +525,7 @@ textarea {
 	}
 }
 
+// Notebook L window
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 	.header {
 		height: 750px;
@@ -571,6 +573,7 @@ textarea {
 	}
 }
 
+// Notebook window
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	.header {
 		height: 750px;
@@ -601,6 +604,7 @@ textarea {
 	}
 }
 
+// Tablet
 @media screen and (min-width: 425px) and (max-width: 768px) {
 	.header {
 		height: 750px;
@@ -651,6 +655,7 @@ textarea {
 	}
 }
 
+// Default mobile window
 @media screen and (min-width: 320px) and (max-width: 425px) {
 	.header {
 		height: 750px;
@@ -700,6 +705,8 @@ textarea {
 		}
 	}
 }
+
+// Small mobile window
 @media screen and (max-width: 320px) {
 	.header {
 		height: 750px;
@@ -749,3 +756,4 @@ textarea {
 		}
 	}
 }
+// #endregion
