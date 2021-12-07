@@ -147,7 +147,7 @@ textarea:focus {
 }
 
 .main .about-me-text {
-  width: 540px;
+  width: 740px;
   margin-bottom: 100px;
   color: #727272;
 }
@@ -453,12 +453,6 @@ textarea:focus {
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
-}
-
-.footer-left-side-text {
-  margin: 20px 0 0 0;
-  font-size: 13px;
-  line-height: 21px;
 }
 
 .footer-right-side-links {
