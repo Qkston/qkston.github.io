@@ -3,6 +3,8 @@ $light: #ffffff;
 $dark: #000000;
 $blue: #4743e0;
 $body-bg: #e5e5e5;
+$form-header: #42505c;
+$form-terms: #404040;
 
 * {
 	font-family: "Roboto", sans-serif;
@@ -39,6 +41,34 @@ body {
 				letter-spacing: 0.25px;
 				text-decoration: none;
 				color: $blue;
+			}
+		}
+
+		&-form-title {
+			display: flex;
+
+			&-title {
+				width: 280px;
+				margin: 0;
+				margin-right: 60px;
+				color: $form-header;
+				font-weight: bold;
+				font-size: 54px;
+				line-height: 68px;
+			}
+
+			&-terms {
+				width: 300px;
+				color: $form-terms;
+				font-size: 14px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+
+				a {
+					color: $blue;
+					font-weight: 700;
+					text-decoration: none;
+				}
 			}
 		}
 	}
