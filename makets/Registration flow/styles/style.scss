@@ -5,6 +5,8 @@ $blue: #4743e0;
 $body-bg: #e5e5e5;
 $form-header: #42505c;
 $form-terms: #404040;
+$form-text: #333333;
+$form-input-border: #d1d1d1;
 
 * {
 	font-family: "Roboto", sans-serif;
@@ -27,7 +29,6 @@ body {
 		width: 850px;
 		height: 100%;
 		box-sizing: border-box;
-		background: aquamarine;
 
 		&-already-member {
 			display: flex;
@@ -46,6 +47,7 @@ body {
 
 		&-form-title {
 			display: flex;
+			margin-bottom: 50px;
 
 			&-title {
 				width: 280px;
@@ -69,6 +71,42 @@ body {
 					font-weight: 700;
 					text-decoration: none;
 				}
+			}
+		}
+
+		&-form {
+			display: flex;
+			flex-wrap: wrap;
+			width: 650px;
+			padding: 40px 0;
+			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+			border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+
+			&-label {
+				display: block;
+				margin-bottom: 15px;
+				color: $form-text;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+			}
+
+			&-input {
+				display: block;
+				width: 300px;
+				height: 50px;
+				margin-bottom: 25px;
+				padding: 15px 0 20px 15px;
+				border: 1px solid $form-input-border;
+				box-sizing: border-box;
+
+				&:focus {
+					outline: none;
+				}
+			}
+			&:nth-child(odd) &-input {
+				margin-right: 45px;
 			}
 		}
 	}

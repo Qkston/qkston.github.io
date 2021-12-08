@@ -21,7 +21,6 @@ body {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: aquamarine;
 }
 
 .wrap .main-already-member {
@@ -47,6 +46,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .wrap .main-form-title-title {
@@ -71,5 +71,46 @@ body {
   color: #4743e0;
   font-weight: 700;
   text-decoration: none;
+}
+
+.wrap .main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 650px;
+  padding: 40px 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.wrap .main-form-label {
+  display: block;
+  margin-bottom: 15px;
+  color: #333333;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.wrap .main-form-input {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 15px 0 20px 15px;
+  border: 1px solid #d1d1d1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .main-form-input:focus {
+  outline: none;
+}
+
+.wrap .main-form:nth-child(odd) .wrap .main-form-input {
+  margin-right: 45px;
 }
 /*# sourceMappingURL=style.css.map */
