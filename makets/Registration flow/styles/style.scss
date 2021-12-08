@@ -2,6 +2,7 @@
 $light: #ffffff;
 $dark: #000000;
 $blue: #4743e0;
+$body-bg: #e5e5e5;
 
 * {
 	font-family: "Roboto", sans-serif;
@@ -9,4 +10,13 @@ $blue: #4743e0;
 
 body {
 	margin: 0;
+	background: $body-bg;
+}
+
+.wrap {
+	display: block;
+	margin: 40px auto;
+	width: 1440px;
+	height: 850px;
+	background: $light;
 }
