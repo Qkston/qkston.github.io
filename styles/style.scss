@@ -509,6 +509,7 @@ textarea {
 // Full screen window
 @media screen and (min-width: 1440px) and (max-width: 1820px) {
 	.header {
+		// #region Header
 		&-up-block {
 			padding: 60px 200px 0 200px;
 		}
@@ -516,6 +517,7 @@ textarea {
 		&-main-block {
 			padding: 0px 200px;
 		}
+		// #endregion
 	}
 }
 
@@ -571,15 +573,22 @@ textarea {
 	.main {
 		// #region About me
 		.about-me {
+			// Navy-blue section with my stats
 			&-stats {
 				height: 300px;
+
+				// List of section
 				&-list {
+					// Item of list
 					&-item {
+						// Icon of item
 						&-icon {
 							display: block;
 							margin: auto 0;
 							font-size: 36px;
 						}
+
+						// Text of item
 						&-text {
 							width: 130px;
 							font-size: 12px;
@@ -630,11 +639,13 @@ textarea {
 	.main {
 		// #region About me
 		.about-me {
+			// About me text
 			&-text {
 				width: 600px;
 				font-size: 12px;
 			}
 
+			// Navy-blue section with my stats
 			&-stats {
 				height: 350px;
 				&-list {
@@ -714,10 +725,13 @@ textarea {
 	.main {
 		// #region About me
 		.about-me {
+			// About me text
 			&-text {
 				width: 400px;
 				font-size: 12px;
 			}
+
+			// Navy-blue section with my stats
 			&-stats {
 				height: 350px;
 				&-list {
@@ -799,6 +813,7 @@ textarea {
 	.main {
 		// #region About me
 		.about-me {
+			// About me text
 			&-title {
 				margin-top: 100px;
 				font-size: 24px;
@@ -807,6 +822,8 @@ textarea {
 				width: 200px;
 				font-size: 9px;
 			}
+
+			// Navy-blue section with my stats
 			&-stats {
 				height: 500px;
 				&-list {
@@ -838,7 +855,7 @@ textarea {
 @media screen and (max-width: 320px) {
 	.header {
 		height: 750px;
-
+		// #region Header
 		&-up-block {
 			flex-direction: column;
 			justify-content: space-evenly;
@@ -882,11 +899,13 @@ textarea {
 				}
 			}
 		}
+		// #endregion
 	}
 
 	.main {
 		// #region About me
 		.about-me {
+			// About me text
 			&-title {
 				margin-top: 100px;
 				font-size: 24px;
@@ -895,6 +914,8 @@ textarea {
 				width: 200px;
 				font-size: 9px;
 			}
+
+			// Navy-blue section with my stats
 			&-stats {
 				height: 500px;
 				&-list {
