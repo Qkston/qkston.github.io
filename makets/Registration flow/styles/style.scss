@@ -19,4 +19,27 @@ body {
 	width: 1440px;
 	height: 850px;
 	background: $light;
+
+	.main {
+		padding: 80px 100px;
+		width: 850px;
+		height: 100%;
+		box-sizing: border-box;
+		background: aquamarine;
+
+		&-already-member {
+			display: flex;
+			justify-content: end;
+
+			&-text {
+				margin-right: 15px;
+				margin-bottom: 50px;
+				font-weight: normal;
+				font-size: 14px;
+				letter-spacing: 0.25px;
+				text-decoration: none;
+				color: $blue;
+			}
+		}
+	}
 }

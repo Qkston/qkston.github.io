@@ -14,4 +14,32 @@ body {
   height: 850px;
   background: #ffffff;
 }
+
+.wrap .main {
+  padding: 80px 100px;
+  width: 850px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: aquamarine;
+}
+
+.wrap .main-already-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.wrap .main-already-member-text {
+  margin-right: 15px;
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  color: #4743e0;
+}
 /*# sourceMappingURL=style.css.map */
