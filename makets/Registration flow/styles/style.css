@@ -161,14 +161,22 @@ body {
   height: 50px;
   text-align: center;
   border: 1px solid #d1d1d1;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
 }
 
 .wrap .main-form-optional-inputs-list:focus {
   outline: none;
 }
 
-.wrap .main-form-optional-inputs .phone {
+.wrap .main-form-optional-inputs-phone {
+  padding: 20px 0 20px 20px;
   width: 210px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
 }
 /*# sourceMappingURL=style.css.map */

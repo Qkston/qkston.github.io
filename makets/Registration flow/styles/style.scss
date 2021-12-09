@@ -90,9 +90,9 @@ body {
 			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
 			border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
 
+			// Styles for labels
 			&-label {
 				display: block;
-				// margin-bottom: 15px;
 				color: $form-text;
 				font-weight: normal;
 				font-size: 12px;
@@ -104,6 +104,7 @@ body {
 				}
 			}
 
+			// Styles for inputs
 			&-input {
 				display: block;
 				width: 300px;
@@ -118,10 +119,12 @@ body {
 				}
 			}
 
+			// Syles for optional section
 			&-optional {
 				display: flex;
 				margin-top: 15px;
 
+				// #region Optional section
 				&-small {
 					color: rgba($color: $form-text, $alpha: 0.34);
 					font-size: 12px;
@@ -159,17 +162,29 @@ body {
 						height: 50px;
 						text-align: center;
 						border: 1px solid $form-input-border;
-						color: rgba($color: $dark, $alpha: 0.5);
+						color: rgba($color: $dark, $alpha: 0.4);
+
+						font-size: 14px;
+						line-height: 28px;
+						letter-spacing: 0.25px;
 
 						&:focus {
 							outline: none;
 						}
 					}
 
-					.phone {
+					&-phone {
+						padding: 20px 0 20px 20px;
 						width: 210px;
+						color: rgba($color: $dark, $alpha: 0.4);
+
+						font-size: 14px;
+						line-height: 28px;
+						letter-spacing: 0.25px;
 					}
 				}
+
+				// #endregion
 			}
 		}
 

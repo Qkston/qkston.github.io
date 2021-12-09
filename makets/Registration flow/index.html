@@ -60,10 +60,12 @@
 						<input type="text" name="work-email" placeholder="John Smit" required class="main-form-input" />
 					</label>
 
+					<!-- Optional section -->
 					<div class="main-form-optional">
 						<!-- Number of employees -->
 						<label for="employees" class="main-form-label main-form-label-left">
 							Number of employees <small class="main-form-optional-small">(optional)</small>
+							<!-- Buttons -->
 							<div class="main-form-optional-inputs">
 								<button class="main-form-optional-inputs-btn">0<20</button>
 								<button class="main-form-optional-inputs-btn">20<50</button>
@@ -76,12 +78,15 @@
 						<label for="phone-number" class="main-form-label">
 							Phone number <small class="main-form-optional-small">(optional)</small>
 							<div class="main-form-optional-inputs">
-								<select class="main-form-optional-inputs-list" selected="">
+								<!-- Left side list of country codes -->
+								<select class="main-form-optional-inputs-list">
+									<option value="" disabled selected hidden>+000</option>
 									<option value="+380">+380</option>
 									<option value="+7">+7</option>
 									<option value="+4">+4</option>
 								</select>
-								<input type="text" name="phone-number" placeholder="00 000 000" class="main-form-input phone" />
+								<!-- Right side for input number phone -->
+								<input type="text" name="phone-number" placeholder="00 000 000" class="main-form-input main-form-optional-inputs-phone" />
 							</div>
 						</label>
 					</div>
