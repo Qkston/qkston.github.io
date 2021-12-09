@@ -109,8 +109,4 @@ body {
 .wrap .main-form-input:focus {
   outline: none;
 }
-
-.wrap .main-form:nth-child(odd) .wrap .main-form-input {
-  margin-right: 45px;
-}
 /*# sourceMappingURL=style.css.map */
