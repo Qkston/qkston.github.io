@@ -37,26 +37,60 @@
 				<!-- Main form -->
 				<form action="#" class="main-form" method="post">
 					<!-- First name -->
-					<label for="first-name" class="main-form-label">
+					<label for="first-name" class="main-form-label main-form-label-left">
 						First name
-						<input type="text" name="first-name" placeholder="John" class="main-form-input" />
+						<input type="text" name="first-name" placeholder="John" required class="main-form-input" />
 					</label>
 
 					<!-- Last name -->
 					<label for="last-name" class="main-form-label">
 						Last name
-						<input type="text" name="last-name" placeholder="Smit" class="main-form-input" />
+						<input type="text" name="last-name" placeholder="Smit" required class="main-form-input" />
 					</label>
 
 					<!-- Company -->
-					<label for="company" class="main-form-label">
+					<label for="company" class="main-form-label main-form-label-left">
 						Company
-						<input type="text" name="company" placeholder="John Smit" class="main-form-input" />
+						<input type="text" name="company" placeholder="John Smit" required class="main-form-input" />
 					</label>
+
+					<!-- Work email -->
+					<label for="work-email" class="main-form-label">
+						Work email
+						<input type="text" name="work-email" placeholder="John Smit" required class="main-form-input" />
+					</label>
+
+					<div class="main-form-optional">
+						<!-- Number of employees -->
+						<label for="employees" class="main-form-label main-form-label-left">
+							Number of employees <small class="main-form-optional-small">(optional)</small>
+							<div class="main-form-optional-inputs">
+								<button class="main-form-optional-inputs-btn">0<20</button>
+								<button class="main-form-optional-inputs-btn">20<50</button>
+								<button class="main-form-optional-inputs-btn">50<100</button>
+								<button class="main-form-optional-inputs-btn">100<...</button>
+							</div>
+						</label>
+
+						<!-- Phone number -->
+						<label for="phone-number" class="main-form-label">
+							Phone number <small class="main-form-optional-small">(optional)</small>
+							<div class="main-form-optional-inputs">
+								<select class="main-form-optional-inputs-list" selected="">
+									<option value="+380">+380</option>
+									<option value="+7">+7</option>
+									<option value="+4">+4</option>
+								</select>
+								<input type="text" name="phone-number" placeholder="00 000 000" class="main-form-input phone" />
+							</div>
+						</label>
+					</div>
 				</form>
 			</main>
 			<!-- Right side image -->
 			<aside class="image"></aside>
 		</div>
+
+		<script src="script.js"></script>
 	</body>
 </html>

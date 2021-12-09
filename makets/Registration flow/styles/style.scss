@@ -92,12 +92,16 @@ body {
 
 			&-label {
 				display: block;
-				margin-bottom: 15px;
+				// margin-bottom: 15px;
 				color: $form-text;
 				font-weight: normal;
 				font-size: 12px;
 				line-height: 28px;
 				letter-spacing: 0.25px;
+
+				&-left {
+					margin-right: 45px;
+				}
 			}
 
 			&-input {
@@ -111,6 +115,60 @@ body {
 
 				&:focus {
 					outline: none;
+				}
+			}
+
+			&-optional {
+				display: flex;
+				margin-top: 15px;
+
+				&-small {
+					color: rgba($color: $form-text, $alpha: 0.34);
+					font-size: 12px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
+				}
+
+				&-inputs {
+					display: flex;
+
+					&-btn {
+						width: 65px;
+						height: 50px;
+						margin-right: 10px;
+						background: $light;
+						border: 1px solid $form-input-border;
+						box-sizing: border-box;
+						cursor: pointer;
+
+						font-size: 14px;
+						line-height: 28px;
+						text-align: center;
+						letter-spacing: 0.25px;
+						color: rgba($color: $dark, $alpha: 0.5);
+					}
+
+					.active {
+						color: $blue;
+						border: 1px solid $blue;
+						box-shadow: 0 0 14px rgba($color: $blue, $alpha: 0.2);
+					}
+
+					&-list {
+						width: 90px;
+						height: 50px;
+						text-align: center;
+						border: 1px solid $form-input-border;
+						color: rgba($color: $dark, $alpha: 0.5);
+
+						&:focus {
+							outline: none;
+						}
+					}
+
+					.phone {
+						width: 210px;
+					}
 				}
 			}
 		}
