@@ -7,11 +7,16 @@ body {
   background: #e5e5e5;
 }
 
+a {
+  color: #4743e0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .wrap {
   display: block;
   margin: 40px auto;
   width: 1440px;
-  height: 850px;
   background: #ffffff;
 }
 
@@ -67,12 +72,6 @@ body {
   letter-spacing: 0.25px;
 }
 
-.wrap .main-form-title-terms a {
-  color: #4743e0;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .wrap .main-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +116,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px;
+  margin: 15px 0 40px 0;
 }
 
 .wrap .main-form-optional-small {
@@ -172,11 +171,42 @@ body {
 }
 
 .wrap .main-form-optional-inputs-phone {
+  margin: 0;
   padding: 20px 0 20px 20px;
   width: 210px;
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.25px;
+}
+
+.wrap .main-form-passwords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.wrap .main-register-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.wrap .main-register-btn-checkbox-input {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border: 1px solid #d1d1d1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
