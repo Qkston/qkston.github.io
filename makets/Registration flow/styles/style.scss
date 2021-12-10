@@ -7,6 +7,7 @@ $form-header: #42505c;
 $form-terms: #404040;
 $form-text: #333333;
 $form-input-border: #d1d1d1;
+$image-bg: #f9faff;
 
 * {
 	font-family: "Roboto", sans-serif;
@@ -24,17 +25,19 @@ a {
 }
 
 .wrap {
-	display: block;
+	display: flex;
 	margin: 40px auto;
 	width: 1440px;
-	// height: 850px;
+	height: 1020px;
 	background: $light;
 
 	.main {
 		// #region Main
+		position: absolute;
+		z-index: 1;
 		padding: 80px 100px;
 		width: 850px;
-		height: 100%;
+		height: 1020px;
 		box-sizing: border-box;
 
 		// #region Already member
@@ -215,9 +218,6 @@ a {
 					background: $light;
 					box-sizing: border-box;
 					border: 1px solid $form-input-border;
-					-moz-appearance: none;
-					-webkit-appearance: none;
-					-o-appearance: none;
 				}
 
 				&-text {
@@ -233,6 +233,7 @@ a {
 				height: 50px;
 				border: none;
 				background: $blue;
+				cursor: pointer;
 
 				color: $light;
 				font-weight: bold;
@@ -244,6 +245,21 @@ a {
 		}
 		// #endregion
 
+		// #endregion
+	}
+
+	.image {
+		// #region Right-side image
+		display: block;
+		margin: 0 0 0 auto;
+		width: 590px;
+		background: $image-bg;
+
+		img {
+			position: absolute;
+			left: 49.65%;
+			top: 23.1%;
+		}
 		// #endregion
 	}
 }

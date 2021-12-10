@@ -14,16 +14,21 @@ a {
 }
 
 .wrap {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 40px auto;
   width: 1440px;
+  height: 1020px;
   background: #ffffff;
 }
 
 .wrap .main {
+  position: absolute;
+  z-index: 1;
   padding: 80px 100px;
   width: 850px;
-  height: 100%;
+  height: 1020px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -218,9 +223,6 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #d1d1d1;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -o-appearance: none;
 }
 
 .wrap .main-register-section-checkbox-text {
@@ -235,11 +237,25 @@ a {
   height: 50px;
   border: none;
   background: #4743e0;
+  cursor: pointer;
   color: #ffffff;
   font-weight: bold;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.25px;
+}
+
+.wrap .image {
+  display: block;
+  margin: 0 0 0 auto;
+  width: 590px;
+  background: #f9faff;
+}
+
+.wrap .image img {
+  position: absolute;
+  left: 49.65%;
+  top: 23.1%;
 }
 /*# sourceMappingURL=style.css.map */
