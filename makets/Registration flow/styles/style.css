@@ -79,7 +79,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 650px;
-  padding: 40px 0;
+  padding: 40px 0 25px 0;
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
@@ -188,7 +188,7 @@ a {
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
-.wrap .main-register-btn {
+.wrap .main-register-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,12 +201,45 @@ a {
   padding-top: 30px;
 }
 
-.wrap .main-register-btn-checkbox-input {
+.wrap .main-register-section-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main-register-section-checkbox-input {
   width: 24px;
   height: 24px;
+  margin-right: 15px;
   background: #ffffff;
-  border: 1px solid #d1d1d1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+}
+
+.wrap .main-register-section-checkbox-text {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #404040;
+}
+
+.wrap .main-register-section-button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: #4743e0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
 }
 /*# sourceMappingURL=style.css.map */
