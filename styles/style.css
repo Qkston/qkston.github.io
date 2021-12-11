@@ -848,6 +848,28 @@ textarea:focus {
   .main .about-me-stats-list-item-text-number {
     font-size: 12px;
   }
+  .main .my-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 750px;
+  }
+  .main .my-skills-block {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .main .my-skills-block-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .main .my-skills-block-rectangles {
+    width: 200px;
+  }
+  .main .my-skills img {
+    width: 240px;
+  }
 }
 
 @media screen and (max-width: 320px) {
