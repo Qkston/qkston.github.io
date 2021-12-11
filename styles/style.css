@@ -660,6 +660,18 @@ textarea:focus {
   .main .about-me-stats-list-item-text-number {
     font-size: 16px;
   }
+  .main .my-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 1050px;
+  }
+  .main .my-skills-block {
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
