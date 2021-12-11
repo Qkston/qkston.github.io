@@ -798,6 +798,32 @@ textarea {
 			}
 		}
 		// #endregion
+
+		// #region My skills
+		.my-skills {
+			flex-direction: column-reverse;
+			height: 950px;
+
+			&-block {
+				text-align: center;
+				margin: 0;
+				margin-top: 20px;
+
+				&-title {
+					font-size: 24px;
+					margin-bottom: 40px;
+				}
+
+				&-rectangles {
+					width: 300px;
+				}
+			}
+
+			img {
+				width: 320px;
+			}
+		}
+		// #endregion
 	}
 }
 
