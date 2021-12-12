@@ -345,14 +345,14 @@ textarea {
 		justify-content: center;
 		padding: 50px;
 
-		.carousel-inner {
-			border-radius: 10px;
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			-ms-border-radius: 10px;
-			-o-border-radius: 10px;
+		.fotorama__html {
+			display: flex;
+			justify-content: center;
+			align-items: end;
 
-			.carousel-caption {
+			p {
+				font-size: 14px;
+				text-align: center;
 				border-radius: 20px;
 				transition: 0.2s;
 
@@ -360,11 +360,6 @@ textarea {
 					background: rgba($color: $dark, $alpha: 0.7);
 					color: $light;
 				}
-			}
-
-			p {
-				// margin: 0 auto;
-				font-size: 14px;
 			}
 		}
 	}

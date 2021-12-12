@@ -356,27 +356,29 @@ textarea:focus {
   padding: 50px;
 }
 
-.main .my-projects .carousel-inner {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+.main .my-projects .fotorama__html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
-.main .my-projects .carousel-inner .carousel-caption {
+.main .my-projects .fotorama__html p {
+  font-size: 14px;
+  text-align: center;
   border-radius: 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.main .my-projects .carousel-inner .carousel-caption:hover {
+.main .my-projects .fotorama__html p:hover {
   background: rgba(0, 0, 0, 0.7);
   color: #ffffff;
-}
-
-.main .my-projects .carousel-inner p {
-  font-size: 14px;
 }
 
 .main .form {
