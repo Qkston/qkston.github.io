@@ -351,6 +351,7 @@ textarea {
 			align-items: end;
 
 			p {
+				padding: 10px;
 				text-align: center;
 				border-radius: 20px;
 				transition: 0.2s;
@@ -425,6 +426,7 @@ textarea {
 				resize: none;
 				border: 0;
 				box-sizing: border-box;
+				font-family: "Roboto";
 			}
 
 			&-input-btn {
