@@ -343,7 +343,7 @@ textarea {
 	.my-projects {
 		display: flex;
 		justify-content: center;
-		padding: 50px;
+		padding: 50px 0;
 
 		.fotorama__html {
 			display: flex;
@@ -351,7 +351,6 @@ textarea {
 			align-items: end;
 
 			p {
-				font-size: 14px;
 				text-align: center;
 				border-radius: 20px;
 				transition: 0.2s;
@@ -644,6 +643,14 @@ textarea {
 			}
 		}
 		// #endregion
+
+		// #region My projects
+		.fotorama__html {
+			p {
+				font-size: 12px;
+			}
+		}
+		// #endregion
 	}
 }
 
@@ -730,6 +737,15 @@ textarea {
 			height: 950px;
 
 			&-text {
+				font-size: 12px;
+			}
+		}
+		// #endregion
+
+		// #region My projects
+		.fotorama__html {
+			p {
+				width: 350px;
 				font-size: 12px;
 			}
 		}
@@ -859,6 +875,16 @@ textarea {
 			}
 		}
 		// #endregion
+
+		// #region My projects
+		.fotorama__html {
+			p {
+				width: 350px;
+				font-size: 12px;
+				line-height: 2;
+			}
+		}
+		// #endregion
 	}
 }
 
@@ -985,6 +1011,16 @@ textarea {
 			&-text {
 				width: 200px;
 				font-size: 9px;
+			}
+		}
+		// #endregion
+
+		// #region My projects
+		.fotorama__html {
+			p {
+				width: 250px;
+				font-size: 9px;
+				line-height: 2;
 			}
 		}
 		// #endregion
@@ -1123,6 +1159,16 @@ textarea {
 			&-text {
 				width: 200px;
 				font-size: 9px;
+			}
+		}
+		// #endregion
+
+		// #region My projects
+		.fotorama__html {
+			p {
+				width: 200px;
+				font-size: 9px;
+				line-height: 1;
 			}
 		}
 		// #endregion

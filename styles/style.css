@@ -353,7 +353,7 @@ textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .main .my-projects .fotorama__html {
@@ -369,7 +369,6 @@ textarea:focus {
 }
 
 .main .my-projects .fotorama__html p {
-  font-size: 14px;
   text-align: center;
   border-radius: 20px;
   -webkit-transition: 0.2s;
@@ -630,6 +629,9 @@ textarea:focus {
     margin: 0;
     margin-top: 30px;
   }
+  .main .fotorama__html p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -698,6 +700,10 @@ textarea:focus {
     height: 950px;
   }
   .main .working-text {
+    font-size: 12px;
+  }
+  .main .fotorama__html p {
+    width: 350px;
     font-size: 12px;
   }
 }
@@ -803,6 +809,11 @@ textarea:focus {
   .main .working-text {
     width: 400px;
     font-size: 12px;
+  }
+  .main .fotorama__html p {
+    width: 350px;
+    font-size: 12px;
+    line-height: 2;
   }
 }
 
@@ -911,6 +922,11 @@ textarea:focus {
   .main .working-text {
     width: 200px;
     font-size: 9px;
+  }
+  .main .fotorama__html p {
+    width: 250px;
+    font-size: 9px;
+    line-height: 2;
   }
 }
 
@@ -1026,6 +1042,11 @@ textarea:focus {
   .main .working-text {
     width: 200px;
     font-size: 9px;
+  }
+  .main .fotorama__html p {
+    width: 200px;
+    font-size: 9px;
+    line-height: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
