@@ -293,6 +293,7 @@ textarea {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		// width: 100%;
 		height: 1000px;
 		background: $bg-color;
 
@@ -316,6 +317,24 @@ textarea {
 			line-height: 26px;
 			text-align: center;
 			color: $silver-text;
+		}
+
+		&-wrap-iframe {
+			position: relative;
+			padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+			width: 90%;
+			overflow: hidden;
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				max-height: 600px;
+				border-width: 0;
+				outline-width: 0;
+			}
 		}
 	}
 	// #endregion
@@ -710,6 +729,16 @@ textarea {
 			}
 		}
 		// #endregion
+
+		// #region How i'm working
+		.working {
+			height: 950px;
+
+			&-text {
+				font-size: 12px;
+			}
+		}
+		// #endregion
 	}
 }
 
@@ -821,6 +850,17 @@ textarea {
 
 			img {
 				width: 320px;
+			}
+		}
+		// #endregion
+
+		// #region How i'm working
+		.working {
+			height: 800px;
+
+			&-text {
+				width: 400px;
+				font-size: 12px;
 			}
 		}
 		// #endregion
@@ -939,6 +979,17 @@ textarea {
 
 			img {
 				width: 240px;
+			}
+		}
+		// #endregion
+
+		// #region How i'm working
+		.working {
+			height: 650px;
+
+			&-text {
+				width: 200px;
+				font-size: 9px;
 			}
 		}
 		// #endregion
@@ -1062,6 +1113,21 @@ textarea {
 
 			img {
 				width: 160px;
+			}
+		}
+		// #endregion
+
+		// #region How i'm working
+		.working {
+			height: 600px;
+
+			&-title {
+				font-size: 24px;
+			}
+
+			&-text {
+				width: 200px;
+				font-size: 9px;
 			}
 		}
 		// #endregion

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -324,6 +325,25 @@ textarea:focus {
   line-height: 26px;
   text-align: center;
   color: #727272;
+}
+
+.main .working-wrap-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  width: 90%;
+  overflow: hidden;
+}
+
+.main .working-wrap-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  border-width: 0;
+  outline-width: 0;
 }
 
 .main .my-projects {
@@ -672,6 +692,12 @@ textarea:focus {
     margin: 0;
     margin-top: 30px;
   }
+  .main .working {
+    height: 950px;
+  }
+  .main .working-text {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
@@ -768,6 +794,13 @@ textarea:focus {
   }
   .main .my-skills img {
     width: 320px;
+  }
+  .main .working {
+    height: 800px;
+  }
+  .main .working-text {
+    width: 400px;
+    font-size: 12px;
   }
 }
 
@@ -869,6 +902,13 @@ textarea:focus {
   }
   .main .my-skills img {
     width: 240px;
+  }
+  .main .working {
+    height: 650px;
+  }
+  .main .working-text {
+    width: 200px;
+    font-size: 9px;
   }
 }
 
@@ -974,6 +1014,16 @@ textarea:focus {
   }
   .main .my-skills img {
     width: 160px;
+  }
+  .main .working {
+    height: 600px;
+  }
+  .main .working-title {
+    font-size: 24px;
+  }
+  .main .working-text {
+    width: 200px;
+    font-size: 9px;
   }
 }
 /*# sourceMappingURL=style.css.map */
