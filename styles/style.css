@@ -1072,9 +1072,13 @@ textarea:focus {
   .main .about-me-stats {
     height: 500px;
   }
+  .main .about-me-stats-list {
+    width: 150px;
+    padding: 0;
+  }
   .main .about-me-stats-list-item {
     margin-top: 30px;
-    margin-right: 30px;
+    margin-right: 0px;
   }
   .main .about-me-stats-list-item-icon {
     display: block;
@@ -1082,7 +1086,7 @@ textarea:focus {
     font-size: 24px;
   }
   .main .about-me-stats-list-item-text {
-    width: 130px;
+    width: 100px;
     font-size: 9px;
   }
   .main .about-me-stats-list-item-text-number {
