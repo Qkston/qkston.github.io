@@ -915,16 +915,16 @@ textarea {
 			}
 
 			&-main {
-				width: 500px;
+				width: 400px;
 
 				&-input-name {
-					width: 375px;
+					width: 300px;
 					margin-bottom: 20px;
 					margin-right: 0;
 				}
 
 				&-input-email {
-					width: 375px;
+					width: 300px;
 					margin-right: 0;
 				}
 
@@ -1095,6 +1095,7 @@ textarea {
 			&-text {
 				width: 200px;
 				font-size: 9px;
+				line-height: 2;
 			}
 
 			&-main {
@@ -1104,15 +1105,23 @@ textarea {
 					width: 250px;
 					margin-bottom: 20px;
 					margin-right: 0;
+					font-size: 12px;
 				}
 
 				&-input-email {
 					width: 250px;
 					margin-right: 0;
+					font-size: 12px;
 				}
 
 				&-input-message {
 					margin-right: 0;
+					font-size: 12px;
+				}
+
+				&-input-btn {
+					width: 125px;
+					font-size: 12px;
 				}
 			}
 		}
@@ -1281,30 +1290,54 @@ textarea {
 		// #region Form
 		.form {
 			&-title {
-				font-size: 24px;
+				margin-top: 50px;
+				margin-bottom: 25px;
+				font-size: 14px;
 			}
 
 			&-text {
-				width: 200px;
-				font-size: 9px;
+				width: 150px;
+				margin-bottom: 40px;
+				font-size: 7px;
+				line-height: 2;
 			}
 
 			&-main {
-				width: 330px;
+				width: 200px;
+				margin-bottom: 50px;
 
 				&-input-name {
-					width: 250px;
+					width: 150px;
+					height: 25px;
 					margin-bottom: 20px;
 					margin-right: 0;
+					padding: 0;
+					font-size: 9px;
+					text-align: center;
 				}
 
 				&-input-email {
-					width: 250px;
+					width: 150px;
+					height: 25px;
 					margin-right: 0;
+					padding: 0;
+					font-size: 9px;
+					text-align: center;
 				}
 
 				&-input-message {
 					margin-right: 0;
+					padding: 0;
+					padding-top: 10px;
+					height: 100px;
+					font-size: 9px;
+					text-align: center;
+				}
+
+				&-input-btn {
+					width: 100px;
+					height: 30px;
+					font-size: 9px;
 				}
 			}
 		}
