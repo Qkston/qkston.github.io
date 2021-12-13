@@ -441,7 +441,6 @@ textarea {
 
 .footer {
 	// #region Footer
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -469,7 +468,6 @@ textarea {
 			margin-right: 20px;
 			font-size: 28px;
 		}
-
 		// #region Icon animation
 		.github {
 			transition: 0.2s;
@@ -549,6 +547,12 @@ textarea {
 		}
 		// #endregion
 	}
+
+	.footer {
+		// #region Footer
+		padding: 0 200px 0 200px;
+		// #endregion
+	}
 }
 
 // Notebook L window
@@ -596,7 +600,6 @@ textarea {
 				}
 			}
 		}
-
 		// #endregion
 	}
 
@@ -652,6 +655,12 @@ textarea {
 				font-size: 12px;
 			}
 		}
+		// #endregion
+	}
+
+	.footer {
+		// #region Footer
+		padding: 0 50px 0 50px;
 		// #endregion
 	}
 }
@@ -751,6 +760,12 @@ textarea {
 				font-size: 12px;
 			}
 		}
+		// #endregion
+	}
+
+	.footer {
+		// #region Footer
+		padding: 0 50px 0 50px;
 		// #endregion
 	}
 }
@@ -917,6 +932,18 @@ textarea {
 					margin-right: 0;
 				}
 			}
+		}
+		// #endregion
+	}
+
+	.footer {
+		// #region Footer
+		justify-content: center;
+		padding: 0 50px 0 50px;
+		height: 100px;
+
+		&-left-side {
+			display: none;
 		}
 		// #endregion
 	}
@@ -1088,6 +1115,18 @@ textarea {
 					margin-right: 0;
 				}
 			}
+		}
+		// #endregion
+	}
+
+	.footer {
+		// #region Footer
+		justify-content: center;
+		padding: 0 50px 0 50px;
+		height: 100px;
+
+		&-left-side {
+			display: none;
 		}
 		// #endregion
 	}
@@ -1267,6 +1306,25 @@ textarea {
 				&-input-message {
 					margin-right: 0;
 				}
+			}
+		}
+		// #endregion
+	}
+
+	.footer {
+		// #region Footer
+		justify-content: center;
+		padding: 0 20px 0 20px;
+		height: 100px;
+
+		&-left-side {
+			display: none;
+		}
+
+		&-right-side {
+			&-links {
+				margin-right: 10px;
+				font-size: 14px;
 			}
 		}
 		// #endregion
