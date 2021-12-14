@@ -4,6 +4,10 @@ formOptionalBtn.forEach((element) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
 
-		element.classList.toggle("active");
+		formOptionalBtn.forEach((element) => {
+			element.classList.remove("active");
+		});
+
+		element.classList.add("active");
 	});
 });
