@@ -31,6 +31,7 @@ a {
 	height: 1020px;
 	background: $light;
 
+	// #region Registration page
 	.main {
 		// #region Main
 		position: absolute;
@@ -39,12 +40,6 @@ a {
 		width: 850px;
 		height: 1020px;
 		box-sizing: border-box;
-
-		/* 
-      
-      Registration page
-
-      */
 
 		// #region Already member
 		&-already-member {
@@ -257,12 +252,6 @@ a {
 		}
 		// #endregion
 
-		/* 
-      
-      Success-register page
-
-      */
-
 		// #endregion
 	}
 
@@ -280,4 +269,67 @@ a {
 		}
 		// #endregion
 	}
+	// #endregion
+
+	// #region Success-register page
+	// Main
+	.success-page-main {
+		// display: flex;
+		width: 100%;
+		text-align: center;
+
+		&-close-btn {
+			display: flex;
+			justify-content: end;
+			margin-bottom: 5px;
+
+			&-image {
+				margin: 80px 90px 0 0;
+				cursor: pointer;
+			}
+		}
+
+		&-header {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			&-title {
+				margin: 0 0 20px 0;
+				color: $form-header;
+				font-weight: bold;
+				font-size: 54px;
+				line-height: 68px;
+			}
+
+			&-text {
+				margin: 0 0 90px 0;
+				width: 480px;
+				color: $form-terms;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+				opacity: 0.99;
+			}
+		}
+
+		&-email {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			&-text {
+				margin: 0 0 15px 0;
+				width: 480px;
+				color: $form-terms;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+				opacity: 0.99;
+			}
+		}
+	}
+	// #endregion
 }

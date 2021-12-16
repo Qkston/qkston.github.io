@@ -31,16 +31,6 @@ a {
   height: 1020px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* 
-      
-      Registration page
-
-      */
-  /* 
-      
-      Success-register page
-
-      */
 }
 
 .wrap .main-already-member {
@@ -273,5 +263,81 @@ a {
   position: absolute;
   left: 49.65%;
   top: 23.1%;
+}
+
+.wrap .success-page-main {
+  width: 100%;
+  text-align: center;
+}
+
+.wrap .success-page-main-close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 5px;
+}
+
+.wrap .success-page-main-close-btn-image {
+  margin: 80px 90px 0 0;
+  cursor: pointer;
+}
+
+.wrap .success-page-main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .success-page-main-header-title {
+  margin: 0 0 20px 0;
+  color: #42505c;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 68px;
+}
+
+.wrap .success-page-main-header-text {
+  margin: 0 0 90px 0;
+  width: 480px;
+  color: #404040;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  opacity: 0.99;
+}
+
+.wrap .success-page-main-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .success-page-main-email-text {
+  margin: 0 0 15px 0;
+  width: 480px;
+  color: #404040;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  opacity: 0.99;
 }
 /*# sourceMappingURL=style.css.map */
