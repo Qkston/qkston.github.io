@@ -40,6 +40,12 @@ a {
 		height: 1020px;
 		box-sizing: border-box;
 
+		/* 
+      
+      Registration page
+
+      */
+
 		// #region Already member
 		&-already-member {
 			display: flex;
@@ -250,6 +256,12 @@ a {
 			}
 		}
 		// #endregion
+
+		/* 
+      
+      Success-register page
+
+      */
 
 		// #endregion
 	}
