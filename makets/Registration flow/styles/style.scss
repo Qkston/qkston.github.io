@@ -105,6 +105,12 @@ a {
 				&-left {
 					margin-right: 45px;
 				}
+
+				&-passwords-not-match {
+					display: none;
+					margin-left: 55px;
+					color: red;
+				}
 			}
 
 			// Styles for inputs

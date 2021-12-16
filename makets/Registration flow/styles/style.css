@@ -102,6 +102,12 @@ a {
   margin-right: 45px;
 }
 
+.wrap .main-form-label-passwords-not-match {
+  display: none;
+  margin-left: 55px;
+  color: red;
+}
+
 .wrap .main-form-input {
   display: block;
   width: 300px;
