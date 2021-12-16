@@ -3,8 +3,8 @@ $light: #ffffff;
 $dark: #000000;
 $blue: #4743e0;
 $body-bg: #e5e5e5;
-$form-header: #42505c;
-$form-terms: #404040;
+$headers: #42505c;
+$secondary-text: #404040;
 $form-text: #333333;
 $form-input-border: #d1d1d1;
 $image-bg: #f9faff;
@@ -68,7 +68,7 @@ a {
 				width: 280px;
 				margin: 0;
 				margin-right: 60px;
-				color: $form-header;
+				color: $headers;
 				font-weight: bold;
 				font-size: 54px;
 				line-height: 68px;
@@ -76,7 +76,7 @@ a {
 
 			&-terms {
 				width: 300px;
-				color: $form-terms;
+				color: $secondary-text;
 				font-size: 14px;
 				line-height: 28px;
 				letter-spacing: 0.25px;
@@ -231,7 +231,7 @@ a {
 					font-size: 14px;
 					line-height: 28px;
 					letter-spacing: 0.25px;
-					color: $form-terms;
+					color: $secondary-text;
 				}
 			}
 
@@ -278,6 +278,7 @@ a {
 		width: 100%;
 		text-align: center;
 
+		// #region Right-side button
 		&-close-btn {
 			display: flex;
 			justify-content: end;
@@ -288,7 +289,9 @@ a {
 				cursor: pointer;
 			}
 		}
+		// #endregion
 
+		// #region Header
 		&-header {
 			display: flex;
 			align-items: center;
@@ -296,7 +299,7 @@ a {
 
 			&-title {
 				margin: 0 0 20px 0;
-				color: $form-header;
+				color: $headers;
 				font-weight: bold;
 				font-size: 54px;
 				line-height: 68px;
@@ -305,7 +308,7 @@ a {
 			&-text {
 				margin: 0 0 90px 0;
 				width: 480px;
-				color: $form-terms;
+				color: $secondary-text;
 				font-weight: normal;
 				font-size: 14px;
 				line-height: 28px;
@@ -313,7 +316,9 @@ a {
 				opacity: 0.99;
 			}
 		}
+		// #endregion
 
+		// #region Email block
 		&-email {
 			display: flex;
 			align-items: center;
@@ -322,7 +327,7 @@ a {
 			&-text {
 				margin: 0 0 15px 0;
 				width: 480px;
-				color: $form-terms;
+				color: $secondary-text;
 				font-weight: normal;
 				font-size: 14px;
 				line-height: 28px;
@@ -330,6 +335,7 @@ a {
 				opacity: 0.99;
 			}
 		}
+		// #endregion
 	}
 	// #endregion
 }
