@@ -4,6 +4,8 @@ const labelForIncorrectPasswords = document.querySelector(".incorrect-passwords"
 const passwordInput = document.querySelector(".password");
 const confirmPasswordInput = document.querySelector(".confirm-password");
 
+const registerBtn = document.querySelector(".register-button");
+
 formOptionalBtn.forEach((element) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
@@ -22,4 +24,10 @@ confirmPasswordInput.addEventListener("keyup", () => {
 	} else {
 		labelForIncorrectPasswords.style.display = "none";
 	}
+});
+
+registerBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+
+	window.location = "https://qkston.github.io/makets/Registration%20flow/success-register.html";
 });
