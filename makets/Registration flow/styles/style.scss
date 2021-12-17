@@ -90,9 +90,9 @@ a {
 			display: flex;
 			flex-wrap: wrap;
 			width: 650px;
-			padding: 40px 0 25px 0;
+			padding: 40px 0 0 0;
 			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
-			border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+			// border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
 
 			// Styles for labels
 			&-label {
@@ -201,55 +201,58 @@ a {
 			&-passwords {
 				display: flex;
 				padding-top: 40px;
+				padding-bottom: 40px;
 				border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
 			}
-		}
 
-		// #endregion
-
-		// #region Lower register button
-		&-register-section {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding-top: 30px;
-
-			&-checkbox {
+			// #region Lower register button
+			&-submit {
 				display: flex;
+				justify-content: space-between;
 				align-items: center;
+				width: 99%;
+				margin-top: 30px;
 
-				&-input {
-					width: 24px;
-					height: 24px;
-					margin-right: 15px;
-					background: $light;
-					box-sizing: border-box;
-					border: 1px solid $form-input-border;
+				&-checkbox {
+					display: flex;
+					align-items: center;
+
+					&-input {
+						width: 24px;
+						height: 24px;
+						margin-right: 15px;
+						background: $light;
+						box-sizing: border-box;
+						border: 1px solid $form-input-border;
+					}
+
+					&-text {
+						font-size: 14px;
+						line-height: 28px;
+						letter-spacing: 0.25px;
+						color: $secondary-text;
+					}
 				}
 
-				&-text {
+				&-button {
+					width: 100px;
+					height: 50px;
+					border: none;
+					background: $blue;
+					cursor: pointer;
+
+					color: $light;
+					font-weight: bold;
 					font-size: 14px;
 					line-height: 28px;
+					text-align: center;
 					letter-spacing: 0.25px;
-					color: $secondary-text;
 				}
 			}
-
-			&-button {
-				width: 100px;
-				height: 50px;
-				border: none;
-				background: $blue;
-				cursor: pointer;
-
-				color: $light;
-				font-weight: bold;
-				font-size: 14px;
-				line-height: 28px;
-				text-align: center;
-				letter-spacing: 0.25px;
-			}
+			// #endregion
 		}
+
 		// #endregion
 
 		// #endregion

@@ -84,9 +84,8 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 650px;
-  padding: 40px 0 25px 0;
+  padding: 40px 0 0 0;
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .wrap .main-form-label {
@@ -196,10 +195,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding-top: 40px;
+  padding-bottom: 40px;
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
-.wrap .main-register-section {
+.wrap .main-form-submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,10 +210,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  width: 99%;
+  margin-top: 30px;
 }
 
-.wrap .main-register-section-checkbox {
+.wrap .main-form-submit-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +223,7 @@ a {
           align-items: center;
 }
 
-.wrap .main-register-section-checkbox-input {
+.wrap .main-form-submit-checkbox-input {
   width: 24px;
   height: 24px;
   margin-right: 15px;
@@ -231,14 +233,14 @@ a {
   border: 1px solid #d1d1d1;
 }
 
-.wrap .main-register-section-checkbox-text {
+.wrap .main-form-submit-checkbox-text {
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.25px;
   color: #404040;
 }
 
-.wrap .main-register-section-button {
+.wrap .main-form-submit-button {
   width: 100px;
   height: 50px;
   border: none;
