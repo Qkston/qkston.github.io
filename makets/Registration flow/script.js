@@ -1,15 +1,12 @@
 const formOptionalBtn = document.querySelectorAll(".main-form-optional-inputs-btn");
 
-const labelForIncorrectPasswords = document.querySelector(".incorrect-passwords");
-const passwordInput = document.querySelector(".password");
-const confirmPasswordInput = document.querySelector(".confirm-password");
-
 const requiredInputs = document.querySelectorAll(".required-input");
 const errorMessages = document.querySelectorAll(".main-form-label-error");
 
-const registerBtn = document.querySelector(".register-button");
+const labelForIncorrectPasswords = document.querySelector(".incorrect-passwords");
+const passwordInputs = document.querySelectorAll(".password-inputs");
 
-console.log(Array.from(requiredInputs));
+const registerBtn = document.querySelector(".register-button");
 
 formOptionalBtn.forEach((element) => {
 	element.addEventListener("click", (e) => {
@@ -23,8 +20,8 @@ formOptionalBtn.forEach((element) => {
 	});
 });
 
-confirmPasswordInput.addEventListener("keyup", () => {
-	if (passwordInput.value !== confirmPasswordInput.value) {
+passwordInputs[1].addEventListener("keyup", () => {
+	if (passwordInputs[0].value !== passwordInputs[1].value) {
 		errorMessages.forEach((element) => {
 			element.style.display = "none";
 		});
@@ -43,6 +40,9 @@ registerBtn.addEventListener("click", (e) => {
 		if (isEmpty) {
 			errorMessages.forEach((element) => {
 				element.style.display = "inline-block";
+				setTimeout(() => {
+					element.style.display = "none";
+				}, 3000);
 			});
 		} else {
 			location.href = "https://qkston.github.io/makets/Registration%20flow/success-register.html";

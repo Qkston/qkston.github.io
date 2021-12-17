@@ -92,7 +92,6 @@ a {
 			width: 650px;
 			padding: 40px 0 0 0;
 			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
-			// border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
 
 			// Styles for labels
 			&-label {
@@ -103,7 +102,7 @@ a {
 				line-height: 28px;
 				letter-spacing: 0.25px;
 
-				p {
+				&-title {
 					display: inline-block;
 					margin: 0;
 					width: 55%;
