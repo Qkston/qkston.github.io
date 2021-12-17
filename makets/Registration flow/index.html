@@ -35,34 +35,33 @@
 				</section>
 
 				<!-- Main form -->
-				<form
-					action="https://qkston.github.io/makets/Registration%20flow/success-register.html"
-					id="registration"
-					class="main-form"
-					method="post"
-				>
+				<form id="registration" class="main-form" method="post">
 					<!-- First name -->
 					<label for="first-name" class="main-form-label main-form-label-left">
-						First name
-						<input type="text" name="first-name" placeholder="John" required class="main-form-input" />
+						<p>First name</p>
+						<span class="main-form-label-error">Please fill out this field</span>
+						<input type="text" name="first-name" placeholder="John" class="main-form-input required-input" />
 					</label>
 
 					<!-- Last name -->
 					<label for="last-name" class="main-form-label">
-						Last name
-						<input type="text" name="last-name" placeholder="Smit" required class="main-form-input" />
+						<p>Last name</p>
+						<span class="main-form-label-error">Please fill out this field</span>
+						<input type="text" name="last-name" placeholder="Smit" class="main-form-input required-input" />
 					</label>
 
 					<!-- Company -->
 					<label for="company" class="main-form-label main-form-label-left">
-						Company
-						<input type="text" name="company" placeholder="John Smit" required class="main-form-input" />
+						<p>Company</p>
+						<span class="main-form-label-error">Please fill out this field</span>
+						<input type="text" name="company" placeholder="John Smit" class="main-form-input required-input" />
 					</label>
 
 					<!-- Work email -->
 					<label for="work-email" class="main-form-label">
-						Work email
-						<input type="text" name="work-email" placeholder="John Smit" required class="main-form-input" />
+						<p>Work email</p>
+						<span class="main-form-label-error">Please fill out this field</span>
+						<input type="text" name="work-email" placeholder="John Smit" class="main-form-input required-input" />
 					</label>
 
 					<!-- Optional section -->
@@ -100,14 +99,17 @@
 					<section class="main-form-passwords">
 						<!-- Password -->
 						<label for="password" class="main-form-label main-form-label-left">
-							Password
-							<input type="password" name="password" required class="main-form-input password" />
+							<p>Password</p>
+							<span class="main-form-label-error">Please fill out this field</span>
+							<input type="password" name="password" class="main-form-input password required-input" />
 						</label>
 
 						<!-- Confirm password -->
 						<label for="confirm-password" class="main-form-label">
-							Confirm password <span class="main-form-label-passwords-not-match incorrect-passwords">Passwords do not match</span>
-							<input type="password" name="confirm-password" required class="main-form-input confirm-password" />
+							<p>Confirm password</p>
+							<span class="main-form-label-passwords-not-match incorrect-passwords">Passwords do not match</span>
+							<span class="main-form-label-error">Please fill out this field</span>
+							<input type="password" name="confirm-password" class="main-form-input confirm-password required-input" />
 						</label>
 					</section>
 
@@ -119,8 +121,7 @@
 							<span class="main-form-submit-checkbox-text">I agree with <a href="#">terms and conditins</a>.</span>
 						</div>
 						<!-- Button -->
-						<!-- <a class="main-register-section-button" href="https://qkston.github.io/makets/Registration%20flow/success-register.html">Register</a> -->
-						<input class="main-form-submit-button" type="submit" value="Register" />
+						<input class="main-form-submit-button register-button" type="submit" value="Register" />
 					</section>
 				</form>
 			</main>

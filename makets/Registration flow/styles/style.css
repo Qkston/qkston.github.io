@@ -97,13 +97,24 @@ a {
   letter-spacing: 0.25px;
 }
 
+.wrap .main-form-label p {
+  display: inline-block;
+  margin: 0;
+  width: 55%;
+}
+
 .wrap .main-form-label-left {
   margin-right: 45px;
 }
 
 .wrap .main-form-label-passwords-not-match {
   display: none;
-  margin-left: 55px;
+  margin-left: -10px;
+  color: red;
+}
+
+.wrap .main-form-label-error {
+  display: none;
   color: red;
 }
 

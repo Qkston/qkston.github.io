@@ -103,13 +103,24 @@ a {
 				line-height: 28px;
 				letter-spacing: 0.25px;
 
+				p {
+					display: inline-block;
+					margin: 0;
+					width: 55%;
+				}
+
 				&-left {
 					margin-right: 45px;
 				}
 
 				&-passwords-not-match {
 					display: none;
-					margin-left: 55px;
+					margin-left: -10px;
+					color: red;
+				}
+
+				&-error {
+					display: none;
 					color: red;
 				}
 			}
