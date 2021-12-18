@@ -292,12 +292,12 @@ a {
 		text-align: center;
 
 		// #region Right-side button
-		&-close-btn {
+		&-right-close {
 			display: flex;
 			justify-content: end;
 			margin-bottom: 5px;
 
-			&-image {
+			&-button {
 				margin: 80px 90px 0 0;
 				cursor: pointer;
 			}
@@ -386,6 +386,7 @@ a {
 		}
 		// #endregion
 
+		// #region Close button
 		&-close {
 			&-button {
 				width: 100px;
@@ -402,6 +403,7 @@ a {
 				letter-spacing: 0.25px;
 			}
 		}
+		// #endregion
 	}
 	// #endregion
 }

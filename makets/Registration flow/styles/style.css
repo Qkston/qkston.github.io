@@ -283,7 +283,7 @@ a {
   text-align: center;
 }
 
-.wrap .success-page-main-close-btn {
+.wrap .success-page-main-right-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +293,7 @@ a {
   margin-bottom: 5px;
 }
 
-.wrap .success-page-main-close-btn-image {
+.wrap .success-page-main-right-close-button {
   margin: 80px 90px 0 0;
   cursor: pointer;
 }
