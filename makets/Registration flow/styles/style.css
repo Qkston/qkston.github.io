@@ -357,6 +357,7 @@ a {
 .wrap .success-page-main-email-timer {
   width: 51px;
   height: 51px;
+  margin: 0 0 15px 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   -webkit-box-sizing: border-box;
@@ -388,5 +389,26 @@ a {
   text-align: center;
   letter-spacing: 0.25px;
   color: #4743e0;
+}
+
+.wrap .success-page-main-email-resend {
+  margin: 0 0 70px 0;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 28px;
+}
+
+.wrap .success-page-main-close-button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: #4743e0;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -351,6 +351,7 @@ a {
 			&-timer {
 				width: 51px;
 				height: 51px;
+				margin: 0 0 15px 0;
 				border: 1px solid rgba($color: $dark, $alpha: 0.2);
 				border-radius: 50%;
 				box-sizing: border-box;
@@ -375,8 +376,32 @@ a {
 					}
 				}
 			}
+
+			&-resend {
+				margin: 0 0 70px 0;
+				font-size: 14px;
+				letter-spacing: 0.25px;
+				line-height: 28px;
+			}
 		}
 		// #endregion
+
+		&-close {
+			&-button {
+				width: 100px;
+				height: 50px;
+				border: none;
+				background: $blue;
+				cursor: pointer;
+
+				color: $light;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 28px;
+				text-align: center;
+				letter-spacing: 0.25px;
+			}
+		}
 	}
 	// #endregion
 }
