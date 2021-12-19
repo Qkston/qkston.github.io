@@ -418,6 +418,13 @@ a {
 }
 
 .wrap .success-page-main-bottom-images-left {
-  margin-right: 329px;
+  position: absolute;
+  top: 14px;
+  left: 57.22%;
+}
+
+.wrap .success-page-main-bottom-images-right {
+  position: absolute;
+  left: 949px;
 }
 /*# sourceMappingURL=style.css.map */

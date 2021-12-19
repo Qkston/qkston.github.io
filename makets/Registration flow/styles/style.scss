@@ -287,7 +287,6 @@ a {
 	// #region Success-register page
 	// Main
 	.success-page-main {
-		// display: flex;
 		width: 100%;
 		text-align: center;
 
@@ -411,7 +410,14 @@ a {
 			top: 54.6%;
 
 			&-left {
-				margin-right: 329px;
+				position: absolute;
+				top: 14px;
+				left: 57.22%;
+			}
+
+			&-right {
+				position: absolute;
+				left: 949px;
 			}
 		}
 		// #endregion
