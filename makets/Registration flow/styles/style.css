@@ -371,7 +371,6 @@ a {
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: center;
 }
 
 .wrap .success-page-main-email-timer-done {
@@ -398,6 +397,7 @@ a {
 }
 
 .wrap .success-page-main-email-resend {
+  display: none;
   margin: 0 0 70px 0;
   font-size: 14px;
   letter-spacing: 0.25px;

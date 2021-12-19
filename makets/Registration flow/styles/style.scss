@@ -357,7 +357,6 @@ a {
 				border: 1px solid rgba($color: $dark, $alpha: 0.2);
 				border-radius: 50%;
 				box-sizing: border-box;
-				text-align: center;
 
 				&-done {
 					position: absolute;
@@ -381,6 +380,7 @@ a {
 			}
 
 			&-resend {
+				display: none;
 				margin: 0 0 70px 0;
 				font-size: 14px;
 				letter-spacing: 0.25px;
