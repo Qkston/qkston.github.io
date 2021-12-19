@@ -411,4 +411,13 @@ a {
   text-align: center;
   letter-spacing: 0.25px;
 }
+
+.wrap .success-page-main-bottom-images {
+  position: absolute;
+  top: 54.6%;
+}
+
+.wrap .success-page-main-bottom-images-left {
+  margin-right: 329px;
+}
 /*# sourceMappingURL=style.css.map */

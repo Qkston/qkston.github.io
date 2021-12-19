@@ -404,6 +404,17 @@ a {
 			}
 		}
 		// #endregion
+
+		// #region Bottom images
+		&-bottom-images {
+			position: absolute;
+			top: 54.6%;
+
+			&-left {
+				margin-right: 329px;
+			}
+		}
+		// #endregion
 	}
 	// #endregion
 }
