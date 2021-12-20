@@ -7,6 +7,9 @@
 	const labelForIncorrectPasswords = document.querySelector(".incorrect-passwords");
 	const passwordInputs = document.querySelectorAll(".password-inputs");
 
+	const checkboxInput = document.querySelector(".main-form-submit-checkbox-input");
+	const termsText = document.querySelector(".main-form-submit-checkbox-text");
+
 	const registerBtn = document.querySelector(".register-button");
 
 	// For choosing in section number of employees
@@ -33,7 +36,9 @@
 			if (isEmpty) {
 				requiredInputsIsEmpty();
 			} else if (!checkedPasswords) {
-				passwordsCorrect(checkedPasswords);
+				passwordsCorrect();
+			} else if (!checkboxInput.checked) {
+				checkboxChecked();
 			} else {
 				location.href = "https://qkston.github.io/makets/Registration%20flow/success-register.html";
 			}
@@ -52,17 +57,21 @@
 	}
 
 	// Checking of the correct passwords
-	function passwordsCorrect(checkedPasswords) {
-		if (!checkedPasswords) {
-			errorMessages.forEach((element) => {
-				element.style.display = "none";
-			});
+	function passwordsCorrect() {
+		errorMessages.forEach((element) => {
+			element.style.display = "none";
+		});
 
-			labelForIncorrectPasswords.style.display = "inline-block";
+		labelForIncorrectPasswords.style.display = "inline-block";
 
-			setTimeout(() => {
-				labelForIncorrectPasswords.style.display = "none";
-			}, 3000);
-		}
+		setTimeout(() => {
+			labelForIncorrectPasswords.style.display = "none";
+		}, 3000);
+	}
+
+	// Checking checkbox
+	function checkboxChecked() {
+		termsText.innerHTML = `You must agree to <a href="#">terms and conditins</a> to register.`;
+		termsText.style.color = "red";
 	}
 })();
