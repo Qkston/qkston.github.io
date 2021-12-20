@@ -9,6 +9,7 @@
 
 	const registerBtn = document.querySelector(".register-button");
 
+	// For choosing in section number of employees
 	formOptionalBtn.forEach((element) => {
 		element.addEventListener("click", (e) => {
 			e.preventDefault();
@@ -21,6 +22,7 @@
 		});
 	});
 
+	// Register button clicked
 	registerBtn.addEventListener("click", (e) => {
 		e.preventDefault();
 
@@ -38,15 +40,18 @@
 		});
 	});
 
+	// Checking of the cumulative fields for emptiness
 	function requiredInputsIsEmpty() {
 		errorMessages.forEach((element) => {
 			element.style.display = "inline-block";
+
 			setTimeout(() => {
 				element.style.display = "none";
 			}, 3000);
 		});
 	}
 
+	// Checking of the correct passwords
 	function passwordsCorrect(checkedPasswords) {
 		if (!checkedPasswords) {
 			errorMessages.forEach((element) => {
