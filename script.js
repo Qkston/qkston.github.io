@@ -27,6 +27,10 @@ sendFormBtn.addEventListener("click", (e) => {
 		}, 3000);
 	} else {
 		console.log("good");
-		modalWindow.style.display = "block";
+		modalWindow.style.display = "flex";
+
+		setTimeout(() => {
+			modalWindow.style.display = "none";
+		}, 6000);
 	}
 });
