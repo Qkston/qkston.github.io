@@ -359,6 +359,10 @@ textarea {
 				&:hover {
 					background: rgba($color: $dark, $alpha: 0.7);
 					color: $light;
+
+					a {
+						color: $light;
+					}
 				}
 			}
 		}

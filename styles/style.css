@@ -381,6 +381,10 @@ textarea:focus {
   color: #ffffff;
 }
 
+.main .my-projects .fotorama__html p:hover a {
+  color: #ffffff;
+}
+
 .main .form {
   display: -webkit-box;
   display: -ms-flexbox;
