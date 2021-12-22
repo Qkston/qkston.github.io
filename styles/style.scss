@@ -46,7 +46,7 @@ textarea {
 	-o-transition: 0.2s;
 
 	&:hover {
-		background-color: lighten($color: $navy-blue, $amount: 10);
+		background: lighten($color: $navy-blue, $amount: 10);
 	}
 }
 
@@ -173,7 +173,7 @@ textarea {
 			align-items: center;
 			width: 100%;
 			height: 250px;
-			background-color: $navy-blue;
+			background: $navy-blue;
 			color: $light;
 
 			&-list {
@@ -535,6 +535,19 @@ textarea {
 		// #endregion
 	}
 	// #endregion
+}
+
+.modal-window {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background: rgba($color: $dark, $alpha: 0.7);
 }
 
 // #region Media requests
