@@ -6,32 +6,82 @@ const lowerArrowHours = document.querySelector(".lower-arrows-hours");
 const lowerArrowMinutes = document.querySelector(".lower-arrows-minutes");
 const lowerArrowSeconds = document.querySelector(".lower-arrows-seconds");
 
-const hoursCount = document.querySelector(".numbers-hours-count");
-const minutesCount = document.querySelector(".numbers-minutes-count");
-const secondsCount = document.querySelector(".numbers-seconds-count");
+const hoursCountNumber = document.querySelector(".numbers-hours-count");
+const minutesCountNumber = document.querySelector(".numbers-minutes-count");
+const secondsCountNumber = document.querySelector(".numbers-seconds-count");
 
-console.dir(upperArrowHours);
-let count = 0;
+let hoursCount = 0,
+	minutesCount = 0,
+	secondsCount = 0;
 
+// Hours
 upperArrowHours.addEventListener("click", () => {
-	count++;
+	hoursCount++;
 
-	if (count < 10) {
-		hoursCount.innerHTML = `0${count}`;
-	} else if (count >= 10) {
-		hoursCount.innerHTML = `${count}`;
+	if (hoursCount < 10) {
+		hoursCountNumber.innerHTML = `0${hoursCount}`;
+	} else if (hoursCount >= 10) {
+		hoursCountNumber.innerHTML = `${hoursCount}`;
 	}
 });
 
 lowerArrowHours.addEventListener("click", () => {
-	count--;
+	hoursCount--;
 
-	if (count >= 0 && count < 10) {
-		hoursCount.innerHTML = `0${count}`;
-	} else if (count >= 10) {
-		hoursCount.innerHTML = `${count}`;
-	} else if (count <= 0) {
-		hoursCount.innerHTML = `00`;
-		count = 0;
+	if (hoursCount >= 0 && hoursCount < 10) {
+		hoursCountNumber.innerHTML = `0${hoursCount}`;
+	} else if (hoursCount >= 10) {
+		hoursCountNumber.innerHTML = `${hoursCount}`;
+	} else if (hoursCount <= 0) {
+		hoursCountNumber.innerHTML = `00`;
+		hoursCount = 0;
+	}
+});
+
+// Minutes
+upperArrowMinutes.addEventListener("click", () => {
+	minutesCount++;
+
+	if (minutesCount < 10) {
+		minutesCountNumber.innerHTML = `0${minutesCount}`;
+	} else if (minutesCount >= 10) {
+		minutesCountNumber.innerHTML = `${minutesCount}`;
+	}
+});
+
+lowerArrowMinutes.addEventListener("click", () => {
+	minutesCount--;
+
+	if (minutesCount >= 0 && minutesCount < 10) {
+		minutesCountNumber.innerHTML = `0${minutesCount}`;
+	} else if (minutesCount >= 10) {
+		minutesCountNumber.innerHTML = `${minutesCount}`;
+	} else if (minutesCount <= 0) {
+		minutesCountNumber.innerHTML = `00`;
+		minutesCount = 0;
+	}
+});
+
+// Seconds
+upperArrowSeconds.addEventListener("click", () => {
+	secondsCount++;
+
+	if (secondsCount < 10) {
+		secondsCountNumber.innerHTML = `0${secondsCount}`;
+	} else if (secondsCount >= 10) {
+		secondsCountNumber.innerHTML = `${secondsCount}`;
+	}
+});
+
+lowerArrowSeconds.addEventListener("click", () => {
+	secondsCount--;
+
+	if (secondsCount >= 0 && secondsCount < 10) {
+		secondsCountNumber.innerHTML = `0${secondsCount}`;
+	} else if (secondsCount >= 10) {
+		secondsCountNumber.innerHTML = `${secondsCount}`;
+	} else if (secondsCount <= 0) {
+		secondsCountNumber.innerHTML = `00`;
+		secondsCount = 0;
 	}
 });
