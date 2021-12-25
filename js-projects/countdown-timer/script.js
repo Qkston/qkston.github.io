@@ -18,10 +18,15 @@ let hoursCount = 0,
 upperArrowHours.addEventListener("click", () => {
 	hoursCount++;
 
+	console.log(hoursCount);
+
 	if (hoursCount < 10) {
 		hoursCountNumber.innerHTML = `0${hoursCount}`;
-	} else if (hoursCount >= 10) {
+	} else if (hoursCount >= 10 && hoursCount < 23) {
 		hoursCountNumber.innerHTML = `${hoursCount}`;
+	} else if (hoursCount >= 23) {
+		hoursCountNumber.innerHTML = `23`;
+		hoursCount = 23;
 	}
 });
 
@@ -44,8 +49,12 @@ upperArrowMinutes.addEventListener("click", () => {
 
 	if (minutesCount < 10) {
 		minutesCountNumber.innerHTML = `0${minutesCount}`;
-	} else if (minutesCount >= 10) {
+	} else if (minutesCount >= 10 && minutesCount < 60) {
 		minutesCountNumber.innerHTML = `${minutesCount}`;
+	} else if (minutesCount === 60) {
+		hoursCount++;
+		minutesCount = 0;
+		minutesCountNumber.innerHTML = `00`;
 	}
 });
 
@@ -68,8 +77,12 @@ upperArrowSeconds.addEventListener("click", () => {
 
 	if (secondsCount < 10) {
 		secondsCountNumber.innerHTML = `0${secondsCount}`;
-	} else if (secondsCount >= 10) {
+	} else if (secondsCount >= 10 && secondsCount < 60) {
 		secondsCountNumber.innerHTML = `${secondsCount}`;
+	} else if (secondsCount === 60) {
+		minutesCount++;
+		secondsCount = 0;
+		secondsCountNumber.innerHTML = `00`;
 	}
 });
 
