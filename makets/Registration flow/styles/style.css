@@ -462,7 +462,7 @@ a {
   color: #404040;
 }
 
-.wrap .log-in-main-form {
+.wrap .log-in-main-form .main-form-label {
   padding: 40px 0;
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
@@ -483,5 +483,22 @@ a {
 
 .wrap .log-in-main-form-forgot {
   font-weight: normal;
+}
+
+.wrap .log-in-main-form-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.wrap .log-in-main-form-lower .main-form-submit-checkbox-input {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */

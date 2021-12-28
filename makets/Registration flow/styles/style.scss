@@ -458,9 +458,11 @@ a {
 		}
 
 		&-form {
-			padding: 40px 0;
-			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
-			border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+			.main-form-label {
+				padding: 40px 0;
+				border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+			}
 
 			p {
 				margin: 0 0 10px 0;
@@ -477,6 +479,17 @@ a {
 
 			&-forgot {
 				font-weight: normal;
+			}
+
+			&-lower {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 50px;
+
+				.main-form-submit-checkbox-input {
+					margin-right: 15px;
+				}
 			}
 		}
 	}
