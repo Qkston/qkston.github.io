@@ -434,7 +434,51 @@ a {
 
 	// #region Log-in page
 	.log-in-main {
-		width: 100%;
+		width: 480px;
+		padding: 170px 85px 50px 90px;
+		box-sizing: border-box;
+
+		&-title {
+			margin: 0 0 35px 0;
+
+			font-weight: bold;
+			font-size: 54px;
+			line-height: 68px;
+			color: $headers;
+		}
+
+		&-description {
+			margin: 0 0 40px 0;
+			width: 270px;
+
+			font-size: 14px;
+			line-height: 28px;
+			letter-spacing: 0.25px;
+			color: $secondary-text;
+		}
+
+		&-form {
+			padding: 40px 0;
+			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+			border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+
+			p {
+				margin: 0 0 10px 0;
+			}
+
+			input {
+				margin: 0;
+
+				&:nth-last-of-type(1) {
+					border-top: none;
+					margin-bottom: 15px;
+				}
+			}
+
+			&-forgot {
+				font-weight: normal;
+			}
+		}
 	}
 	// #endregion
 }

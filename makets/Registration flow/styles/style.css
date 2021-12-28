@@ -439,6 +439,49 @@ a {
 }
 
 .wrap .log-in-main {
-  width: 100%;
+  width: 480px;
+  padding: 170px 85px 50px 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .log-in-main-title {
+  margin: 0 0 35px 0;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 68px;
+  color: #42505c;
+}
+
+.wrap .log-in-main-description {
+  margin: 0 0 40px 0;
+  width: 270px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #404040;
+}
+
+.wrap .log-in-main-form {
+  padding: 40px 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.wrap .log-in-main-form p {
+  margin: 0 0 10px 0;
+}
+
+.wrap .log-in-main-form input {
+  margin: 0;
+}
+
+.wrap .log-in-main-form input:nth-last-of-type(1) {
+  border-top: none;
+  margin-bottom: 15px;
+}
+
+.wrap .log-in-main-form-forgot {
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
