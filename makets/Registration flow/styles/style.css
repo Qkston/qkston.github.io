@@ -19,6 +19,7 @@ a {
   display: flex;
   margin: 40px auto;
   width: 1440px;
+  height: 1020px;
   background: #ffffff;
 }
 
@@ -532,7 +533,7 @@ a {
 }
 
 .wrap .log-in-main-footer {
-  margin: 240px 0 0 0;
+  margin: 165px 0 0 0;
   text-align: center;
 }
 
@@ -542,5 +543,17 @@ a {
   line-height: 28px;
   letter-spacing: 0.25px;
   color: rgba(51, 51, 51, 0.3);
+}
+
+.wrap .log-in-image {
+  display: block;
+  width: 960px;
+  background: #f9faff;
+}
+
+.wrap .log-in-image img {
+  position: absolute;
+  bottom: -135px;
+  width: 960px;
 }
 /*# sourceMappingURL=style.css.map */
