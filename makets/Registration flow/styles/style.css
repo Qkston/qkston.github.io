@@ -279,6 +279,7 @@ a {
 }
 
 .wrap .success-page-main {
+  padding: 80px 90px 0 0;
   width: 100%;
   text-align: center;
 }
@@ -294,7 +295,6 @@ a {
 }
 
 .wrap .success-page-main-right-close-button {
-  margin: 80px 90px 0 0;
   cursor: pointer;
 }
 
