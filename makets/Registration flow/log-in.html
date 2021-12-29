@@ -16,8 +16,10 @@
 	<body>
 		<div class="wrap">
 			<main class="log-in-main">
-				<h1 class="log-in-main-title">Log in</h1>
-				<p class="log-in-main-description">Please input your information in the fields below to enter your Journey platform.</p>
+				<header class="log-in-main-header">
+					<h1 class="log-in-main-header-title">Log in</h1>
+					<p class="log-in-main-header-description">Please input your information in the fields below to enter your Journey platform.</p>
+				</header>
 				<form class="log-in-main-form">
 					<label for="log-in-main-form-inputs" class="main-form-label">
 						<p class="main-form-label-title">Account</p>
@@ -26,15 +28,24 @@
 						<a href="#" class="log-in-main-form-forgot">Forgot your password?</a>
 					</label>
 					<div class="log-in-main-form-lower">
-						<div class="main-form-submit-checkbox">
-							<input class="main-form-submit-checkbox-input" type="checkbox" />
-							<span class="main-form-submit-checkbox-text">Remember me</span>
-						</div>
+						<div id="checkbox" class="log-in-main-form-lower-checkbox bg-off"></div>
+						<span class="log-in-main-form-lower-remember">Remember me</span>
 						<!-- Button -->
-						<input class="main-form-submit-button register-button" type="submit" value="Log in" />
+						<input class="log-in-main-form-lower-button register-button" type="submit" value="Log in" style="margin-bottom: 0" />
 					</div>
 				</form>
+				<footer class="log-in-main-footer">
+					<p class="log-in-main-footer-title">Don't have an account yet?</p>
+					<a
+						href="https://qkston.github.io/makets/Registration%20flow/index.html"
+						class="log-in-main-footer-register"
+						style="font-weight: normal; font-size: 14px; letter-spacing: 0.25px"
+						>Register here</a
+					>
+				</footer>
 			</main>
 		</div>
+
+		<script src="form.js"></script>
 	</body>
 </html>

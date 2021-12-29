@@ -28,7 +28,7 @@ a {
 	display: flex;
 	margin: 40px auto;
 	width: 1440px;
-	height: 1020px;
+	// height: 1020px;
 	background: $light;
 
 	// #region Registration page
@@ -438,25 +438,30 @@ a {
 		padding: 170px 85px 50px 90px;
 		box-sizing: border-box;
 
-		&-title {
-			margin: 0 0 35px 0;
+		// #region Header
+		&-header {
+			&-title {
+				margin: 0 0 35px 0;
 
-			font-weight: bold;
-			font-size: 54px;
-			line-height: 68px;
-			color: $headers;
+				font-weight: bold;
+				font-size: 54px;
+				line-height: 68px;
+				color: $headers;
+			}
+
+			&-description {
+				margin: 0 0 40px 0;
+				width: 270px;
+
+				font-size: 14px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+				color: $secondary-text;
+			}
 		}
+		// #endregion
 
-		&-description {
-			margin: 0 0 40px 0;
-			width: 270px;
-
-			font-size: 14px;
-			line-height: 28px;
-			letter-spacing: 0.25px;
-			color: $secondary-text;
-		}
-
+		// #region Form
 		&-form {
 			.main-form-label {
 				padding: 40px 0;
@@ -483,15 +488,69 @@ a {
 
 			&-lower {
 				display: flex;
-				justify-content: space-between;
 				align-items: center;
 				margin-top: 50px;
 
-				.main-form-submit-checkbox-input {
+				&-checkbox {
+					width: 24px;
+					height: 24px;
 					margin-right: 15px;
+
+					border: 1px solid $form-input-border;
+					box-sizing: border-box;
+					cursor: pointer;
+
+					transition: 0.2s;
+
+					&:hover {
+						background: darken($color: $light, $amount: 5%);
+					}
+				}
+
+				&-remember {
+					margin-right: 70px;
+
+					font-size: 14px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
+
+					color: $form-text;
+				}
+
+				&-button {
+					width: 100px;
+					height: 50px;
+					border: none;
+					background: $blue;
+
+					cursor: pointer;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
+
+					color: $light;
 				}
 			}
 		}
+		// #endregion
+
+		// #region Footer
+		&-footer {
+			margin: 240px 0 0 0;
+			text-align: center;
+
+			&-title {
+				margin: 0 0 20px 0;
+
+				font-size: 14px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+
+				color: rgba($color: $form-text, $alpha: 0.3);
+			}
+		}
+		// #endregion
 	}
 	// #endregion
 }

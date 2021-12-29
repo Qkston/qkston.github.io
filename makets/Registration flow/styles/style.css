@@ -19,7 +19,6 @@ a {
   display: flex;
   margin: 40px auto;
   width: 1440px;
-  height: 1020px;
   background: #ffffff;
 }
 
@@ -445,7 +444,7 @@ a {
           box-sizing: border-box;
 }
 
-.wrap .log-in-main-title {
+.wrap .log-in-main-header-title {
   margin: 0 0 35px 0;
   font-weight: bold;
   font-size: 54px;
@@ -453,7 +452,7 @@ a {
   color: #42505c;
 }
 
-.wrap .log-in-main-description {
+.wrap .log-in-main-header-description {
   margin: 0 0 40px 0;
   width: 270px;
   font-size: 14px;
@@ -489,16 +488,59 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
 }
 
-.wrap .log-in-main-form-lower .main-form-submit-checkbox-input {
+.wrap .log-in-main-form-lower-checkbox {
+  width: 24px;
+  height: 24px;
   margin-right: 15px;
+  border: 1px solid #d1d1d1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrap .log-in-main-form-lower-checkbox:hover {
+  background: #f2f2f2;
+}
+
+.wrap .log-in-main-form-lower-remember {
+  margin-right: 70px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #333333;
+}
+
+.wrap .log-in-main-form-lower-button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: #4743e0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+}
+
+.wrap .log-in-main-footer {
+  margin: 240px 0 0 0;
+  text-align: center;
+}
+
+.wrap .log-in-main-footer-title {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: rgba(51, 51, 51, 0.3);
 }
 /*# sourceMappingURL=style.css.map */
