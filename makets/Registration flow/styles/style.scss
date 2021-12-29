@@ -11,6 +11,9 @@ $image-bg: #f9faff;
 
 * {
 	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: 0.25px;
 }
 
 body {
@@ -18,7 +21,7 @@ body {
 	background: $body-bg;
 }
 
-a {
+.link {
 	color: $blue;
 	font-weight: 700;
 	text-decoration: none;
@@ -45,15 +48,11 @@ a {
 		&-already-member {
 			display: flex;
 			justify-content: end;
+			margin-bottom: 50px;
 
 			&-text {
 				margin-right: 15px;
-				margin-bottom: 50px;
 				font-weight: normal;
-				font-size: 14px;
-				letter-spacing: 0.25px;
-				text-decoration: none;
-				color: $blue;
 			}
 		}
 
@@ -378,24 +377,13 @@ a {
 					color: $blue;
 				}
 			}
-
-			&-resend {
-				display: none;
-				margin: 0 0 70px 0;
-				font-size: 14px;
-				letter-spacing: 0.25px;
-				line-height: 28px;
-
-				&:disabled {
-					color: $secondary-text;
-				}
-			}
 		}
 		// #endregion
 
 		// #region Close button
 		&-close {
 			&-button {
+				margin-top: 70px;
 				width: 100px;
 				height: 50px;
 				border: none;
@@ -548,6 +536,10 @@ a {
 				letter-spacing: 0.25px;
 
 				color: rgba($color: $form-text, $alpha: 0.3);
+			}
+
+			&-link {
+				font-weight: normal;
 			}
 		}
 		// #endregion

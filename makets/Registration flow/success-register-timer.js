@@ -3,7 +3,7 @@
 	const timerNumber = document.querySelector(".success-page-main-email-timer-number");
 	const timerDoneLine = document.querySelector(".success-page-main-email-timer-done");
 
-	const resendLink = document.querySelector(".success-page-main-email-resend");
+	const resendLink = document.getElementById("resend-link");
 
 	window.addEventListener("load", () => {
 		let timer = 30;

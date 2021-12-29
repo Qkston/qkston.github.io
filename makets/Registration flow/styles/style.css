@@ -1,5 +1,8 @@
 * {
   font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.25px;
 }
 
 body {
@@ -7,7 +10,7 @@ body {
   background: #e5e5e5;
 }
 
-a {
+.link {
   color: #4743e0;
   font-weight: 700;
   text-decoration: none;
@@ -40,16 +43,12 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  margin-bottom: 50px;
 }
 
 .wrap .main-already-member-text {
   margin-right: 15px;
-  margin-bottom: 50px;
   font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.25px;
-  text-decoration: none;
-  color: #4743e0;
 }
 
 .wrap .main-form-title {
@@ -396,19 +395,8 @@ a {
   color: #4743e0;
 }
 
-.wrap .success-page-main-email-resend {
-  display: none;
-  margin: 0 0 70px 0;
-  font-size: 14px;
-  letter-spacing: 0.25px;
-  line-height: 28px;
-}
-
-.wrap .success-page-main-email-resend:disabled {
-  color: #404040;
-}
-
 .wrap .success-page-main-close-button {
+  margin-top: 70px;
   width: 100px;
   height: 50px;
   border: none;
@@ -543,6 +531,10 @@ a {
   line-height: 28px;
   letter-spacing: 0.25px;
   color: rgba(51, 51, 51, 0.3);
+}
+
+.wrap .log-in-main-footer-link {
+  font-weight: normal;
 }
 
 .wrap .log-in-image {
