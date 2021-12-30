@@ -95,16 +95,17 @@ body {
 			// Styles for labels
 			&-label {
 				display: block;
-				color: $form-text;
-				font-weight: normal;
-				font-size: 12px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
 
 				&-title {
 					display: inline-block;
 					margin: 0;
 					width: 55%;
+
+					color: $form-text;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
 				}
 
 				&-left {
@@ -115,11 +116,21 @@ body {
 					display: none;
 					margin-left: -10px;
 					color: red;
+
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
 				}
 
 				&-error {
 					display: none;
 					color: red;
+
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
 				}
 			}
 

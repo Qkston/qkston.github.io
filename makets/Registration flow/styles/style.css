@@ -89,17 +89,17 @@ body {
 
 .wrap .main-form-label {
   display: block;
-  color: #333333;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
 }
 
 .wrap .main-form-label-title {
   display: inline-block;
   margin: 0;
   width: 55%;
+  color: #333333;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
 }
 
 .wrap .main-form-label-left {
@@ -110,11 +110,19 @@ body {
   display: none;
   margin-left: -10px;
   color: red;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
 }
 
 .wrap .main-form-label-error {
   display: none;
   color: red;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
 }
 
 .wrap .main-form-input {
