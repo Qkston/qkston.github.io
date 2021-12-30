@@ -1,7 +1,7 @@
 (() => {
-	const timerBlock = document.querySelector(".success-page-main-email-timer");
-	const timerNumber = document.querySelector(".success-page-main-email-timer-number");
-	const timerDoneLine = document.querySelector(".success-page-main-email-timer-done");
+	const timerBlock = document.getElementById("timer");
+	const timerNumber = document.getElementById("number");
+	const timerDoneLine = document.getElementById("done-timer");
 
 	const resendLink = document.getElementById("resend-link");
 	let timer = 30;

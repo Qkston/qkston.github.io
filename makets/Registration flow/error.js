@@ -2,13 +2,13 @@
 	const requiredInputs = document.querySelectorAll(".required-input");
 	const errorMessages = document.querySelectorAll(".main-form-label-error");
 
-	const labelForIncorrectPasswords = document.querySelector(".incorrect-passwords");
+	const labelForIncorrectPasswords = document.getElementById("error-passwords");
 	const passwordInputs = document.querySelectorAll(".password-inputs");
 
-	const checkboxInput = document.querySelector(".main-form-submit-checkbox-input");
-	const termsText = document.querySelector(".main-form-submit-checkbox-text");
+	const checkboxInput = document.getElementById("default-checkbox");
+	const termsText = document.getElementById("agree-terms");
 
-	const registerBtn = document.querySelector(".register-button");
+	const registerBtn = document.getElementById("register-button");
 
 	// Register button clicked
 	registerBtn.addEventListener("click", (e) => {
