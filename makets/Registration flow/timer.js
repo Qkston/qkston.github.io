@@ -4,21 +4,19 @@
 	const timerDoneLine = document.querySelector(".success-page-main-email-timer-done");
 
 	const resendLink = document.getElementById("resend-link");
+	let timer = 30;
 
-	window.addEventListener("load", () => {
-		let timer = 30;
-
+	document.addEventListener("DOMContentLoaded", () => {
 		setInterval(() => {
 			if (timer === 0) {
 				timerDoneLine.style.borderTop = "2px solid transparent";
 				timerBlock.style.display = "none";
 				resendLink.style.display = "block";
 			} else {
-				resendLink.style.display = "none";
+				timer--;
 				timerNumber.innerHTML = `
                ${timer}s
             `;
-				timer--;
 
 				if (30 > timer && timer >= 20) {
 					timerDoneLine.style.borderLeft = "2px solid transparent";
