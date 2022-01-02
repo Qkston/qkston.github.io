@@ -570,4 +570,35 @@ body {
 	}
 
 	// #endregion
+
+	// #region Forgot-password page
+	.forgot-password-main {
+		width: 480px;
+		padding: 170px 90px 50px 90px;
+		box-sizing: border-box;
+
+		// #region Header
+		&-header {
+			&-title {
+				margin: 0 0 35px 0;
+
+				font-weight: bold;
+				font-size: 54px;
+				line-height: 68px;
+				color: $headers;
+			}
+
+			&-description {
+				margin: 0 0 40px 0;
+				width: 300px;
+
+				font-size: 14px;
+				line-height: 28px;
+				letter-spacing: 0.25px;
+				color: $secondary-text;
+			}
+		}
+		// #endregion
+	}
+	// #endregion
 }

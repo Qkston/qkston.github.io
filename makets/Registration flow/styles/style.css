@@ -556,4 +556,28 @@ body {
   bottom: -135px;
   width: 960px;
 }
+
+.wrap .forgot-password-main {
+  width: 480px;
+  padding: 170px 90px 50px 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .forgot-password-main-header-title {
+  margin: 0 0 35px 0;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 68px;
+  color: #42505c;
+}
+
+.wrap .forgot-password-main-header-description {
+  margin: 0 0 40px 0;
+  width: 300px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #404040;
+}
 /*# sourceMappingURL=style.css.map */
