@@ -608,4 +608,16 @@ body {
 .wrap .forgot-password-main-footer-link {
   font-weight: normal;
 }
+
+.wrap .forgot-password-image {
+  display: block;
+  width: 960px;
+  background: #f9faff;
+}
+
+.wrap .forgot-password-image img {
+  position: absolute;
+  bottom: -131px;
+  width: 960px;
+}
 /*# sourceMappingURL=style.css.map */

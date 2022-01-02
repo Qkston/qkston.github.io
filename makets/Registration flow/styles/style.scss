@@ -600,6 +600,7 @@ body {
 		}
 		// #endregion
 
+		// #region Form
 		&-form {
 			padding: 50px 0;
 			margin-bottom: 50px;
@@ -616,7 +617,9 @@ body {
 			margin-bottom: 70px;
 			width: 100%;
 		}
+		// #endregion
 
+		// #region Footer
 		&-footer {
 			text-align: center;
 
@@ -628,6 +631,19 @@ body {
 			&-link {
 				font-weight: normal;
 			}
+		}
+		// #endregion
+	}
+
+	.forgot-password-image {
+		display: block;
+		width: 960px;
+		background: $image-bg;
+
+		img {
+			position: absolute;
+			bottom: -131px;
+			width: 960px;
 		}
 	}
 	// #endregion
