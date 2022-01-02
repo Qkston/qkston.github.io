@@ -36,12 +36,10 @@ body {
 
 	// #region Registration page
 	.main {
-		// #region Main
 		position: absolute;
 		z-index: 1;
 		padding: 80px 100px;
 		width: 850px;
-		// height: 1020px;
 		box-sizing: border-box;
 
 		// #region Already member
@@ -51,34 +49,13 @@ body {
 			margin-bottom: 50px;
 
 			&-text {
-				margin-right: 15px;
+				display: flex;
+				align-items: center;
 				font-weight: normal;
-			}
-		}
 
-		// #endregion
-
-		// #region Form's title
-		&-form-title {
-			display: flex;
-			margin-bottom: 50px;
-
-			&-title {
-				width: 280px;
-				margin: 0;
-				margin-right: 60px;
-				color: $headers;
-				font-weight: bold;
-				font-size: 54px;
-				line-height: 68px;
-			}
-
-			&-terms {
-				width: 300px;
-				color: $secondary-text;
-				font-size: 14px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
+				img {
+					margin: 0 0 0 15px;
+				}
 			}
 		}
 
@@ -89,10 +66,36 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			width: 650px;
-			padding: 40px 0 0 0;
-			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
 
-			// Styles for labels
+			// #region Title
+			&-title {
+				display: flex;
+				margin-bottom: 40px;
+				padding: 0 0 40px 0;
+
+				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+
+				&-title {
+					width: 280px;
+					margin: 0;
+					margin-right: 60px;
+					color: $headers;
+					font-weight: bold;
+					font-size: 54px;
+					line-height: 68px;
+				}
+
+				&-terms {
+					width: 300px;
+					color: $secondary-text;
+					font-size: 14px;
+					line-height: 28px;
+					letter-spacing: 0.25px;
+				}
+			}
+			// #endregion
+
+			// #region Styles for labels
 			&-label {
 				display: block;
 
@@ -155,6 +158,12 @@ body {
 				margin: 15px 0 40px 0;
 
 				// #region Optional section
+				&-title {
+					display: inline-block;
+					font-size: 12px;
+					color: $form-text;
+				}
+
 				&-small {
 					color: rgba($color: $form-text, $alpha: 0.34);
 					font-size: 12px;
@@ -226,6 +235,8 @@ body {
 				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
 			}
 
+			// #endregion
+
 			// #region Lower register button
 			&-submit {
 				display: flex;
@@ -272,8 +283,6 @@ body {
 			}
 			// #endregion
 		}
-
-		// #endregion
 
 		// #endregion
 	}
@@ -635,6 +644,7 @@ body {
 		// #endregion
 	}
 
+	// #region Right-side image
 	.forgot-password-image {
 		display: block;
 		width: 960px;
@@ -646,5 +656,6 @@ body {
 			width: 960px;
 		}
 	}
+	// #endregion
 	// #endregion
 }
