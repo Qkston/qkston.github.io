@@ -616,6 +616,19 @@ body {
 			margin-bottom: 70px;
 			width: 100%;
 		}
+
+		&-footer {
+			text-align: center;
+
+			&-title {
+				margin: 0 0 25px 0;
+				color: rgba($color: $form-text, $alpha: 0.3);
+			}
+
+			&-link {
+				font-weight: normal;
+			}
+		}
 	}
 	// #endregion
 }

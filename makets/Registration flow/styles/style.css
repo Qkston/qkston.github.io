@@ -599,4 +599,13 @@ body {
 .wrap .forgot-password-main-footer {
   text-align: center;
 }
+
+.wrap .forgot-password-main-footer-title {
+  margin: 0 0 25px 0;
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.wrap .forgot-password-main-footer-link {
+  font-weight: normal;
+}
 /*# sourceMappingURL=style.css.map */
