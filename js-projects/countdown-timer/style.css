@@ -48,3 +48,21 @@ button:hover {
 	text-align: center;
 }
 /* #endregion */
+
+.button {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.start-timer {
+	width: 150px;
+	height: 50px;
+
+	cursor: pointer;
+	background: #bebdbd;
+	border: 1px solid #000;
+
+	font-family: "Moncerrat", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
