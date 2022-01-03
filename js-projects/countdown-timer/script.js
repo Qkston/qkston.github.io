@@ -17,18 +17,14 @@ let hoursCount = 0,
 	secondsCount = 0;
 
 // Button
-// startBtn.addEventListener("click", (e) => {
-// 	e.preventDefault();
-// 	console.log("Started");
+startBtn.addEventListener("click", () => {
+	console.log("Started");
 
-// 	while (secondsCount > 0) {
-// 		setTimeout(() => {
-// 			secondsCount--;
-// 			console.log(secondsCount);
-// 		}, 1000);
-// 		// secondsDown(secondsCount);
-// 	}
-// });
+	let timer = setInterval(secondsDown, 1000);
+	// if (secondsCount === 0) {
+	// 	clearInterval(timer);
+	// }
+});
 
 // Hours
 upperArrowHours.addEventListener("click", () => {
@@ -101,20 +97,20 @@ upperArrowSeconds.addEventListener("click", () => {
 });
 
 lowerArrowSeconds.addEventListener("click", () => {
-	secondsCount = secondsDown(secondsCount);
+	secondsCount = secondsDown();
 });
 
-function secondsDown(count) {
-	count--;
+function secondsDown() {
+	secondsCount--;
 
-	if (count >= 0 && count < 10) {
-		secondsCountNumber.innerHTML = `0${count}`;
-	} else if (count >= 10) {
-		secondsCountNumber.innerHTML = `${count}`;
-	} else if (count <= 0) {
+	if (secondsCount >= 0 && secondsCount < 10) {
+		secondsCountNumber.innerHTML = `0${secondsCount}`;
+	} else if (secondsCount >= 10) {
+		secondsCountNumber.innerHTML = `${secondsCount}`;
+	} else if (secondsCount <= 0) {
 		secondsCountNumber.innerHTML = `00`;
-		count = 0;
+		secondsCount = 0;
 	}
-
-	return count;
+	console.log(secondsCount);
+	return secondsCount;
 }
