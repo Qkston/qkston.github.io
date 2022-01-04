@@ -16,6 +16,23 @@ body {
   text-decoration: none;
 }
 
+.main-header-title {
+  margin: 0 0 35px 0;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 68px;
+  color: #42505c;
+}
+
+.main-header-description {
+  margin: 0 0 40px 0;
+  width: 270px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #404040;
+}
+
 .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,23 +472,6 @@ body {
           box-sizing: border-box;
 }
 
-.wrap .log-in-main-header-title {
-  margin: 0 0 35px 0;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 68px;
-  color: #42505c;
-}
-
-.wrap .log-in-main-header-description {
-  margin: 0 0 40px 0;
-  width: 270px;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #404040;
-}
-
 .wrap .log-in-main-form .main-form-label {
   padding: 40px 0;
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
@@ -578,21 +578,8 @@ body {
           box-sizing: border-box;
 }
 
-.wrap .forgot-password-main-header-title {
-  margin: 0 0 35px 0;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 68px;
-  color: #42505c;
-}
-
 .wrap .forgot-password-main-header-description {
-  margin: 0 0 40px 0;
   width: 300px;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #404040;
 }
 
 .wrap .forgot-password-main-form {
@@ -637,11 +624,22 @@ body {
   width: 960px;
 }
 
-.wrap .change-password-first-label {
+.wrap .change-password-main {
+  width: 480px;
+  padding: 170px 90px 50px 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .change-password-main-header-description {
+  width: 300px;
+}
+
+.wrap .change-password-main .change-password-first-label {
   margin-bottom: 40px;
 }
 
-.wrap .password-quality {
+.wrap .change-password-main .password-quality {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,7 +648,7 @@ body {
   height: 6px;
 }
 
-.wrap .password-quality-block {
+.wrap .change-password-main .password-quality-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,13 +658,13 @@ body {
   background: #eaeaea;
 }
 
-.wrap .password-quality-block-full {
+.wrap .change-password-main .password-quality-block-full {
   width: 100%;
   height: 100%;
   background: #f3c652;
 }
 
-.wrap .change-password-margin {
+.wrap .change-password-main .change-password-margin {
   margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,6 +27,27 @@ body {
 	text-decoration: none;
 }
 
+.main-header {
+	&-title {
+		margin: 0 0 35px 0;
+
+		font-weight: bold;
+		font-size: 54px;
+		line-height: 68px;
+		color: $headers;
+	}
+
+	&-description {
+		margin: 0 0 40px 0;
+		width: 270px;
+
+		font-size: 14px;
+		line-height: 28px;
+		letter-spacing: 0.25px;
+		color: $secondary-text;
+	}
+}
+
 .wrap {
 	display: flex;
 	margin: 40px auto;
@@ -448,26 +469,7 @@ body {
 		box-sizing: border-box;
 
 		// #region Header
-		&-header {
-			&-title {
-				margin: 0 0 35px 0;
 
-				font-weight: bold;
-				font-size: 54px;
-				line-height: 68px;
-				color: $headers;
-			}
-
-			&-description {
-				margin: 0 0 40px 0;
-				width: 270px;
-
-				font-size: 14px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
-				color: $secondary-text;
-			}
-		}
 		// #endregion
 
 		// #region Form
@@ -587,25 +589,8 @@ body {
 		box-sizing: border-box;
 
 		// #region Header
-		&-header {
-			&-title {
-				margin: 0 0 35px 0;
-
-				font-weight: bold;
-				font-size: 54px;
-				line-height: 68px;
-				color: $headers;
-			}
-
-			&-description {
-				margin: 0 0 40px 0;
-				width: 300px;
-
-				font-size: 14px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
-				color: $secondary-text;
-			}
+		&-header-description {
+			width: 300px;
 		}
 		// #endregion
 
@@ -661,33 +646,44 @@ body {
 	// #endregion
 
 	// #region Change-password page
-	.change-password-first-label {
-		margin-bottom: 40px;
-	}
+	.change-password-main {
+		width: 480px;
+		padding: 170px 90px 50px 90px;
+		box-sizing: border-box;
 
-	.password-quality {
-		display: flex;
-		margin-top: 10px;
-		width: 100%;
-		height: 6px;
+		&-header-description {
+			width: 300px;
+		}
 
-		&-block {
+		.change-password-first-label {
+			margin-bottom: 40px;
+		}
+
+		.password-quality {
 			display: flex;
-			margin-right: 1px;
-			width: 24px;
-			height: 100%;
-			background: #eaeaea;
+			margin-top: 10px;
+			width: 100%;
+			height: 6px;
 
-			&-full {
-				width: 100%;
+			&-block {
+				display: flex;
+				margin-right: 1px;
+				width: 24px;
 				height: 100%;
-				background: #f3c652;
+				background: #eaeaea;
+
+				&-full {
+					width: 100%;
+					height: 100%;
+					background: #f3c652;
+				}
 			}
+		}
+
+		.change-password-margin {
+			margin-bottom: 15px;
 		}
 	}
 
-	.change-password-margin {
-		margin-bottom: 15px;
-	}
 	// #endregion
 }
