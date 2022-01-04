@@ -468,10 +468,6 @@ body {
 		padding: 170px 85px 50px 90px;
 		box-sizing: border-box;
 
-		// #region Header
-
-		// #endregion
-
 		// #region Form
 		&-form {
 			.main-form-label {
@@ -568,6 +564,7 @@ body {
 		// #endregion
 	}
 
+	// #region Right-side image
 	.log-in-image {
 		display: block;
 		width: 960px;
@@ -579,6 +576,7 @@ body {
 			width: 960px;
 		}
 	}
+	// #endregion
 
 	// #endregion
 
@@ -651,9 +649,11 @@ body {
 		padding: 170px 90px 50px 90px;
 		box-sizing: border-box;
 
+		// #region Header
 		&-header-description {
 			width: 300px;
 		}
+		// #endregion
 
 		.change-password-first-label {
 			margin-bottom: 40px;
