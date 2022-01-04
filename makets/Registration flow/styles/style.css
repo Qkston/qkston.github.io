@@ -665,4 +665,8 @@ body {
   height: 100%;
   background: #f3c652;
 }
+
+.wrap .change-password-margin {
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=style.css.map */
