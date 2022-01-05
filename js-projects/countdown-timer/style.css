@@ -49,12 +49,20 @@ button:hover {
 }
 /* #endregion */
 
-.button {
-	margin-top: 50px;
+/* #region Buttons */
+.start-button {
 	display: flex;
 	justify-content: center;
+	margin-top: 50px;
 }
-.start-timer {
+
+.stop-pause-buttons {
+	display: none;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.button-for-contols {
 	width: 150px;
 	height: 50px;
 
@@ -66,3 +74,4 @@ button:hover {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+/* #endregion */

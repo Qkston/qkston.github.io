@@ -10,7 +10,14 @@ const upperArrowHours = document.querySelector(".upper-arrows-hours"),
 	hoursCountNumber = document.querySelector(".numbers-hours-count"),
 	minutesCountNumber = document.querySelector(".numbers-minutes-count"),
 	secondsCountNumber = document.querySelector(".numbers-seconds-count"),
-	startBtn = document.querySelector(".start-timer");
+	// Buttons for controls
+	buttons = document.querySelectorAll(".button-for-contols"),
+	startBtn = buttons[0],
+	stopBtn = buttons[1],
+	pauseBtn = buttons[2],
+	// Block for buttons
+	blockStartBtn = document.querySelector(".start-button"),
+	blockStopPauseBtn = document.querySelector(".stop-pause-buttons");
 
 let hoursCount = 0,
 	minutesCount = 0,
@@ -18,10 +25,15 @@ let hoursCount = 0,
 
 // Button
 startBtn.addEventListener("click", () => {
-	console.log("Started");
+	blockStartBtn.style.display = "none";
+	blockStopPauseBtn.style.display = "flex";
+
 	let timer = setInterval(() => {
 		secondsDown();
 		if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
+			blockStartBtn.style.display = "flex";
+			blockStopPauseBtn.style.display = "none";
+
 			clearInterval(timer);
 			alert("the end");
 		}
