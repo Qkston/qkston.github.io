@@ -82,7 +82,7 @@ function minutesUp() {
 	} else if (minutesCount >= 10 && minutesCount < 60) {
 		minutesCountNumber.innerHTML = `${minutesCount}`;
 	} else if (minutesCount === 60) {
-		// hoursCount++;
+		hoursUp();
 		minutesCount = 0;
 		minutesCountNumber.innerHTML = `00`;
 	}
@@ -122,7 +122,7 @@ function secondsUp() {
 	} else if (secondsCount >= 10 && secondsCount < 60) {
 		secondsCountNumber.innerHTML = `${secondsCount}`;
 	} else if (secondsCount === 60) {
-		// minutesCount++;
+		minutesUp();
 		secondsCount = 0;
 		secondsCountNumber.innerHTML = `00`;
 	}
