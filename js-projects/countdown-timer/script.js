@@ -32,7 +32,7 @@ upperArrowHours.addEventListener("click", () => {
 });
 
 lowerArrowHours.addEventListener("click", () => {
-	hoursCount = hourstDown();
+	hoursCount = hoursDown();
 });
 
 function hoursUp() {
@@ -50,7 +50,7 @@ function hoursUp() {
 	return hoursCount;
 }
 
-function hourstDown() {
+function hoursDown() {
 	hoursCount--;
 
 	if (hoursCount >= 0 && hoursCount < 10) {
@@ -98,8 +98,14 @@ function minutesDown() {
 	} else if (minutesCount >= 10) {
 		minutesCountNumber.innerHTML = `${minutesCount}`;
 	} else if (minutesCount <= 0) {
-		minutesCountNumber.innerHTML = `00`;
-		minutesCount = 0;
+		if (hoursCount <= 0) {
+			minutesCountNumber.innerHTML = `00`;
+			minutesCount = 0;
+		} else {
+			hoursDown();
+			minutesCount = 59;
+			minutesCountNumber.innerHTML = `${minutesCount}`;
+		}
 	}
 
 	return minutesCount;
@@ -137,8 +143,14 @@ function secondsDown() {
 	} else if (secondsCount >= 10) {
 		secondsCountNumber.innerHTML = `${secondsCount}`;
 	} else if (secondsCount <= 0) {
-		secondsCountNumber.innerHTML = `00`;
-		secondsCount = 0;
+		if (minutesCount <= 0) {
+			secondsCountNumber.innerHTML = `00`;
+			secondsCount = 0;
+		} else {
+			minutesDown();
+			secondsCount = 59;
+			secondsCountNumber.innerHTML = `${secondsCount}`;
+		}
 	}
 	console.log(secondsCount);
 	return secondsCount;
