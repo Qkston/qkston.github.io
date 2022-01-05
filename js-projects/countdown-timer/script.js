@@ -19,11 +19,13 @@ let hoursCount = 0,
 // Button
 startBtn.addEventListener("click", () => {
 	console.log("Started");
-
-	let timer = setInterval(secondsDown, 1000);
-	// if (secondsCount === 0) {
-	// 	clearInterval(timer);
-	// }
+	let timer = setInterval(() => {
+		secondsDown();
+		if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
+			clearInterval(timer);
+			alert("the end");
+		}
+	}, 1000);
 });
 
 // Hours
@@ -132,6 +134,7 @@ function secondsUp() {
 		secondsCount = 0;
 		secondsCountNumber.innerHTML = `00`;
 	}
+
 	return secondsCount;
 }
 
@@ -143,15 +146,22 @@ function secondsDown() {
 	} else if (secondsCount >= 10) {
 		secondsCountNumber.innerHTML = `${secondsCount}`;
 	} else if (secondsCount <= 0) {
-		if (minutesCount <= 0) {
-			secondsCountNumber.innerHTML = `00`;
-			secondsCount = 0;
-		} else {
+		if (minutesCount > 0) {
 			minutesDown();
 			secondsCount = 59;
 			secondsCountNumber.innerHTML = `${secondsCount}`;
+		} else if (hoursCount > 0 && minutesCount <= 0) {
+			hoursDown();
+			minutesDown();
+			secondsCount = 59;
+			minutesCount = 59;
+			secondsCountNumber.innerHTML = `${secondsCount}`;
+			minutesCountNumber.innerHTML = `${minutesCount}`;
+		} else {
+			secondsCountNumber.innerHTML = `00`;
+			secondsCount = 0;
 		}
 	}
-	console.log(secondsCount);
+
 	return secondsCount;
 }
