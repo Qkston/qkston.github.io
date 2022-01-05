@@ -1,16 +1,16 @@
-const upperArrowHours = document.querySelector(".upper-arrows-hours");
-const upperArrowMinutes = document.querySelector(".upper-arrows-minutes");
-const upperArrowSeconds = document.querySelector(".upper-arrows-seconds");
-
-const lowerArrowHours = document.querySelector(".lower-arrows-hours");
-const lowerArrowMinutes = document.querySelector(".lower-arrows-minutes");
-const lowerArrowSeconds = document.querySelector(".lower-arrows-seconds");
-
-const hoursCountNumber = document.querySelector(".numbers-hours-count");
-const minutesCountNumber = document.querySelector(".numbers-minutes-count");
-const secondsCountNumber = document.querySelector(".numbers-seconds-count");
-
-const startBtn = document.querySelector(".start-timer");
+// Upper buttons
+const upperArrowHours = document.querySelector(".upper-arrows-hours"),
+	upperArrowMinutes = document.querySelector(".upper-arrows-minutes"),
+	upperArrowSeconds = document.querySelector(".upper-arrows-seconds"),
+	// Lower buttons
+	lowerArrowHours = document.querySelector(".lower-arrows-hours"),
+	lowerArrowMinutes = document.querySelector(".lower-arrows-minutes"),
+	lowerArrowSeconds = document.querySelector(".lower-arrows-seconds"),
+	// Number
+	hoursCountNumber = document.querySelector(".numbers-hours-count"),
+	minutesCountNumber = document.querySelector(".numbers-minutes-count"),
+	secondsCountNumber = document.querySelector(".numbers-seconds-count"),
+	startBtn = document.querySelector(".start-timer");
 
 let hoursCount = 0,
 	minutesCount = 0,
@@ -28,6 +28,14 @@ startBtn.addEventListener("click", () => {
 
 // Hours
 upperArrowHours.addEventListener("click", () => {
+	hoursCount = hoursUp();
+});
+
+lowerArrowHours.addEventListener("click", () => {
+	hoursCount = hourstDown();
+});
+
+function hoursUp() {
 	hoursCount++;
 
 	if (hoursCount < 10) {
@@ -38,9 +46,11 @@ upperArrowHours.addEventListener("click", () => {
 		hoursCountNumber.innerHTML = `23`;
 		hoursCount = 23;
 	}
-});
 
-lowerArrowHours.addEventListener("click", () => {
+	return hoursCount;
+}
+
+function hourstDown() {
 	hoursCount--;
 
 	if (hoursCount >= 0 && hoursCount < 10) {
@@ -51,10 +61,20 @@ lowerArrowHours.addEventListener("click", () => {
 		hoursCountNumber.innerHTML = `00`;
 		hoursCount = 0;
 	}
-});
+
+	return hoursCount;
+}
 
 // Minutes
 upperArrowMinutes.addEventListener("click", () => {
+	minutesCount = minutesUp();
+});
+
+lowerArrowMinutes.addEventListener("click", () => {
+	minutesCount = minutesDown();
+});
+
+function minutesUp() {
 	minutesCount++;
 
 	if (minutesCount < 10) {
@@ -66,9 +86,11 @@ upperArrowMinutes.addEventListener("click", () => {
 		minutesCount = 0;
 		minutesCountNumber.innerHTML = `00`;
 	}
-});
 
-lowerArrowMinutes.addEventListener("click", () => {
+	return minutesCount;
+}
+
+function minutesDown() {
 	minutesCount--;
 
 	if (minutesCount >= 0 && minutesCount < 10) {
@@ -79,10 +101,20 @@ lowerArrowMinutes.addEventListener("click", () => {
 		minutesCountNumber.innerHTML = `00`;
 		minutesCount = 0;
 	}
-});
+
+	return minutesCount;
+}
 
 // Seconds
 upperArrowSeconds.addEventListener("click", () => {
+	secondsCount = secondsUp();
+});
+
+lowerArrowSeconds.addEventListener("click", () => {
+	secondsCount = secondsDown();
+});
+
+function secondsUp() {
 	secondsCount++;
 
 	if (secondsCount < 10) {
@@ -94,11 +126,8 @@ upperArrowSeconds.addEventListener("click", () => {
 		secondsCount = 0;
 		secondsCountNumber.innerHTML = `00`;
 	}
-});
-
-lowerArrowSeconds.addEventListener("click", () => {
-	secondsCount = secondsDown();
-});
+	return secondsCount;
+}
 
 function secondsDown() {
 	secondsCount--;
