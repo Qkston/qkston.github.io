@@ -24,19 +24,30 @@ let hoursCount = 0,
 	secondsCount = 0,
 	timer;
 
-// Button
+// Notification
+function notification() {
+	setInterval(new Audio("notification/notification.mp3").play(), 3000);
+}
+
+// Buttons
 startBtn.addEventListener("click", () => {
+	upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = true;
+	lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = true;
+
 	blockStartBtn.style.display = "none";
 	blockStopPauseBtn.style.display = "flex";
+
 	timer = setInterval(() => {
 		secondsDown();
 		if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
+			upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
+			lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
+
 			blockStartBtn.style.display = "flex";
 			blockStopPauseBtn.style.display = "none";
 
-			new Audio("notification/notification.mp3").play();
+			notification();
 			clearInterval(timer);
-			// alert("the end");
 		}
 	}, 1000);
 });
@@ -50,6 +61,9 @@ stopBtn.addEventListener("click", () => {
 
 pauseBtn.addEventListener("click", () => {
 	clearInterval(timer);
+
+	upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
+	lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
 
 	blockStartBtn.style.display = "flex";
 	blockStopPauseBtn.style.display = "none";
