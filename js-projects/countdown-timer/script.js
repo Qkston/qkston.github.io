@@ -48,6 +48,13 @@ stopBtn.addEventListener("click", () => {
 	secondsDown();
 });
 
+pauseBtn.addEventListener("click", () => {
+	clearInterval(timer);
+
+	blockStartBtn.style.display = "flex";
+	blockStopPauseBtn.style.display = "none";
+});
+
 // Hours
 upperArrowHours.addEventListener("click", () => {
 	hoursCount = hoursUp();
