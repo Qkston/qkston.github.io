@@ -26,7 +26,7 @@ let hoursCount = 0,
 
 // Notification
 function notification() {
-	setInterval(new Audio("notification/notification.mp3").play(), 3000);
+	new Audio("notification/notification.mp3").play();
 }
 
 // Buttons
