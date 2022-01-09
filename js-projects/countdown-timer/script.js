@@ -28,15 +28,15 @@ let hoursCount = 0,
 startBtn.addEventListener("click", () => {
 	blockStartBtn.style.display = "none";
 	blockStopPauseBtn.style.display = "flex";
-
 	timer = setInterval(() => {
 		secondsDown();
 		if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
 			blockStartBtn.style.display = "flex";
 			blockStopPauseBtn.style.display = "none";
 
+			new Audio("notification/notification.mp3").play();
 			clearInterval(timer);
-			alert("the end");
+			// alert("the end");
 		}
 	}, 1000);
 });
