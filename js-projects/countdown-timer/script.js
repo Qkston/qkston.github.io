@@ -21,14 +21,15 @@ const upperArrowHours = document.querySelector(".upper-arrows-hours"),
 
 let hoursCount = 0,
 	minutesCount = 0,
-	secondsCount = 0;
+	secondsCount = 0,
+	timer;
 
 // Button
 startBtn.addEventListener("click", () => {
 	blockStartBtn.style.display = "none";
 	blockStopPauseBtn.style.display = "flex";
 
-	let timer = setInterval(() => {
+	timer = setInterval(() => {
 		secondsDown();
 		if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
 			blockStartBtn.style.display = "flex";
@@ -38,6 +39,13 @@ startBtn.addEventListener("click", () => {
 			alert("the end");
 		}
 	}, 1000);
+});
+
+stopBtn.addEventListener("click", () => {
+	hoursCount = minutesCount = secondsCount = 0;
+	hoursDown();
+	minutesDown();
+	secondsDown();
 });
 
 // Hours
