@@ -24,6 +24,22 @@ let hoursCount = 0,
 	secondsCount = 0,
 	timer;
 
+function changeTitle() {
+	let headerTitle;
+	for (const title of document.head.childNodes) {
+		if (title.nodeName === "TITLE") {
+			headerTitle = title;
+		}
+	}
+	headerTitle.innerHTML = "Timer is end";
+
+	document.querySelectorAll("button").forEach((button) => {
+		button.addEventListener("click", () => {
+			headerTitle.innerHTML = "Countdown timer";
+		});
+	});
+}
+
 // Notification
 function notification() {
 	new Audio("notification/notification.mp3").play();
@@ -46,6 +62,7 @@ startBtn.addEventListener("click", () => {
 			blockStartBtn.style.display = "flex";
 			blockStopPauseBtn.style.display = "none";
 
+			changeTitle();
 			notification();
 			clearInterval(timer);
 		}
