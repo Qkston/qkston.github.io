@@ -24,28 +24,8 @@ let hoursCount = 0,
 	secondsCount = 0,
 	timer;
 
-function changeTitle() {
-	let headerTitle;
-	for (const title of document.head.childNodes) {
-		if (title.nodeName === "TITLE") {
-			headerTitle = title;
-		}
-	}
-	headerTitle.innerHTML = "Timer is end";
-
-	document.querySelectorAll("button").forEach((button) => {
-		button.addEventListener("click", () => {
-			headerTitle.innerHTML = "Countdown timer";
-		});
-	});
-}
-
-// Notification
-function notification() {
-	new Audio("notification/notification.mp3").play();
-}
-
-// Buttons
+// #region Buttons
+// Start button
 startBtn.addEventListener("click", () => {
 	upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = true;
 	lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = true;
@@ -68,14 +48,14 @@ startBtn.addEventListener("click", () => {
 		}
 	}, 1000);
 });
-
+// Stop button
 stopBtn.addEventListener("click", () => {
 	hoursCount = minutesCount = secondsCount = 0;
 	hoursDown();
 	minutesDown();
 	secondsDown();
 });
-
+// Pause button
 pauseBtn.addEventListener("click", () => {
 	clearInterval(timer);
 
@@ -85,16 +65,42 @@ pauseBtn.addEventListener("click", () => {
 	blockStartBtn.style.display = "flex";
 	blockStopPauseBtn.style.display = "none";
 });
+// #endregion
 
-// Hours
+// #region Hours
+// Top button
 upperArrowHours.addEventListener("click", () => {
 	hoursCount = hoursUp();
 });
-
+// Bottom button
 lowerArrowHours.addEventListener("click", () => {
 	hoursCount = hoursDown();
 });
+// #endregion
 
+// #region Minutes
+// Top button
+upperArrowMinutes.addEventListener("click", () => {
+	minutesCount = minutesUp();
+});
+// Bottom button
+lowerArrowMinutes.addEventListener("click", () => {
+	minutesCount = minutesDown();
+});
+// #endregion
+
+// #region Seconds
+// Top button
+upperArrowSeconds.addEventListener("click", () => {
+	secondsCount = secondsUp();
+});
+// Bottom button
+lowerArrowSeconds.addEventListener("click", () => {
+	secondsCount = secondsDown();
+});
+// #endregion
+
+// #region Function of the hours
 function hoursUp() {
 	hoursCount++;
 
@@ -124,16 +130,9 @@ function hoursDown() {
 
 	return hoursCount;
 }
+// #endregion
 
-// Minutes
-upperArrowMinutes.addEventListener("click", () => {
-	minutesCount = minutesUp();
-});
-
-lowerArrowMinutes.addEventListener("click", () => {
-	minutesCount = minutesDown();
-});
-
+// #region Function of the minutes
 function minutesUp() {
 	minutesCount++;
 
@@ -170,16 +169,9 @@ function minutesDown() {
 
 	return minutesCount;
 }
+// #endregion
 
-// Seconds
-upperArrowSeconds.addEventListener("click", () => {
-	secondsCount = secondsUp();
-});
-
-lowerArrowSeconds.addEventListener("click", () => {
-	secondsCount = secondsDown();
-});
-
+// #region Functions of the seconds
 function secondsUp() {
 	secondsCount++;
 
@@ -223,3 +215,28 @@ function secondsDown() {
 
 	return secondsCount;
 }
+// #endregion
+
+// #region Other functions
+// Change title
+function changeTitle() {
+	let headerTitle;
+	for (const title of document.head.childNodes) {
+		if (title.nodeName === "TITLE") {
+			headerTitle = title;
+		}
+	}
+	headerTitle.innerHTML = "Timer is end";
+
+	document.querySelectorAll("button").forEach((button) => {
+		button.addEventListener("click", () => {
+			headerTitle.innerHTML = "Countdown timer";
+		});
+	});
+}
+
+// Notification
+function notification() {
+	new Audio("notification/notification.mp3").play();
+}
+// #endregion
