@@ -5,8 +5,80 @@ $main-bg: #fafafa;
 $main-text: #262626;
 $second-text: #8e8e8e;
 $link: #0095f6;
+$borders: #dbdbdb;
 $gradient: linear-gradient(180deg, #de0046 0%, #f7a34b 100%);
 
 * {
 	font-family: "Segoe UI";
+}
+
+body {
+	margin: 0;
+
+	background: $main-bg;
+}
+
+.container {
+	margin: 0 500px 0 480px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+
+	height: 50px;
+	padding: 9px 0px 8px;
+	box-sizing: border-box;
+
+	border-bottom: 1px solid $borders;
+
+	&-logo {
+		margin-left: 480px;
+		margin-right: 250px;
+
+		cursor: pointer;
+	}
+
+	&-input {
+		margin-right: 120px;
+		padding: 5px 0px;
+		width: 215px;
+		height: 28px;
+
+		background: $main-bg;
+
+		border: 1px solid $borders;
+		box-sizing: border-box;
+		border-radius: 3px;
+
+		color: $second-text;
+		text-align: center;
+		font-weight: 300;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&-navigation {
+		margin-right: 490px;
+
+		&-list {
+			margin: 0;
+			padding: 0;
+
+			list-style: none;
+
+			&-item {
+				display: inline-block;
+				margin-right: 20px;
+
+				cursor: pointer;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }
