@@ -7,10 +7,6 @@ body {
   background: #fafafa;
 }
 
-.container {
-  margin: 0 500px 0 480px;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

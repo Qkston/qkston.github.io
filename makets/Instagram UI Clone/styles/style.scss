@@ -8,6 +8,7 @@ $link: #0095f6;
 $borders: #dbdbdb;
 $gradient: linear-gradient(180deg, #de0046 0%, #f7a34b 100%);
 
+// General settings
 * {
 	font-family: "Segoe UI";
 }
@@ -16,10 +17,6 @@ body {
 	margin: 0;
 
 	background: $main-bg;
-}
-
-.container {
-	margin: 0 500px 0 480px;
 }
 
 .header {
@@ -32,6 +29,8 @@ body {
 
 	border-bottom: 1px solid $borders;
 
+	// #region Header
+	// Logo
 	&-logo {
 		margin-left: 480px;
 		margin-right: 250px;
@@ -39,6 +38,7 @@ body {
 		cursor: pointer;
 	}
 
+	// Search input
 	&-input {
 		margin-right: 120px;
 		padding: 5px 0px;
@@ -60,6 +60,7 @@ body {
 		}
 	}
 
+	// Navigation menu
 	&-navigation {
 		margin-right: 490px;
 
@@ -81,4 +82,6 @@ body {
 			}
 		}
 	}
+
+	// #endregion
 }
