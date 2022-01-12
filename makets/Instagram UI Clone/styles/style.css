@@ -1,23 +1,4 @@
 * {
   font-family: "Segoe UI";
 }
-
-.wrap {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.border {
-  border-radius: 50%;
-  border: 2.5px solid;
-  border-color: linear-gradient(180deg, #de0046 0%, #f7a34b 100%);
-  border-image-slice: 1;
-}
-
-.content {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
 /*# sourceMappingURL=style.css.map */
