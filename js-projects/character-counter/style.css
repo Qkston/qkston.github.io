@@ -1,7 +1,10 @@
 body {
 	margin: 0;
-	font-family: "Montserrat";
 	background: #8f5ee2;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -54,4 +57,9 @@ body {
 	background: #3e0a97;
 	color: #fff;
 	font-size: 18px;
+	font-weight: bold;
+}
+
+.textarea:focus {
+	outline: none;
 }
