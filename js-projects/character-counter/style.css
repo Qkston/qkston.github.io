@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: "Montserrat";
+	background: #8f5ee2;
 }
 
 .header {
@@ -13,10 +14,10 @@ body {
 	padding: 0 40px;
 
 	color: #fff;
-	background: #8f5ee2;
 	box-sizing: border-box;
 	font-weight: bold;
 	font-size: 28px;
+	border-bottom: 2px solid #fff;
 }
 
 .btn-copy {
@@ -25,8 +26,32 @@ body {
 
 	background: #000;
 	color: #fff;
-	border: none;
+	border: 2px solid #fff;
+	border-radius: 10px;
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.main {
+	padding: 20px 40px;
+	box-sizing: border-box;
+	height: 820px;
+}
+
+.textarea {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	resize: none;
+
+	background: #3e0a97;
+	color: #fff;
+	font-size: 18px;
 }
