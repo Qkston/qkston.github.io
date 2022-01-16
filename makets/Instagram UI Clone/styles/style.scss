@@ -85,3 +85,52 @@ body {
 
 	// #endregion
 }
+
+.main {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+
+	&-block {
+		width: 615px;
+
+		background: $light;
+		border: 1px solid $borders;
+
+		.stories-block {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			padding: 15px 0 15px 20px;
+
+			&-story {
+				display: flex;
+				flex-direction: column;
+				margin-right: 15px;
+
+				&:nth-last-child() {
+					margin-right: 0;
+				}
+
+				&-img {
+					margin: 0 auto;
+					margin-bottom: 5px;
+
+					width: 56px;
+					height: 56px;
+				}
+
+				&-description {
+					margin: 0;
+
+					color: $main-text;
+
+					font-size: 12px;
+					text-align: center;
+					letter-spacing: 0.12px;
+					text-transform: lowercase;
+				}
+			}
+		}
+	}
+}
