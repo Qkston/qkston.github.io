@@ -91,18 +91,23 @@ body {
 	justify-content: center;
 	margin-top: 30px;
 
+	// #region Main
 	&-block {
 		width: 615px;
 
 		background: $light;
 		border: 1px solid $borders;
 
+		// #region Stories
 		.stories-block {
 			display: flex;
 			align-items: center;
 			justify-content: space-around;
 			padding: 15px 0 15px 20px;
 
+			border-bottom: 1px solid $borders;
+
+			// Story block
 			&-story {
 				display: flex;
 				flex-direction: column;
@@ -112,6 +117,7 @@ body {
 					margin-right: 0;
 				}
 
+				// Image
 				&-img {
 					margin: 0 auto;
 					margin-bottom: 5px;
@@ -120,6 +126,7 @@ body {
 					height: 56px;
 				}
 
+				// Description
 				&-description {
 					margin: 0;
 
@@ -132,5 +139,7 @@ body {
 				}
 			}
 		}
+		// #endregion
 	}
+	// #endregion
 }

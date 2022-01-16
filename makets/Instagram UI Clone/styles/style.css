@@ -92,6 +92,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 15px 0 15px 20px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .main-block .stories-block-story {
