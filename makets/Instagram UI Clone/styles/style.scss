@@ -140,6 +140,35 @@ body {
 			}
 		}
 		// #endregion
+
+		.posts-block {
+			&-post {
+				&-header {
+					display: flex;
+					align-items: center;
+
+					height: 60px;
+
+					&-img {
+						margin: 0 20px;
+
+						width: 32px;
+						height: 32px;
+					}
+
+					&-nickname {
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 18px;
+						text-transform: lowercase;
+					}
+
+					&-more {
+						margin-left: 71%;
+					}
+				}
+			}
+		}
 	}
 	// #endregion
 }
