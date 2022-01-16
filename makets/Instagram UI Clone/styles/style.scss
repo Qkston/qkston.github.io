@@ -122,6 +122,8 @@ body {
 					margin: 0 auto;
 					margin-bottom: 5px;
 
+					cursor: pointer;
+
 					width: 56px;
 					height: 56px;
 				}
@@ -149,14 +151,22 @@ body {
 
 					height: 60px;
 
+					border-bottom: 1px solid $borders;
+
 					&-img {
 						margin: 0 20px;
+
+						cursor: pointer;
 
 						width: 32px;
 						height: 32px;
 					}
 
 					&-nickname {
+						color: $main-text;
+
+						cursor: pointer;
+
 						font-weight: 600;
 						font-size: 14px;
 						line-height: 18px;
@@ -165,6 +175,107 @@ body {
 
 					&-more {
 						margin-left: 71%;
+
+						cursor: pointer;
+					}
+				}
+				&-main {
+					border-bottom: 1px solid $borders;
+
+					&-user-img {
+						width: 100%;
+
+						margin-bottom: 15px;
+					}
+
+					&-interaction {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+
+						padding: 0 15px 0 25px;
+						margin-bottom: 15px;
+
+						.left-side-like,
+						.left-side-comment {
+							margin-right: 15px;
+
+							cursor: pointer;
+						}
+
+						.left-side-send,
+						.right-side-save {
+							cursor: pointer;
+						}
+					}
+
+					&-info {
+						margin: 0 30px 15px 15px;
+
+						&-likes {
+							margin: 0;
+
+							cursor: pointer;
+
+							color: $main-text;
+
+							font-weight: 600;
+							font-size: 14px;
+							line-height: 18px;
+							text-transform: lowercase;
+						}
+
+						&-description {
+							&-nickname {
+								margin-right: 5px;
+
+								color: $main-text;
+
+								cursor: pointer;
+
+								font-weight: 600;
+								font-size: 14px;
+								line-height: 18px;
+								text-transform: lowercase;
+							}
+							&-text {
+								color: $main-text;
+
+								font-size: 14px;
+								line-height: 18px;
+
+								.more {
+									color: $second-text;
+
+									cursor: pointer;
+
+									font-size: 14px;
+									line-height: 18px;
+								}
+							}
+						}
+
+						&-comments {
+							margin: 5px 0 0 0;
+
+							color: $second-text;
+
+							cursor: pointer;
+
+							font-size: 14px;
+							line-height: 18px;
+						}
+
+						&-time {
+							margin: 5px 0 0 0;
+
+							color: $second-text;
+
+							font-size: 10px;
+							line-height: 18px;
+							letter-spacing: 0.2px;
+							text-transform: uppercase;
+						}
 					}
 				}
 			}

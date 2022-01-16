@@ -113,6 +113,7 @@ body {
 .main-block .stories-block-story-img {
   margin: 0 auto;
   margin-bottom: 5px;
+  cursor: pointer;
   width: 56px;
   height: 56px;
 }
@@ -134,15 +135,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .main-block .posts-block-post-header-img {
   margin: 0 20px;
+  cursor: pointer;
   width: 32px;
   height: 32px;
 }
 
 .main-block .posts-block-post-header-nickname {
+  color: #262626;
+  cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -151,5 +156,94 @@ body {
 
 .main-block .posts-block-post-header-more {
   margin-left: 71%;
+  cursor: pointer;
+}
+
+.main-block .posts-block-post-main {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.main-block .posts-block-post-main-user-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.main-block .posts-block-post-main-interaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px 0 25px;
+  margin-bottom: 15px;
+}
+
+.main-block .posts-block-post-main-interaction .left-side-like,
+.main-block .posts-block-post-main-interaction .left-side-comment {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.main-block .posts-block-post-main-interaction .left-side-send,
+.main-block .posts-block-post-main-interaction .right-side-save {
+  cursor: pointer;
+}
+
+.main-block .posts-block-post-main-info {
+  margin: 0 30px 15px 15px;
+}
+
+.main-block .posts-block-post-main-info-likes {
+  margin: 0;
+  cursor: pointer;
+  color: #262626;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.main-block .posts-block-post-main-info-description-nickname {
+  margin-right: 5px;
+  color: #262626;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.main-block .posts-block-post-main-info-description-text {
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-block .posts-block-post-main-info-description-text .more {
+  color: #8e8e8e;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-block .posts-block-post-main-info-comments {
+  margin: 5px 0 0 0;
+  color: #8e8e8e;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-block .posts-block-post-main-info-time {
+  margin: 5px 0 0 0;
+  color: #8e8e8e;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
