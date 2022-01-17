@@ -1,18 +1,19 @@
-const count = document.querySelector(".count-number"),
-	msg = document.querySelector(".msg-copy"),
-	btn = document.querySelector(".btn-copy"),
+const header = document.querySelector(".header"),
+	countNumber = header.querySelector(".count-number"),
+	copyBtn = header.querySelector(".btn-copy"),
+	copyMsg = header.querySelector(".msg-copy"),
 	textarea = document.querySelector(".textarea");
 
 textarea.oninput = function (event) {
-	count.innerHTML = event.target.value.length;
+	countNumber.innerHTML = event.target.value.length;
 };
 
-btn.addEventListener("click", () => {
+copyBtn.addEventListener("click", () => {
 	textarea.focus();
 	textarea.select();
 	document.execCommand("copy");
 
-	checkTextareaLength(textarea, msg);
+	checkTextareaLength(textarea, copyMsg);
 });
 
 function checkTextareaLength(textarea, message) {
