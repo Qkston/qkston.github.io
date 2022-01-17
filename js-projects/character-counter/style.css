@@ -25,6 +25,13 @@ body {
 	border-bottom: 2px solid #fff;
 }
 
+.copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .btn-copy {
 	width: 150px;
 	height: 50px;
@@ -36,6 +43,19 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.msg-copy {
+	margin: 10px 0 0 0;
+
+	font-size: 12px;
+}
+
+.error {
+	color: #ff0000;
+}
+.successful {
+	color: #adff22;
 }
 
 .main {
