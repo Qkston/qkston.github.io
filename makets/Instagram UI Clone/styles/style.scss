@@ -294,6 +294,57 @@ body {
 					}
 				}
 				// #endregion
+
+				// #region Footer
+				&-footer {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					padding: 15px;
+
+					// Emoji and input for comment
+					.left-side {
+						display: flex;
+						align-items: center;
+
+						width: 100%;
+						height: 100%;
+					}
+
+					// Emoji
+					&-emoji {
+						margin-right: 15px;
+
+						cursor: pointer;
+					}
+
+					// Input for comment
+					&-add {
+						width: 100%;
+
+						font-size: 14px;
+						line-height: 18px;
+
+						color: $main-text;
+
+						cursor: text;
+					}
+
+					// Post button
+					&-post {
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 18px;
+						text-transform: capitalize;
+
+						color: $link;
+
+						opacity: 0.3;
+						cursor: pointer;
+					}
+				}
+				// #endregion
 			}
 		}
 	}
