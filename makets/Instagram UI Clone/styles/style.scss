@@ -347,6 +347,63 @@ body {
 				// #endregion
 			}
 		}
+		// #endregion
 	}
-	// #endregion
+
+	.aside-block {
+		width: 300px;
+
+		margin: 15px 0 0 30px;
+
+		&-header {
+			display: flex;
+			align-items: center;
+
+			&-profile-picture {
+				margin-right: 25px;
+
+				cursor: pointer;
+			}
+
+			&-text {
+				margin-right: 70px;
+
+				&-nickname {
+					margin: 0 0 10px 0;
+
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 18px;
+					text-transform: lowercase;
+
+					color: $main-text;
+
+					cursor: pointer;
+				}
+
+				&-name {
+					margin: 0 0 0 0;
+
+					font-size: 14px;
+					line-height: 18px;
+					text-transform: capitalize;
+
+					color: $second-text;
+
+					cursor: pointer;
+				}
+			}
+
+			&-switch {
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 16px;
+				text-transform: capitalize;
+
+				color: $link;
+
+				cursor: pointer;
+			}
+		}
+	}
 }

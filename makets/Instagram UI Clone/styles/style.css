@@ -293,4 +293,55 @@ body {
   opacity: 0.3;
   cursor: pointer;
 }
+
+.main .aside-block {
+  width: 300px;
+  margin: 15px 0 0 30px;
+}
+
+.main .aside-block-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .aside-block-header-profile-picture {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.main .aside-block-header-text {
+  margin-right: 70px;
+}
+
+.main .aside-block-header-text-nickname {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: #262626;
+  cursor: pointer;
+}
+
+.main .aside-block-header-text-name {
+  margin: 0 0 0 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.main .aside-block-header-switch {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #0095f6;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
