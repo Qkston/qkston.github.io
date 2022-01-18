@@ -6,6 +6,7 @@ $main-text: #262626;
 $second-text: #8e8e8e;
 $link: #0095f6;
 $borders: #dbdbdb;
+$footer-text: #c7c7c7;
 $gradient: linear-gradient(180deg, #de0046 0%, #f7a34b 100%);
 
 // General settings
@@ -355,9 +356,12 @@ body {
 
 		margin: 15px 0 0 30px;
 
+		// #region Header
 		&-header {
 			display: flex;
 			align-items: center;
+
+			margin-bottom: 25px;
 
 			&-profile-picture {
 				margin-right: 25px;
@@ -366,7 +370,7 @@ body {
 			}
 
 			&-text {
-				margin-right: 70px;
+				margin-right: 89px;
 
 				&-nickname {
 					margin: 0 0 10px 0;
@@ -405,5 +409,122 @@ body {
 				cursor: pointer;
 			}
 		}
+		// #endregion
+
+		// #region Main
+		&-main {
+			margin-bottom: 30px;
+
+			// #region Header
+			&-header {
+				display: flex;
+				align-items: center;
+
+				margin-bottom: 15px;
+
+				&-suggestions {
+					margin: 0 134px 0 0;
+
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 18px;
+					text-transform: capitalize;
+
+					color: $second-text;
+				}
+
+				&-see-all {
+					margin: 0;
+
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 16px;
+					text-transform: capitalize;
+
+					color: $main-text;
+
+					cursor: pointer;
+				}
+			}
+			// #endregion
+
+			// #region Main
+			&-main {
+				&-profile {
+					display: flex;
+					align-items: center;
+
+					margin-bottom: 20px;
+
+					&-picture {
+						margin-right: 10px;
+
+						width: 32px;
+						height: 32px;
+
+						cursor: pointer;
+					}
+
+					&-text {
+						width: 90%;
+
+						&-nickname {
+							margin: 0 0 10px 0;
+
+							font-size: 14px;
+							line-height: 11px;
+							text-transform: lowercase;
+
+							color: $main-text;
+
+							cursor: pointer;
+						}
+
+						&-followed {
+							margin: 0;
+
+							font-size: 12px;
+							line-height: 11px;
+
+							color: $second-text;
+						}
+					}
+
+					&-follow {
+						margin: 0;
+
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 11px;
+						text-transform: capitalize;
+
+						color: $link;
+
+						cursor: pointer;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			// #endregion
+		}
+		// #endregion
+
+		// #region Footer
+		&-footer {
+			&-text {
+				font-size: 11px;
+				line-height: 16px;
+
+				text-transform: capitalize;
+
+				color: $footer-text;
+
+				cursor: pointer;
+			}
+		}
+		// #endregion
 	}
 }

@@ -306,6 +306,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 25px;
 }
 
 .main .aside-block-header-profile-picture {
@@ -314,7 +315,7 @@ body {
 }
 
 .main .aside-block-header-text {
-  margin-right: 70px;
+  margin-right: 89px;
 }
 
 .main .aside-block-header-text-nickname {
@@ -342,6 +343,98 @@ body {
   line-height: 16px;
   text-transform: capitalize;
   color: #0095f6;
+  cursor: pointer;
+}
+
+.main .aside-block-main {
+  margin-bottom: 30px;
+}
+
+.main .aside-block-main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.main .aside-block-main-header-suggestions {
+  margin: 0 134px 0 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #8e8e8e;
+}
+
+.main .aside-block-main-header-see-all {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #262626;
+  cursor: pointer;
+}
+
+.main .aside-block-main-main-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.main .aside-block-main-main-profile-picture {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.main .aside-block-main-main-profile-text {
+  width: 90%;
+}
+
+.main .aside-block-main-main-profile-text-nickname {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 11px;
+  text-transform: lowercase;
+  color: #262626;
+  cursor: pointer;
+}
+
+.main .aside-block-main-main-profile-text-followed {
+  margin: 0;
+  font-size: 12px;
+  line-height: 11px;
+  color: #8e8e8e;
+}
+
+.main .aside-block-main-main-profile-follow {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: capitalize;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.main .aside-block-main-main-profile:last-child {
+  margin-bottom: 0;
+}
+
+.main .aside-block-footer-text {
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #c7c7c7;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
