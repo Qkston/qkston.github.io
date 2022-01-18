@@ -7,7 +7,7 @@ $second-text: #8e8e8e;
 $link: #0095f6;
 $borders: #dbdbdb;
 $footer-text: #c7c7c7;
-$gradient: linear-gradient(180deg, #de0046 0%, #f7a34b 100%);
+$gradient: linear-gradient(180deg, #de0046, #f7a34b);
 
 // General settings
 * {
@@ -52,6 +52,7 @@ body {
 		box-sizing: border-box;
 		border-radius: 3px;
 
+		font-family: FontAwesome, "Segoe UI", sans-serif;
 		color: $second-text;
 		text-align: center;
 		font-weight: 300;
@@ -119,14 +120,29 @@ body {
 				}
 
 				// Image
-				&-img {
-					margin: 0 auto;
-					margin-bottom: 5px;
+				&-wrap {
+					position: relative;
+					width: 60px;
+					height: 60px;
 
-					cursor: pointer;
+					padding: 2px;
 
-					width: 56px;
-					height: 56px;
+					background: $gradient;
+					border-radius: 100%;
+
+					&-img {
+						margin: 0 auto;
+						margin-bottom: 5px;
+						padding: 2px;
+
+						width: 56px;
+						height: 56px;
+
+						background: $light;
+
+						border-radius: 100%;
+						cursor: pointer;
+					}
 				}
 
 				// Description
@@ -157,13 +173,28 @@ body {
 					border-bottom: 1px solid $borders;
 
 					// User image
-					&-img {
-						margin: 0 20px;
+					&-wrap {
+						position: relative;
+						margin: 0 15px;
+						padding: 2px;
 
-						cursor: pointer;
+						width: 36px;
+						height: 36px;
 
-						width: 32px;
-						height: 32px;
+						background: $gradient;
+						border-radius: 100%;
+
+						&-img {
+							margin: 0 auto;
+							padding: 2px;
+
+							width: 32px;
+							height: 32px;
+
+							cursor: pointer;
+							background: $light;
+							border-radius: 100%;
+						}
 					}
 
 					// User nickname

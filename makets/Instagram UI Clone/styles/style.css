@@ -37,6 +37,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
+  font-family: FontAwesome, "Segoe UI", sans-serif;
   color: #8e8e8e;
   text-align: center;
   font-weight: 300;
@@ -110,12 +111,25 @@ body {
   margin-right: 0;
 }
 
-.main-block .stories-block-story-img {
+.main-block .stories-block-story-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#de0046), to(#f7a34b));
+  background: linear-gradient(180deg, #de0046, #f7a34b);
+  border-radius: 100%;
+}
+
+.main-block .stories-block-story-wrap-img {
   margin: 0 auto;
   margin-bottom: 5px;
-  cursor: pointer;
+  padding: 2px;
   width: 56px;
   height: 56px;
+  background: #ffffff;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .main-block .stories-block-story-description {
@@ -138,11 +152,25 @@ body {
   border-bottom: 1px solid #dbdbdb;
 }
 
-.main-block .posts-block-post-header-img {
-  margin: 0 20px;
-  cursor: pointer;
+.main-block .posts-block-post-header-wrap {
+  position: relative;
+  margin: 0 15px;
+  padding: 2px;
+  width: 36px;
+  height: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#de0046), to(#f7a34b));
+  background: linear-gradient(180deg, #de0046, #f7a34b);
+  border-radius: 100%;
+}
+
+.main-block .posts-block-post-header-wrap-img {
+  margin: 0 auto;
+  padding: 2px;
   width: 32px;
   height: 32px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 100%;
 }
 
 .main-block .posts-block-post-header-nickname {
