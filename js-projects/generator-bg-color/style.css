@@ -22,13 +22,15 @@ body {
 	width: 70%;
 	height: 100%;
 
-	/* background: #fff; */
 	border-right: 1px solid #f0f2f4;
 }
 
 .settings {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 
 	padding: 50px;
 
@@ -36,6 +38,24 @@ body {
 	height: 100%;
 
 	box-sizing: border-box;
+}
+
+.hash-color {
+	margin-bottom: 20px;
+
+	width: 250px;
+	height: 50px;
+
+	text-align: center;
+	font-size: 28px;
+
+	color: #bebfc0;
+	border: 1px solid #bebfc0;
+	border-radius: 5px;
+}
+.hash-color:focus {
+	color: #000;
+	outline: none;
 }
 
 .generate-btn {
@@ -48,7 +68,6 @@ body {
 	transition: 0.2s;
 	cursor: pointer;
 }
-
 .generate-btn:focus {
 	outline: none;
 }
