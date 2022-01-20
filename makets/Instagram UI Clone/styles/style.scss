@@ -20,6 +20,7 @@ body {
 	background: $main-bg;
 }
 
+// #region Home page
 // #region Header
 .header {
 	display: flex;
@@ -575,5 +576,42 @@ body {
 		// #endregion
 	}
 	// #endregion
+}
+// #endregion
+// #endregion
+
+// #region Direct page
+.chats {
+	width: 350px;
+
+	&-header {
+		display: flex;
+		align-items: center;
+
+		padding: 18px 50px 18px 80px;
+		margin-bottom: 15px;
+
+		height: 60px;
+
+		border-bottom: 1px solid $borders;
+		box-sizing: border-box;
+
+		&-account {
+			margin: 0 10px 0 0;
+
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: lowercase;
+
+			color: $main-text;
+		}
+
+		&-switch {
+			margin-right: 70px;
+
+			cursor: pointer;
+		}
+	}
 }
 // #endregion

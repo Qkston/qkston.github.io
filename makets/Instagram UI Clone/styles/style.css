@@ -465,4 +465,37 @@ body {
   color: #c7c7c7;
   cursor: pointer;
 }
+
+.chats {
+  width: 350px;
+}
+
+.chats-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 50px 18px 80px;
+  margin-bottom: 15px;
+  height: 60px;
+  border-bottom: 1px solid #dbdbdb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.chats-header-account {
+  margin: 0 10px 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #262626;
+}
+
+.chats-header-switch {
+  margin-right: 70px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
