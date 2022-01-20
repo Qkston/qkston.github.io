@@ -684,6 +684,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 
+	// Title
 	&-title {
 		margin: 15px 0 0 0;
 
@@ -694,6 +695,7 @@ body {
 		color: $main-text;
 	}
 
+	// Description
 	&-description {
 		margin: 15px 0 0 0;
 
@@ -703,6 +705,7 @@ body {
 		color: $second-text;
 	}
 
+	// Send message button
 	&-send-message {
 		margin: 30px 0 0 0;
 
