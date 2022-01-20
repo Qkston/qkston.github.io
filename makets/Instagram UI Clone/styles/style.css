@@ -498,4 +498,45 @@ body {
   margin-right: 70px;
   cursor: pointer;
 }
+
+.chats-header-create {
+  cursor: pointer;
+}
+
+.chats-messages {
+  padding: 0 20px 400px 20px;
+}
+
+.chats-messages-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.chats-messages-block-profile-picture {
+  margin-right: 10px;
+  width: 56px;
+  height: 56px;
+}
+
+.chats-messages-block-text-nickname {
+  margin: 0 0 10px 0;
+  width: 70%;
+  font-size: 14px;
+  line-height: 11px;
+  text-transform: lowercase;
+  color: #262626;
+}
+
+.chats-messages-block-text-message {
+  margin: 0;
+  font-size: 14px;
+  line-height: 11px;
+  color: #8e8e8e;
+}
 /*# sourceMappingURL=style.css.map */

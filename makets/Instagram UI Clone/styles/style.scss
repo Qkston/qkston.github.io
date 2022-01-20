@@ -612,6 +612,53 @@ body {
 
 			cursor: pointer;
 		}
+
+		&-create {
+			cursor: pointer;
+		}
+	}
+
+	&-messages {
+		padding: 0 20px 400px 20px;
+
+		&-block {
+			display: flex;
+			align-items: center;
+
+			margin-bottom: 15px;
+
+			cursor: pointer;
+
+			&-profile-picture {
+				margin-right: 10px;
+
+				width: 56px;
+				height: 56px;
+			}
+
+			&-text {
+				&-nickname {
+					margin: 0 0 10px 0;
+
+					width: 70%;
+
+					font-size: 14px;
+					line-height: 11px;
+					text-transform: lowercase;
+
+					color: $main-text;
+				}
+
+				&-message {
+					margin: 0;
+
+					font-size: 14px;
+					line-height: 11px;
+
+					color: $second-text;
+				}
+			}
+		}
 	}
 }
 // #endregion
