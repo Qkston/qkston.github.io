@@ -581,9 +581,12 @@ body {
 // #endregion
 
 // #region Direct page
+
+// #region Left side
 .chats {
 	width: 350px;
 
+	// #region Header of chats section
 	&-header {
 		display: flex;
 		align-items: center;
@@ -596,6 +599,7 @@ body {
 		border-bottom: 1px solid $borders;
 		box-sizing: border-box;
 
+		// Nickname
 		&-account {
 			margin: 0 10px 0 0;
 
@@ -607,20 +611,25 @@ body {
 			color: $main-text;
 		}
 
+		// Switch account button
 		&-switch {
 			margin-right: 70px;
 
 			cursor: pointer;
 		}
 
+		// Create chats button
 		&-create {
 			cursor: pointer;
 		}
 	}
+	// #endregion
 
+	// #region Messages section
 	&-messages {
 		padding: 0 20px 400px 20px;
 
+		// Message block
 		&-block {
 			display: flex;
 			align-items: center;
@@ -629,6 +638,7 @@ body {
 
 			cursor: pointer;
 
+			// Profile picture
 			&-profile-picture {
 				margin-right: 10px;
 
@@ -636,7 +646,9 @@ body {
 				height: 56px;
 			}
 
+			// Section with text
 			&-text {
+				// Nickname
 				&-nickname {
 					margin: 0 0 10px 0;
 
@@ -649,6 +661,7 @@ body {
 					color: $main-text;
 				}
 
+				// Message
 				&-message {
 					margin: 0;
 
@@ -660,5 +673,8 @@ body {
 			}
 		}
 	}
+	// #endregion
 }
+// #endregion
+
 // #endregion
