@@ -1,7 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
 	const bgColor = document.querySelector(".bg-color"),
 		generateBtn = document.querySelector(".generate-btn"),
-		inputForHash = document.querySelector(".hash-color");
+		inputForHash = document.querySelector(".hash-color"),
+		copyBtn = document.querySelector(".copy");
 
 	generateColor();
 	bgColor.style.backgroundColor = inputForHash.value;
@@ -14,6 +15,22 @@ window.addEventListener("DOMContentLoaded", () => {
 	inputForHash.oninput = function (event) {
 		bgColor.style.backgroundColor = event.target.value;
 	};
+
+	copyBtn.addEventListener("click", () => {
+		inputForHash.focus();
+		inputForHash.select();
+		document.execCommand("copy");
+
+		copyBtn.style.color = "#4cbe5d";
+		copyBtn.textContent = "Copied successful!";
+
+		setTimeout(() => {
+			window.getSelection().removeAllRanges();
+
+			copyBtn.style.color = "#bebfc0";
+			copyBtn.textContent = "Click here for copy";
+		}, 3000);
+	});
 
 	function generateColor() {
 		let result = "";

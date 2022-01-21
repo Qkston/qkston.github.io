@@ -40,6 +40,14 @@ body {
 	box-sizing: border-box;
 }
 
+.copy {
+	margin-bottom: 5px;
+
+	font-weight: bold;
+	color: #bebfc0;
+	cursor: pointer;
+}
+
 .hash-color {
 	margin-bottom: 20px;
 
