@@ -40,6 +40,10 @@ body {
 	box-sizing: border-box;
 }
 
+.title {
+	margin-bottom: 20px;
+}
+
 .copy {
 	margin-bottom: 5px;
 
@@ -49,7 +53,7 @@ body {
 }
 
 .hash-color {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 	width: 250px;
 	height: 50px;
@@ -66,7 +70,22 @@ body {
 	outline: none;
 }
 
+.example {
+	margin-bottom: 30px;
+
+	font-weight: bold;
+	color: #bebfc0;
+}
+
+.example-hex,
+.example-rgb,
+.example-color {
+	cursor: pointer;
+}
+
 .generate-btn {
+	margin-bottom: 30px;
+
 	width: 150px;
 	height: 50px;
 
