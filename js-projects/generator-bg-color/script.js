@@ -16,16 +16,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	};
 
 	function generateColor() {
-		let array = [];
+		let result = "";
+		const characters = "0123456789abcdef";
 
 		for (let i = 0; i < 6; i++) {
-			array.push(Math.floor(Math.random() * 10));
+			result += characters.charAt(Math.floor(Math.random() * characters.length));
 		}
 
-		const rndColor = array.join("");
-
-		inputForHash.value = `#${rndColor}`;
-
-		return rndColor;
+		inputForHash.value = `#${result}`;
+		return result;
 	}
 });
