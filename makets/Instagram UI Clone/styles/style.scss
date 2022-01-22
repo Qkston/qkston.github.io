@@ -728,5 +728,126 @@ body {
 // #endregion
 
 // #region User profile page
+.main {
+	&-header {
+		width: 935px;
 
+		&-avatar-info {
+			display: flex;
+
+			margin-bottom: 60px;
+
+			&-avatar {
+				margin: 0 100px 0 70px;
+			}
+
+			&-info {
+				&-header {
+					display: flex;
+					align-items: center;
+
+					margin: 20px 0 25px 0;
+
+					&-nickname {
+						margin: 0 20px 0 0;
+
+						font-weight: 350;
+						font-size: 28px;
+						line-height: 32px;
+
+						color: $main-text;
+					}
+
+					&-follow-btn {
+						margin-right: 20px;
+						padding: 6px 24px;
+
+						width: 90px;
+						height: 30px;
+
+						background: $link;
+						border: none;
+						border-radius: 4px;
+
+						color: $light;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 18px;
+
+						cursor: pointer;
+					}
+
+					&-more {
+						cursor: pointer;
+					}
+				}
+
+				&-main {
+					display: flex;
+					margin-bottom: 20px;
+
+					&-block {
+						margin: 0 40px 0 0;
+
+						font-size: 16px;
+						line-height: 18px;
+
+						color: $main-text;
+
+						cursor: pointer;
+
+						&-number {
+							font-weight: 600;
+							font-size: 16px;
+							line-height: 18px;
+
+							color: $main-text;
+						}
+					}
+				}
+
+				&-footer {
+					&-name-surname {
+						margin: 0;
+
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 24px;
+
+						color: $main-text;
+					}
+				}
+			}
+		}
+		&-highlights {
+			display: flex;
+
+			margin: 0 0 55px 80px;
+
+			&-block {
+				margin-right: 60px;
+
+				cursor: pointer;
+				text-align: center;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&-description {
+					margin: 20px 0 0 0;
+
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 16px;
+
+					text-align: center;
+					letter-spacing: 0.12px;
+
+					color: $main-text;
+				}
+			}
+		}
+	}
+}
 // #endregion
