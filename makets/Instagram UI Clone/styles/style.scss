@@ -729,9 +729,11 @@ body {
 
 // #region User profile page
 .main {
+	// #region Header
 	&-header {
 		width: 935px;
 
+		// #region Section with info
 		&-avatar-info {
 			display: flex;
 
@@ -742,12 +744,14 @@ body {
 			}
 
 			&-info {
+				// #region Header of section with info
 				&-header {
 					display: flex;
 					align-items: center;
 
 					margin: 20px 0 25px 0;
 
+					// Nickname
 					&-nickname {
 						margin: 0 20px 0 0;
 
@@ -758,6 +762,7 @@ body {
 						color: $main-text;
 					}
 
+					// Follow button
 					&-follow-btn {
 						margin-right: 20px;
 						padding: 6px 24px;
@@ -777,15 +782,19 @@ body {
 						cursor: pointer;
 					}
 
+					// More button
 					&-more {
 						cursor: pointer;
 					}
 				}
+				// #endregion
 
+				// #region Main content of section with info
 				&-main {
 					display: flex;
 					margin-bottom: 20px;
 
+					// Posts, followers, following
 					&-block {
 						margin: 0 40px 0 0;
 
@@ -796,6 +805,7 @@ body {
 
 						cursor: pointer;
 
+						// Number
 						&-number {
 							font-weight: 600;
 							font-size: 16px;
@@ -805,8 +815,11 @@ body {
 						}
 					}
 				}
+				// #endregion
 
+				// #region Footer of section with info
 				&-footer {
+					// Name and surname
 					&-name-surname {
 						margin: 0;
 
@@ -817,13 +830,18 @@ body {
 						color: $main-text;
 					}
 				}
+				// #endregion
 			}
 		}
+		// #endregion
+
+		// #region Highlights
 		&-highlights {
 			display: flex;
 
 			margin: 0 0 55px 80px;
 
+			// Highlight block
 			&-block {
 				margin-right: 60px;
 
@@ -834,6 +852,7 @@ body {
 					margin-right: 0;
 				}
 
+				// Highlight desription
 				&-description {
 					margin: 20px 0 0 0;
 
@@ -848,6 +867,8 @@ body {
 				}
 			}
 		}
+		// #endregion
 	}
+	// #endregion
 }
 // #endregion
