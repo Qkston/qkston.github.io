@@ -735,6 +735,7 @@ body {
 
 	margin-bottom: 0;
 }
+// #region Main
 .main {
 	// #region Header
 	&-header {
@@ -894,6 +895,7 @@ body {
 
 			box-sizing: border-box;
 
+			// Block
 			&-block {
 				display: flex;
 				align-items: center;
@@ -906,6 +908,7 @@ body {
 					margin-right: 0;
 				}
 
+				// Image
 				&-img {
 					margin-right: 6px;
 
@@ -913,6 +916,7 @@ body {
 					height: 12px;
 				}
 
+				// Section name
 				&-name {
 					color: $second-text;
 					font-weight: 600;
@@ -930,25 +934,29 @@ body {
 
 			cursor: pointer;
 
+			// For 3 and 6 photos
 			&:nth-child(3n + 4) {
 				margin-right: 0;
 			}
 
+			// For 3 last items
 			&:nth-last-child(-n + 3) {
 				margin-bottom: 0;
 			}
 		}
 		// #endregion
 	}
-
 	// #endregion
 }
+// #endregion
+
 // #region Footer
 .footer {
 	position: fixed;
 	left: calc(50% - 662px / 2);
 	bottom: 70px;
 
+	// Top section
 	&-top {
 		margin-bottom: 15px;
 
@@ -957,6 +965,7 @@ body {
 		}
 	}
 
+	// Bottom section
 	&-bottom {
 		&-more {
 			margin-right: 25px;
@@ -965,6 +974,7 @@ body {
 		}
 	}
 
+	// For top and bottom section
 	&-top,
 	&-bottom {
 		&-section {
