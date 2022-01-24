@@ -732,6 +732,8 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+
+	margin-bottom: 0;
 }
 .main {
 	// #region Header
@@ -941,4 +943,43 @@ body {
 
 	// #endregion
 }
+// #region Footer
+.footer {
+	position: fixed;
+	left: calc(50% - 662px / 2);
+	bottom: 70px;
+
+	&-top {
+		margin-bottom: 15px;
+
+		&-section {
+			margin-right: 15px;
+		}
+	}
+
+	&-bottom {
+		&-more {
+			margin-right: 25px;
+
+			cursor: pointer;
+		}
+	}
+
+	&-top,
+	&-bottom {
+		&-section {
+			color: $second-text;
+			font-size: 12px;
+			line-height: 11px;
+			text-transform: capitalize;
+
+			cursor: pointer;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+// #endregion
 // #endregion
