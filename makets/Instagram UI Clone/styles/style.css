@@ -180,6 +180,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-transform: lowercase;
+  text-decoration: none;
 }
 
 .main-block .posts-block-post-header-more {
