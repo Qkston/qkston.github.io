@@ -875,5 +875,54 @@ body {
 		// #endregion
 	}
 	// #endregion
+
+	// #region Main
+	.profile-photos {
+		width: 935px;
+
+		border-top: 1px solid $borders;
+
+		// #region Sections
+		&-sections {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			padding: 20px 0;
+
+			box-sizing: border-box;
+
+			&-block {
+				display: flex;
+				align-items: center;
+
+				margin-right: 60px;
+
+				cursor: pointer;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&-img {
+					margin-right: 6px;
+
+					width: 12px;
+					height: 12px;
+				}
+
+				&-name {
+					color: $second-text;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 18px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		// #endregion
+	}
+
+	// #endregion
 }
 // #endregion
