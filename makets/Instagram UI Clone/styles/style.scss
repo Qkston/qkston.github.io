@@ -728,6 +728,11 @@ body {
 // #endregion
 
 // #region User profile page
+.user-profile {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
 .main {
 	// #region Header
 	&-header {
