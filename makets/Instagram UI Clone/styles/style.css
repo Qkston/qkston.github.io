@@ -837,6 +837,10 @@ body {
   margin-bottom: 30px;
 }
 
+.explore-first-row-big-img {
+  cursor: pointer;
+}
+
 .explore-other-row {
   margin-top: 25px;
 }

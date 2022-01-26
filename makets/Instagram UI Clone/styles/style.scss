@@ -1019,6 +1019,13 @@ body {
 				}
 			}
 		}
+
+		// Big photo
+		&-big {
+			&-img {
+				cursor: pointer;
+			}
+		}
 	}
 
 	// Other rows
