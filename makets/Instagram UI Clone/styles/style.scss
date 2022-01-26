@@ -92,7 +92,7 @@ body {
 .main {
 	display: flex;
 	justify-content: center;
-	margin: 30px 0 10px 0;
+	margin: 30px auto 10px auto;
 
 	// #region Main block
 	&-block {
@@ -993,4 +993,47 @@ body {
 	}
 }
 // #endregion
+// #endregion
+
+// #region Explore
+.explore {
+	align-items: center;
+	flex-direction: column;
+
+	// First row
+	&-first-row {
+		display: flex;
+
+		// Small photo
+		&-small {
+			display: flex;
+			flex-direction: column;
+
+			margin-right: 30px;
+
+			&-img {
+				cursor: pointer;
+
+				&:first-child {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	// Other rows
+	&-other-row {
+		margin-top: 25px;
+
+		&-img {
+			margin-right: 25px;
+
+			cursor: pointer;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
 // #endregion
