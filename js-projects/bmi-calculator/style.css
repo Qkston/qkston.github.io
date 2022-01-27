@@ -62,8 +62,16 @@ body {
 	outline: none;
 }
 
+.bmi {
+	background: #fff;
+	color: #000;
+}
+
 .copy-info {
 	margin-top: 10px;
 
 	font-size: 12px;
+}
+.copy-done {
+	border: 2px solid #008000;
 }

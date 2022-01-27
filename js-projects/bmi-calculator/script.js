@@ -17,6 +17,18 @@ window.addEventListener("DOMContentLoaded", () => {
 		inputBMI.value = calcBMI(inputHeight.value, inputWeight.value);
 	});
 
+	inputBMI.addEventListener("click", () => {
+		inputBMI.focus();
+		inputBMI.select();
+		document.execCommand("copy");
+		inputHeight.focus();
+		inputBMI.classList.add("copy-done");
+
+		setTimeout(() => {
+			inputBMI.classList.remove("copy-done");
+		}, 4000);
+	});
+
 	function calcBMI(h, m) {
 		return (m / Math.pow(h / 100, 2)).toFixed(2);
 	}
