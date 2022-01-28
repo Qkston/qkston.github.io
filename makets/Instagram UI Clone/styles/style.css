@@ -869,10 +869,6 @@ body {
   display: flex;
 }
 
-.profile-photos-posts-left {
-  margin-right: 100px;
-}
-
 .profile-photos-posts-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,6 +883,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 100px;
 }
 
 .profile-photos-posts-right-title {

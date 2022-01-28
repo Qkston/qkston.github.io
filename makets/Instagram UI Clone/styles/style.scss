@@ -1045,6 +1045,8 @@ body {
 }
 // #endregion
 
+// #region My profile
+// Button for edit profile
 .edit-profile-btn {
 	padding: 0;
 	margin-right: 15px;
@@ -1056,19 +1058,20 @@ body {
 	border-radius: 4px;
 }
 
+// Main section on page with profile photos
 .profile-photos-posts {
 	display: flex;
 
-	&-left {
-		margin-right: 100px;
-	}
-
+	// Right section
 	&-right {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 
+		margin-left: 100px;
+
+		// Title of right section
 		&-title {
 			margin: 0 0 10px 0;
 
@@ -1079,6 +1082,7 @@ body {
 			color: $main-text;
 		}
 
+		// Description of right section
 		&-desription {
 			margin: 0 0 25px 0;
 
@@ -1089,6 +1093,7 @@ body {
 			color: $main-text;
 		}
 
+		// Google play and app store buttons
 		&-buttons {
 			&-googleplay,
 			&-appstore {
@@ -1098,6 +1103,7 @@ body {
 	}
 }
 
+// Footer
 .my-profile-footer {
 	display: block;
 	position: static;
@@ -1106,3 +1112,5 @@ body {
 
 	margin: 80px auto 0 auto;
 }
+
+// #endregion
