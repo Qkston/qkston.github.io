@@ -69,9 +69,18 @@ body {
 
 .copy-info {
 	margin-top: 10px;
+	margin-bottom: 30px;
 
 	font-size: 12px;
 }
 .copy-done {
 	border: 2px solid #008000;
+}
+
+.explanation {
+	margin-top: 20px;
+	padding: 0 30px;
+
+	font-size: 14px;
+	text-align: justify;
 }
