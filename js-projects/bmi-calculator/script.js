@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	// Calculation and explanation output
 	inputWeight.addEventListener("input", () => {
 		inputBMI.value = calcBMI(inputHeight.value, inputWeight.value);
 		checkResult(inputBMI);
@@ -25,6 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		checkResult(inputBMI);
 	});
 
+	// Click-copy
 	inputBMI.addEventListener("click", () => {
 		inputBMI.focus();
 		inputBMI.select();
@@ -38,10 +40,12 @@ window.addEventListener("DOMContentLoaded", () => {
 		}, 4000);
 	});
 
+	// Calculation
 	function calcBMI(h, m) {
 		return (m / Math.pow(h / 100, 2)).toFixed(2);
 	}
 
+	// Explanation output
 	function checkResult(input) {
 		if (input.value <= 18.5) {
 			explanationInput.innerHTML = `
