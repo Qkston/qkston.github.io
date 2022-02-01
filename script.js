@@ -37,7 +37,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	modalWindowBtn.addEventListener("click", (element) => {
 		element.preventDefault();
-
 		closeModal();
 	});
 
