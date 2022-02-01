@@ -574,6 +574,15 @@ textarea {
 	}
 }
 
+.show {
+	display: flex;
+	overflow-y: 0;
+}
+.hide {
+	display: none;
+	overflow: scroll;
+}
+
 .no-border {
 	border: none;
 }

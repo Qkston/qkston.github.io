@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+	const form = document.querySelector(".form-main");
 	const formInputs = document.querySelectorAll(".form-inputs");
 	const formInputsArr = Array.from(formInputs);
 
@@ -7,8 +8,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	const modalWindow = document.querySelector(".modal-window");
 	const modalWindowBtn = document.querySelector(".modal-window-main-btn");
 
-	sendFormBtn.addEventListener("click", (e) => {
-		e.preventDefault();
+	let hideModalTimeout;
+
+	sendFormBtn.addEventListener("click", (element) => {
+		element.preventDefault();
 		const requiredInputs = formInputsArr.some((element) => element.value === "");
 
 		if (requiredInputs) {
@@ -24,13 +27,33 @@ window.addEventListener("DOMContentLoaded", () => {
 				}, 3000);
 			});
 		} else {
-			modalWindow.style.display = "flex";
+			showModal();
+
+			hideModalTimeout = setTimeout(() => {
+				closeModal();
+			}, 5000);
 		}
 	});
 
-	modalWindowBtn.addEventListener("click", (e) => {
-		e.preventDefault();
-		modalWindow.style.display = "none";
-		window.location = "https://qkston.github.io/";
+	modalWindowBtn.addEventListener("click", (element) => {
+		element.preventDefault();
+
+		closeModal();
 	});
+
+	function showModal() {
+		modalWindow.classList.add("show");
+		modalWindow.classList.remove("hide");
+
+		document.body.style.overflow = "hidden";
+		form.reset();
+	}
+
+	function closeModal() {
+		modalWindow.classList.add("hide");
+		modalWindow.classList.remove("show");
+
+		clearTimeout(hideModalTimeout);
+		document.body.style.overflow = "";
+	}
 });

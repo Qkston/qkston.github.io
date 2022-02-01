@@ -610,6 +610,18 @@ textarea:focus {
   margin-bottom: 50px;
 }
 
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: 0;
+}
+
+.hide {
+  display: none;
+  overflow: scroll;
+}
+
 .no-border {
   border: none;
 }
