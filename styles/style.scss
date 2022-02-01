@@ -408,7 +408,6 @@ textarea {
 				height: 50px;
 				padding: 20px 0 20px 20px;
 				margin-right: 30px;
-				border: 0;
 				box-sizing: border-box;
 			}
 
@@ -417,7 +416,6 @@ textarea {
 				height: 50px;
 				padding: 20px 0 20px 20px;
 				// margin-right: 30px;
-				border: 0;
 				box-sizing: border-box;
 			}
 
@@ -428,7 +426,6 @@ textarea {
 				margin-top: 20px;
 				// margin-right: 30px;
 				resize: none;
-				border: 0;
 				box-sizing: border-box;
 				font-family: "Roboto";
 			}
@@ -575,6 +572,13 @@ textarea {
 			margin-bottom: 50px;
 		}
 	}
+}
+
+.no-border {
+	border: none;
+}
+.error {
+	border: 1px solid #ff0000;
 }
 
 // #region Media requests

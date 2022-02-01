@@ -1,39 +1,36 @@
-const formInputs = document.querySelectorAll(".form-inputs");
-const formInputsArr = Array.from(formInputs);
+window.addEventListener("DOMContentLoaded", () => {
+	const formInputs = document.querySelectorAll(".form-inputs");
+	const formInputsArr = Array.from(formInputs);
 
-const sendFormBtn = document.getElementById("send-form-button");
+	const sendFormBtn = document.getElementById("send-form-button");
 
-const modalWindow = document.querySelector(".modal-window");
-const modalWindowBtn = document.querySelector(".modal-window-main-btn");
+	const modalWindow = document.querySelector(".modal-window");
+	const modalWindowBtn = document.querySelector(".modal-window-main-btn");
 
-sendFormBtn.addEventListener("click", (e) => {
-	e.preventDefault();
-	const requiredInputs = formInputsArr.some((element) => element.value === "");
+	sendFormBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		const requiredInputs = formInputsArr.some((element) => element.value === "");
 
-	if (requiredInputs) {
-		console.log("bad");
-
-		formInputsArr.forEach((element) => {
-			if (element.value === "") {
-				element.style.border = "1px solid red";
-			}
-		});
-
-		setTimeout(() => {
+		if (requiredInputs) {
 			formInputsArr.forEach((element) => {
 				if (element.value === "") {
-					element.style.border = "none";
+					element.classList.add("error");
+					element.classList.remove("no-border");
 				}
-			});
-		}, 3000);
-	} else {
-		console.log("good");
-		modalWindow.style.display = "flex";
-	}
-});
 
-modalWindowBtn.addEventListener("click", (e) => {
-	e.preventDefault();
-	modalWindow.style.display = "none";
-	window.location = "https://qkston.github.io/";
+				setTimeout(() => {
+					element.classList.add("no-border");
+					element.classList.remove("error");
+				}, 3000);
+			});
+		} else {
+			modalWindow.style.display = "flex";
+		}
+	});
+
+	modalWindowBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		modalWindow.style.display = "none";
+		window.location = "https://qkston.github.io/";
+	});
 });
