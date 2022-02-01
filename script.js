@@ -28,10 +28,15 @@ window.addEventListener("DOMContentLoaded", () => {
 			});
 		} else {
 			showModal();
-
 			hideModalTimeout = setTimeout(() => {
 				closeModal();
 			}, 5000);
+		}
+	});
+
+	document.addEventListener("keydown", (event) => {
+		if (event.code === "Escape" && modalWindow.classList.contains("show")) {
+			closeModal();
 		}
 	});
 
