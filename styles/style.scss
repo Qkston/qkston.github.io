@@ -577,9 +577,9 @@ textarea {
 }
 
 .language-switcher {
-	position: fixed;
+	position: absolute;
 	top: 75px;
-	right: 80px;
+	right: 300px;
 	text-align: center;
 
 	&-icon {

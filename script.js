@@ -64,12 +64,18 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 
 	// Language switcher
-	const icon = document.querySelector(".language-switcher-icon"),
-		languageBlock = document.querySelector(".language-switcher-block"),
+	const languageBlock = document.querySelector(".language-switcher-block"),
 		languages = languageBlock.querySelectorAll(".language-switcher-block-element");
 
-	icon.addEventListener("click", () => {
-		languageBlock.classList.toggle("show");
+	window.addEventListener("click", (e) => {
+		if (!e.target.classList.contains("fas")) {
+			languageBlock.classList.remove("show");
+		} else {
+			languageBlock.classList.toggle("show");
+		}
+	});
+	window.addEventListener("scroll", () => {
+		languageBlock.classList.remove("show");
 	});
 
 	languages.forEach((item) => {
@@ -77,10 +83,14 @@ window.addEventListener("DOMContentLoaded", () => {
 			if (e.target.textContent === "Английский" || e.target.textContent === "English") {
 				if (location.href !== "https://qkston.github.io/english.html") {
 					location.href = "https://qkston.github.io/english.html";
+				} else {
+					languageBlock.classList.remove("show");
 				}
 			} else if (e.target.textContent === "Русский" || e.target.textContent === "Russian") {
 				if (location.href !== "https://qkston.github.io/") {
 					location.href = "https://qkston.github.io/";
+				} else {
+					languageBlock.classList.remove("show");
 				}
 			}
 		});
