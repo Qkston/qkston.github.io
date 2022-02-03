@@ -66,9 +66,23 @@ window.addEventListener("DOMContentLoaded", () => {
 	// Language switcher
 	const icon = document.querySelector(".language-switcher-icon"),
 		languageBlock = document.querySelector(".language-switcher-block"),
-		language = languageBlock.querySelectorAll(".language-switcher-block-element");
+		languages = languageBlock.querySelectorAll(".language-switcher-block-element");
 
 	icon.addEventListener("click", () => {
 		languageBlock.classList.toggle("show");
+	});
+
+	languages.forEach((item) => {
+		item.addEventListener("click", (e) => {
+			if (e.target.textContent === "Английский" || e.target.textContent === "English") {
+				if (location.href !== "https://qkston.github.io/english.html") {
+					location.href = "https://qkston.github.io/english.html";
+				}
+			} else if (e.target.textContent === "Русский" || e.target.textContent === "Russian") {
+				if (location.href !== "https://qkston.github.io/") {
+					location.href = "https://qkston.github.io/";
+				}
+			}
+		});
 	});
 });
