@@ -544,6 +544,7 @@ textarea {
 	top: 0;
 	bottom: 0;
 	background: rgba($color: $dark, $alpha: 0.7);
+	overflow-y: 0;
 
 	&-main {
 		display: flex;
@@ -574,9 +575,55 @@ textarea {
 	}
 }
 
+.language-switcher {
+	position: fixed;
+	top: 75px;
+	right: 80px;
+	text-align: center;
+
+	&-icon {
+		color: $navy-blue;
+		opacity: 0.5;
+
+		font-size: 24px;
+		cursor: pointer;
+		transition: 0.2s;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&-block {
+		display: none;
+		position: absolute;
+		margin-top: 10px;
+		right: 10px;
+		width: 100px;
+
+		background: $light;
+		border-radius: 4px;
+
+		font-size: 11px;
+
+		transition: 0.2s;
+
+		&-element {
+			cursor: pointer;
+			transition: 0.2s;
+
+			&:hover {
+				background: darken($color: $light, $amount: 20%);
+			}
+			&:active {
+				background: darken($color: $light, $amount: 40%);
+			}
+		}
+	}
+}
+
 .show {
 	display: flex;
-	overflow-y: 0;
 }
 .hide {
 	display: none;

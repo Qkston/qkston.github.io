@@ -571,6 +571,7 @@ textarea:focus {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
+  overflow-y: 0;
 }
 
 .modal-window-main {
@@ -610,11 +611,57 @@ textarea:focus {
   margin-bottom: 50px;
 }
 
+.language-switcher {
+  position: fixed;
+  top: 75px;
+  right: 80px;
+  text-align: center;
+}
+
+.language-switcher-icon {
+  color: #34547a;
+  opacity: 0.5;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.language-switcher-icon:hover {
+  opacity: 1;
+}
+
+.language-switcher-block {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  right: 10px;
+  width: 100px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-size: 11px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.language-switcher-block-element {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.language-switcher-block-element:hover {
+  background: #cccccc;
+}
+
+.language-switcher-block-element:active {
+  background: #999999;
+}
+
 .show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-y: 0;
 }
 
 .hide {
