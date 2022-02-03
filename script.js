@@ -5,11 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	const sendFormBtn = document.getElementById("send-form-button");
 
-	const modalWindow = document.querySelector(".modal-window");
-	const modalWindowBtn = document.querySelector(".modal-window-main-btn");
-
 	let hideModalTimeout;
 
+	// Form
 	sendFormBtn.addEventListener("click", (element) => {
 		element.preventDefault();
 		const requiredInputs = formInputsArr.some((element) => element.value === "");
@@ -34,15 +32,19 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	document.addEventListener("keydown", (event) => {
-		if (event.code === "Escape" && modalWindow.classList.contains("show")) {
-			closeModal();
-		}
-	});
+	// Modal
+	const modalWindow = document.querySelector(".modal-window"),
+		modalWindowBtn = document.querySelector(".modal-window-main-btn");
 
 	modalWindowBtn.addEventListener("click", (element) => {
 		element.preventDefault();
 		closeModal();
+	});
+
+	document.addEventListener("keydown", (event) => {
+		if (event.code === "Escape" && modalWindow.classList.contains("show")) {
+			closeModal();
+		}
 	});
 
 	function showModal() {
@@ -60,4 +62,13 @@ window.addEventListener("DOMContentLoaded", () => {
 		clearTimeout(hideModalTimeout);
 		document.body.style.overflow = "";
 	}
+
+	// Language switcher
+	const icon = document.querySelector(".language-switcher-icon"),
+		languageBlock = document.querySelector(".language-switcher-block"),
+		language = languageBlock.querySelectorAll(".language-switcher-block-element");
+
+	icon.addEventListener("click", () => {
+		languageBlock.classList.toggle("show");
+	});
 });

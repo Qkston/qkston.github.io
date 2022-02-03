@@ -551,6 +551,7 @@ textarea {
 		justify-content: space-between;
 		align-items: center;
 		flex-direction: column;
+		margin: 10% auto;
 		width: 700px;
 		height: 400px;
 		background: $light;
@@ -623,11 +624,10 @@ textarea {
 }
 
 .show {
-	display: flex;
+	display: block;
 }
 .hide {
 	display: none;
-	overflow: scroll;
 }
 
 .no-border {

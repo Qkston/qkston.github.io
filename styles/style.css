@@ -588,6 +588,7 @@ textarea:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 10% auto;
   width: 700px;
   height: 400px;
   background: #ffffff;
@@ -659,14 +660,11 @@ textarea:focus {
 }
 
 .show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .hide {
   display: none;
-  overflow: scroll;
 }
 
 .no-border {
