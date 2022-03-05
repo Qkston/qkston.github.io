@@ -50,14 +50,6 @@
 })();
 
 // closeBtn = document.getElementById("close-btn"),
-// requestBtn = document.getElementById("request-password-change");
-
-//  // Request password change on forgot password page
-//  requestBtn.addEventListener("click", e => {
-//    e.preventDefault();
-
-//    location.href = "https://qkston.github.io/makets/Registration%20flow/change-password.html";
-//  });
 
 //  // Close button on success register page
 //  closeBtn.addEventListener("click", e => {
