@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Success register</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success register</title>
 
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-		<!-- My styles -->
-		<link rel="stylesheet" href="styles/style.css" />
-	</head>
-	<body>
-		<div class="wrap">
-			<main class="success-page-main">
-				<!-- Right side close button -->
-				<section class="success-page-main-right-close">
-					<a class="link" href="https://qkston.github.io/makets/Registration%20flow/log-in.html">
-						<img class="success-page-main-right-close-button" src="img/success-registration/close-btn.png" alt="Close button" />
-					</a>
-				</section>
-				<!-- Header with main text -->
-				<section class="success-page-main-header">
-					<h1 class="success-page-main-header-title">Success</h1>
-					<p class="success-page-main-header-text">
-						We have succsefuly created your new account. But before you start you will have to activate it. We have sent an activation mail to
-						the email you provided during registration. It should arrive in a couple of minutes
-					</p>
-				</section>
-				<!-- Email block -->
-				<section class="success-page-main-email">
-					<p class="success-page-main-email-text">
-						IF the email has not arrived during 30s you can still click the button below to resend it. We guarantee it will come this time!
-					</p>
-					<div id="timer" class="success-page-main-email-timer">
-						<div id="done-timer" class="success-page-main-email-timer-done"></div>
-						<p id="number" class="success-page-main-email-timer-number">30s</p>
-					</div>
-					<a id="resend-link" class="link" href="#" style="display: none">Re-send the verification email</a>
-				</section>
-				<!-- Main close button -->
-				<section class="success-page-main-close">
-					<button id="close-btn" class="success-page-main-close-button">Close</button>
-				</section>
-				<!-- Bottom images -->
-				<section class="success-page-main-bottom-images">
-					<img src="img/success-registration/left-side-image.png" alt="" class="success-page-main-bottom-images-left" />
-					<img src="img/success-registration/right-side-image.png" alt="" class="success-page-main-bottom-images-right" />
-				</section>
-			</main>
-		</div>
+    <!-- My styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <main class="success-page-main">
+        <!-- Right side close button -->
+        <section class="success-page-main-right-close">
+          <a class="link" href="https://qkston.github.io/makets/Registration%20flow/log-in.html">
+            <img class="success-page-main-right-close-button" src="img/success-registration/close-btn.png" alt="Close button" />
+          </a>
+        </section>
+        <!-- Header with main text -->
+        <section class="success-page-main-header">
+          <h1 class="success-page-main-header-title">Success</h1>
+          <p class="success-page-main-header-text">
+            We have succsefuly created your new account. But before you start you will have to activate it. We have sent an activation mail to the
+            email you provided during registration. It should arrive in a couple of minutes
+          </p>
+        </section>
+        <!-- Email block -->
+        <section class="success-page-main-email">
+          <p class="success-page-main-email-text">
+            IF the email has not arrived during 30s you can still click the button below to resend it. We guarantee it will come this time!
+          </p>
+          <div id="timer" class="success-page-main-email-timer">
+            <div id="done-timer" class="success-page-main-email-timer-done"></div>
+            <p id="number" class="success-page-main-email-timer-number">30s</p>
+          </div>
+          <a id="resend-link" class="link" href="#" style="display: none">Re-send the verification email</a>
+        </section>
+        <!-- Main close button -->
+        <section class="success-page-main-close">
+          <button id="close-btn" class="success-page-main-close-button">Close</button>
+        </section>
+        <!-- Bottom images -->
+        <section class="success-page-main-bottom-images">
+          <img src="img/success-registration/left-side-image.png" alt="" class="success-page-main-bottom-images-left" />
+          <img src="img/success-registration/right-side-image.png" alt="" class="success-page-main-bottom-images-right" />
+        </section>
+      </main>
+    </div>
 
-		<script src="form.js"></script>
-		<script src="timer.js"></script>
-	</body>
+    <script src="form.js"></script>
+    <script src="timer.js"></script>
+  </body>
 </html>

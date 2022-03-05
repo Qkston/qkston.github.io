@@ -1,142 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Registration flow</title>
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration flow</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-		<!-- My styles -->
-		<link rel="stylesheet" href="styles/style.css" />
-	</head>
-	<body>
-		<div class="wrap">
-			<!-- Left side info -->
-			<main class="main">
-				<!-- Already member section -->
-				<header class="main-already-member">
-					<a class="link main-already-member-text" href="https://qkston.github.io/makets/Registration%20flow/log-in.html">
-						Already a member?
-						<img src="img/registration-form/user-icon.png" alt="User" width="18" />
-					</a>
-				</header>
+    <!-- My styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Left side info -->
+      <main class="main">
+        <!-- Already member section -->
+        <header class="main-already-member">
+          <a class="link main-already-member-text" href="https://qkston.github.io/makets/Registration%20flow/log-in.html">
+            Already a member?
+            <img src="img/registration-form/user-icon.png" alt="User" width="18" />
+          </a>
+        </header>
 
-				<!-- Main form -->
-				<form id="registration" class="main-form" method="post">
-					<!-- Form's title -->
-					<section class="main-form-title">
-						<h1 class="main-form-title-title">Input your information</h1>
-						<p class="main-form-title-terms">
-							We need you to help us with some basic information for your account creation. Here are our
-							<a class="link" href="#">terms and conditins</a>. Please read them carefully. We are GDRP compliiant
-						</p>
-					</section>
+        <!-- Main form -->
+        <form id="registration" class="main-form" method="post">
+          <!-- Form's title -->
+          <section class="main-form-title">
+            <h1 class="main-form-title-title">Input your information</h1>
+            <p class="main-form-title-terms">
+              We need you to help us with some basic information for your account creation. Here are our
+              <a class="link" href="#">terms and conditins</a>. Please read them carefully. We are GDRP compliiant
+            </p>
+          </section>
 
-					<!-- First name -->
-					<label for="first-name" class="main-form-label main-form-label-left">
-						<p class="main-form-label-title">First name</p>
-						<span class="main-form-label-error">Please fill out this field</span>
-						<input type="text" name="first-name" placeholder="John" class="main-form-input required-input" />
-					</label>
+          <!-- First name -->
+          <label for="first-name" class="main-form-label main-form-label-left">
+            <p class="main-form-label-title">First name</p>
+            <span class="main-form-label-error">Please fill out this field</span>
+            <input type="text" name="first-name" placeholder="John" class="main-form-input required-input" />
+          </label>
 
-					<!-- Last name -->
-					<label for="last-name" class="main-form-label">
-						<p class="main-form-label-title">Last name</p>
-						<span class="main-form-label-error">Please fill out this field</span>
-						<input type="text" name="last-name" placeholder="Smit" class="main-form-input required-input" />
-					</label>
+          <!-- Last name -->
+          <label for="last-name" class="main-form-label">
+            <p class="main-form-label-title">Last name</p>
+            <span class="main-form-label-error">Please fill out this field</span>
+            <input type="text" name="last-name" placeholder="Smit" class="main-form-input required-input" />
+          </label>
 
-					<!-- Company -->
-					<label for="company" class="main-form-label main-form-label-left">
-						<p class="main-form-label-title">Company</p>
-						<span class="main-form-label-error">Please fill out this field</span>
-						<input type="text" name="company" placeholder="John Smit" class="main-form-input required-input" />
-					</label>
+          <!-- Company -->
+          <label for="company" class="main-form-label main-form-label-left">
+            <p class="main-form-label-title">Company</p>
+            <span class="main-form-label-error">Please fill out this field</span>
+            <input type="text" name="company" placeholder="John Smit" class="main-form-input required-input" />
+          </label>
 
-					<!-- Work email -->
-					<label for="work-email" class="main-form-label">
-						<p class="main-form-label-title">Work email</p>
-						<span class="main-form-label-error">Please fill out this field</span>
-						<input type="text" name="work-email" placeholder="John Smit" class="main-form-input required-input" />
-					</label>
+          <!-- Work email -->
+          <label for="work-email" class="main-form-label">
+            <p class="main-form-label-title">Work email</p>
+            <span class="main-form-label-error">Please fill out this field</span>
+            <input type="text" name="work-email" placeholder="John Smit" class="main-form-input required-input" />
+          </label>
 
-					<!-- Optional section -->
-					<section class="main-form-optional">
-						<!-- Number of employees -->
-						<label for="employees" class="main-form-label main-form-label-left">
-							<p class="main-form-optional-title">Number of employees</p>
-							<small class="main-form-optional-small">(optional)</small>
-							<!-- Buttons -->
-							<div class="main-form-optional-inputs">
-								<button class="main-form-optional-inputs-btn">0<20</button>
-								<button class="main-form-optional-inputs-btn">20<50</button>
-								<button class="main-form-optional-inputs-btn">50<100</button>
-								<button class="main-form-optional-inputs-btn">100<...</button>
-							</div>
-						</label>
+          <!-- Optional section -->
+          <section class="main-form-optional">
+            <!-- Number of employees -->
+            <label for="employees" class="main-form-label main-form-label-left">
+              <p class="main-form-optional-title">Number of employees</p>
+              <small class="main-form-optional-small">(optional)</small>
+              <!-- Buttons -->
+              <div class="main-form-optional-inputs">
+                <button class="main-form-optional-inputs-btn">0<20</button>
+                <button class="main-form-optional-inputs-btn">20<50</button>
+                <button class="main-form-optional-inputs-btn">50<100</button>
+                <button class="main-form-optional-inputs-btn">100<...</button>
+              </div>
+            </label>
 
-						<!-- Phone number -->
-						<label for="phone-number" class="main-form-label">
-							<p class="main-form-optional-title">Phone number</p>
-							<small class="main-form-optional-small">(optional)</small>
-							<div class="main-form-optional-inputs">
-								<!-- Left side list of country codes -->
-								<select class="main-form-optional-inputs-list">
-									<option value="" disabled selected hidden>+000</option>
-									<option value="+380">+380</option>
-									<option value="+7">+7</option>
-									<option value="+4">+4</option>
-								</select>
-								<!-- Right side for input number phone -->
-								<input type="text" name="phone-number" placeholder="00 000 000" class="main-form-input main-form-optional-inputs-phone" />
-							</div>
-						</label>
-					</section>
+            <!-- Phone number -->
+            <label for="phone-number" class="main-form-label">
+              <p class="main-form-optional-title">Phone number</p>
+              <small class="main-form-optional-small">(optional)</small>
+              <div class="main-form-optional-inputs">
+                <!-- Left side list of country codes -->
+                <select class="main-form-optional-inputs-list">
+                  <option value="" disabled selected hidden>+000</option>
+                  <option value="+380">+380</option>
+                  <option value="+7">+7</option>
+                  <option value="+4">+4</option>
+                </select>
+                <!-- Right side for input number phone -->
+                <input type="text" name="phone-number" placeholder="00 000 000" class="main-form-input main-form-optional-inputs-phone" />
+              </div>
+            </label>
+          </section>
 
-					<!-- Section for password -->
-					<section class="main-form-passwords">
-						<!-- Password -->
-						<label for="password" class="main-form-label main-form-label-left">
-							<p class="main-form-label-title">Password</p>
-							<span class="main-form-label-error">Please fill out this field</span>
-							<input type="password" name="password" class="main-form-input password-inputs required-input" />
-						</label>
+          <!-- Section for password -->
+          <section class="main-form-passwords">
+            <!-- Password -->
+            <label for="password" class="main-form-label main-form-label-left">
+              <p class="main-form-label-title">Password</p>
+              <span class="main-form-label-error">Please fill out this field</span>
+              <input type="password" name="password" class="main-form-input password-inputs required-input" />
+            </label>
 
-						<!-- Confirm password -->
-						<label for="confirm-password" class="main-form-label">
-							<p class="main-form-label-title">Confirm password</p>
-							<span id="error-passwords" class="main-form-label-passwords-not-match">Passwords do not match</span>
-							<span class="main-form-label-error">Please fill out this field</span>
-							<input type="password" name="confirm-password" class="main-form-input password-inputs required-input" />
-						</label>
-					</section>
+            <!-- Confirm password -->
+            <label for="confirm-password" class="main-form-label">
+              <p class="main-form-label-title">Confirm password</p>
+              <span id="error-passwords" class="main-form-label-passwords-not-match">Passwords do not match</span>
+              <span class="main-form-label-error">Please fill out this field</span>
+              <input type="password" name="confirm-password" class="main-form-input password-inputs required-input" />
+            </label>
+          </section>
 
-					<!-- Lower register button -->
-					<section class="main-form-submit">
-						<!-- Checkbox and terms -->
-						<div class="main-form-submit-checkbox">
-							<input id="default-checkbox" class="main-form-submit-checkbox-input" type="checkbox" />
-							<span id="agree-terms" class="main-form-submit-checkbox-text"
-								>I agree with <a class="link" href="#">terms and conditins</a>.</span
-							>
-						</div>
-						<!-- Button -->
-						<input id="register-button" class="main-form-submit-button" type="submit" value="Register" />
-					</section>
-				</form>
-			</main>
+          <!-- Lower register button -->
+          <section class="main-form-submit">
+            <!-- Checkbox and terms -->
+            <div class="main-form-submit-checkbox">
+              <input id="default-checkbox" class="main-form-submit-checkbox-input" type="checkbox" />
+              <span id="agree-terms" class="main-form-submit-checkbox-text">I agree with <a class="link" href="#">terms and conditins</a>.</span>
+            </div>
+            <!-- Button -->
+            <input id="register-button" class="main-form-submit-button" type="submit" value="Register" />
+          </section>
+        </form>
+      </main>
 
-			<!-- Right side image -->
-			<aside class="image">
-				<img src="img/registration-form/right-side-image.png" alt="" />
-			</aside>
-		</div>
+      <!-- Right side image -->
+      <aside class="image">
+        <img src="img/registration-form/right-side-image.png" alt="" />
+      </aside>
+    </div>
 
-		<script src="error.js"></script>
-		<script src="form.js"></script>
-	</body>
+    <script src="error.js"></script>
+    <script src="form.js"></script>
+  </body>
 </html>

@@ -10,680 +10,680 @@ $form-input-border: #d1d1d1;
 $image-bg: #f9faff;
 
 * {
-	font-family: "Roboto", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: 0.25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.25px;
 }
 
 body {
-	margin: 0;
-	background: $body-bg;
+  margin: 0;
+  background: $body-bg;
 }
 
 .link {
-	color: $blue;
-	font-weight: 700;
-	text-decoration: none;
+  color: $blue;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .main-header {
-	&-title {
-		margin: 0 0 35px 0;
+  &-title {
+    margin: 0 0 35px 0;
 
-		font-weight: bold;
-		font-size: 54px;
-		line-height: 68px;
-		color: $headers;
-	}
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 68px;
+    color: $headers;
+  }
 
-	&-description {
-		margin: 0 0 40px 0;
-		width: 270px;
+  &-description {
+    margin: 0 0 40px 0;
+    width: 270px;
 
-		font-size: 14px;
-		line-height: 28px;
-		letter-spacing: 0.25px;
-		color: $secondary-text;
-	}
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: $secondary-text;
+  }
 }
 
 .wrap {
-	display: flex;
-	margin: 40px auto;
-	width: 1440px;
-	height: 1020px;
-	background: $light;
-
-	// #region Registration page
-	.main {
-		position: absolute;
-		z-index: 1;
-		padding: 80px 100px;
-		width: 850px;
-		box-sizing: border-box;
-
-		// #region Already member
-		&-already-member {
-			display: flex;
-			justify-content: end;
-			margin-bottom: 50px;
-
-			&-text {
-				display: flex;
-				align-items: center;
-				font-weight: normal;
-
-				img {
-					margin: 0 0 0 15px;
-				}
-			}
-		}
-
-		// #endregion
-
-		// #region Main form
-		&-form {
-			display: flex;
-			flex-wrap: wrap;
-			width: 650px;
-
-			// #region Title
-			&-title {
-				display: flex;
-				margin-bottom: 40px;
-				padding: 0 0 40px 0;
-
-				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
-
-				&-title {
-					width: 280px;
-					margin: 0;
-					margin-right: 60px;
-					color: $headers;
-					font-weight: bold;
-					font-size: 54px;
-					line-height: 68px;
-				}
-
-				&-terms {
-					width: 300px;
-					color: $secondary-text;
-					font-size: 14px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-				}
-			}
-			// #endregion
-
-			// #region Styles for labels
-			&-label {
-				display: block;
-
-				&-title {
-					display: inline-block;
-					margin: 0;
-					width: 55%;
-
-					color: $form-text;
-					font-weight: normal;
-					font-size: 12px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-				}
-
-				&-left {
-					margin-right: 45px;
-				}
-
-				&-passwords-not-match {
-					display: none;
-					margin-left: -10px;
-					color: red;
-
-					font-weight: normal;
-					font-size: 12px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-				}
-
-				&-error {
-					display: none;
-					color: red;
-
-					font-weight: normal;
-					font-size: 12px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-				}
-			}
-
-			// Styles for inputs
-			&-input {
-				display: block;
-				width: 300px;
-				height: 50px;
-				margin-bottom: 25px;
-				padding: 15px 0 20px 15px;
-				border: 1px solid $form-input-border;
-				box-sizing: border-box;
-
-				&:focus {
-					outline: none;
-				}
-			}
-
-			// Syles for optional section
-			&-optional {
-				display: flex;
-				margin: 15px 0 40px 0;
-
-				// #region Optional section
-				&-title {
-					display: inline-block;
-					font-size: 12px;
-					color: $form-text;
-				}
-
-				&-small {
-					color: rgba($color: $form-text, $alpha: 0.34);
-					font-size: 12px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-				}
-
-				&-inputs {
-					display: flex;
-
-					&-btn {
-						width: 65px;
-						height: 50px;
-						margin-right: 10px;
-						background: $light;
-						border: 1px solid $form-input-border;
-						box-sizing: border-box;
-						cursor: pointer;
-
-						font-size: 14px;
-						line-height: 28px;
-						text-align: center;
-						letter-spacing: 0.25px;
-						color: rgba($color: $dark, $alpha: 0.5);
-					}
-
-					.active {
-						color: $blue;
-						border: 1px solid $blue;
-						box-shadow: 0 0 14px rgba($color: $blue, $alpha: 0.2);
-					}
-
-					&-list {
-						width: 90px;
-						height: 50px;
-						text-align: center;
-						border: 1px solid $form-input-border;
-						color: rgba($color: $dark, $alpha: 0.4);
-
-						font-size: 14px;
-						line-height: 28px;
-						letter-spacing: 0.25px;
-
-						&:focus {
-							outline: none;
-						}
-					}
-
-					&-phone {
-						margin: 0;
-						padding: 20px 0 20px 20px;
-						width: 210px;
-						color: rgba($color: $dark, $alpha: 0.4);
-
-						font-size: 14px;
-						line-height: 28px;
-						letter-spacing: 0.25px;
-					}
-				}
-
-				// #endregion
-			}
-
-			&-passwords {
-				display: flex;
-				padding-top: 40px;
-				padding-bottom: 40px;
-				border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
-				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
-			}
-
-			// #endregion
-
-			// #region Lower register button
-			&-submit {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				width: 99%;
-				margin-top: 30px;
-
-				&-checkbox {
-					display: flex;
-					align-items: center;
-
-					&-input {
-						width: 24px;
-						height: 24px;
-						margin-right: 15px;
-						background: $light;
-						box-sizing: border-box;
-						border: 1px solid $form-input-border;
-					}
-
-					&-text {
-						font-size: 14px;
-						line-height: 28px;
-						letter-spacing: 0.25px;
-						color: $secondary-text;
-					}
-				}
-
-				&-button {
-					width: 100px;
-					height: 50px;
-					border: none;
-					background: $blue;
-					cursor: pointer;
-
-					color: $light;
-					font-weight: bold;
-					font-size: 14px;
-					line-height: 28px;
-					text-align: center;
-					letter-spacing: 0.25px;
-				}
-			}
-			// #endregion
-		}
-
-		// #endregion
-	}
-
-	.image {
-		// #region Right-side image
-		display: block;
-		margin: 0 0 0 auto;
-		width: 590px;
-		background: $image-bg;
-
-		img {
-			position: absolute;
-			left: 49.65%;
-			top: 23.1%;
-		}
-		// #endregion
-	}
-	// #endregion
-
-	// #region Success-register page
-	// Main
-	.success-page-main {
-		padding: 80px 90px 0 0;
-		width: 100%;
-		text-align: center;
-
-		// #region Right-side button
-		&-right-close {
-			display: flex;
-			justify-content: end;
-			margin-bottom: 5px;
-
-			&-button {
-				cursor: pointer;
-			}
-		}
-		// #endregion
-
-		// #region Header
-		&-header {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-
-			&-title {
-				margin: 0 0 20px 0;
-				color: $headers;
-				font-weight: bold;
-				font-size: 54px;
-				line-height: 68px;
-			}
-
-			&-text {
-				margin: 0 0 90px 0;
-				width: 480px;
-				color: $secondary-text;
-				font-weight: normal;
-				font-size: 14px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
-				opacity: 0.99;
-			}
-		}
-		// #endregion
-
-		// #region Email block
-		&-email {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-
-			&-text {
-				margin: 0 0 15px 0;
-				width: 480px;
-				color: $secondary-text;
-				font-weight: normal;
-				font-size: 14px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
-				opacity: 0.99;
-			}
-
-			&-timer {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 51px;
-				height: 51px;
-				margin: 0 0 70px 0;
-				border: 1px solid rgba($color: $dark, $alpha: 0.2);
-				border-radius: 50%;
-				box-sizing: border-box;
-
-				&-done {
-					position: absolute;
-					width: 51px;
-					height: 51px;
-					border-top: 2px solid $blue;
-					border-left: 2px solid $blue;
-					border-right: 2px solid $blue;
-					border-bottom: 2px solid $blue;
-					border-radius: 50%;
-					box-sizing: border-box;
-					transform: rotate(45deg);
-				}
-
-				&-number {
-					font-weight: bold;
-					font-size: 14px;
-					text-align: center;
-					letter-spacing: 0.25px;
-					color: $blue;
-				}
-			}
-		}
-		// #endregion
-
-		// #region Close button
-		&-close {
-			&-button {
-				margin-top: 70px;
-				width: 100px;
-				height: 50px;
-				border: none;
-				background: $blue;
-				cursor: pointer;
-
-				color: $light;
-				font-weight: bold;
-				font-size: 14px;
-				line-height: 28px;
-				text-align: center;
-				letter-spacing: 0.25px;
-			}
-		}
-		// #endregion
-
-		// #region Bottom images
-		&-bottom-images {
-			position: absolute;
-			top: 54.6%;
-
-			&-left {
-				position: absolute;
-				top: 14px;
-				left: 57.22%;
-			}
-
-			&-right {
-				position: absolute;
-				left: 949px;
-			}
-		}
-		// #endregion
-	}
-	// #endregion
-
-	// #region Log-in page
-	.log-in-main {
-		width: 480px;
-		padding: 170px 85px 50px 90px;
-		box-sizing: border-box;
-
-		// #region Form
-		&-form {
-			.main-form-label {
-				padding: 40px 0;
-				border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
-				border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
-			}
-
-			p {
-				margin: 0 0 10px 0;
-			}
-
-			input {
-				margin: 0;
-
-				&:nth-last-of-type(1) {
-					border-top: none;
-					margin-bottom: 15px;
-				}
-			}
-
-			&-forgot {
-				font-weight: normal;
-			}
-
-			&-lower {
-				display: flex;
-				align-items: center;
-				margin-top: 50px;
-
-				&-checkbox {
-					width: 24px;
-					height: 24px;
-					margin-right: 15px;
-
-					border: 1px solid $form-input-border;
-					box-sizing: border-box;
-					cursor: pointer;
-
-					transition: 0.2s;
-
-					&:hover {
-						background: darken($color: $light, $amount: 5%);
-					}
-				}
-
-				&-remember {
-					margin-right: 70px;
-
-					font-size: 14px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-
-					color: $form-text;
-				}
-
-				&-button {
-					width: 100px;
-					height: 50px;
-					border: none;
-					background: $blue;
-
-					cursor: pointer;
-					font-weight: bold;
-					font-size: 14px;
-					line-height: 28px;
-					letter-spacing: 0.25px;
-
-					color: $light;
-				}
-			}
-		}
-		// #endregion
-
-		// #region Footer
-		&-footer {
-			margin: 165px 0 0 0;
-			text-align: center;
-
-			&-title {
-				margin: 0 0 20px 0;
-
-				font-size: 14px;
-				line-height: 28px;
-				letter-spacing: 0.25px;
-
-				color: rgba($color: $form-text, $alpha: 0.3);
-			}
-
-			&-link {
-				font-weight: normal;
-			}
-		}
-		// #endregion
-	}
-
-	// #region Right-side image
-	.log-in-image {
-		display: block;
-		width: 960px;
-		background: $image-bg;
-
-		img {
-			position: absolute;
-			bottom: -135px;
-			width: 960px;
-		}
-	}
-	// #endregion
-
-	// #endregion
-
-	// #region Forgot-password page
-	.forgot-password-main {
-		width: 480px;
-		padding: 170px 90px 50px 90px;
-		box-sizing: border-box;
-
-		// #region Header
-		&-header-description {
-			width: 300px;
-		}
-		// #endregion
-
-		// #region Form
-		&-form {
-			padding: 50px 0;
-			margin-bottom: 50px;
-			width: 300px;
-
-			border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
-			border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
-
-			&-input {
-				margin: 0;
-			}
-		}
-
-		&-button {
-			margin-bottom: 70px;
-			width: 100%;
-		}
-		// #endregion
-
-		// #region Footer
-		&-footer {
-			text-align: center;
-
-			&-title {
-				margin: 0 0 25px 0;
-				color: rgba($color: $form-text, $alpha: 0.3);
-			}
-
-			&-link {
-				font-weight: normal;
-			}
-		}
-		// #endregion
-	}
-
-	// #region Right-side image
-	.forgot-password-image {
-		display: block;
-		width: 960px;
-		background: $image-bg;
-
-		img {
-			position: absolute;
-			bottom: -131px;
-			width: 960px;
-		}
-	}
-	// #endregion
-	// #endregion
-
-	// #region Change-password page
-	.change-password-main {
-		width: 480px;
-		padding: 170px 90px 50px 90px;
-		box-sizing: border-box;
-
-		// #region Header
-		&-header-description {
-			width: 300px;
-		}
-		// #endregion
-
-		.change-password-first-label {
-			margin-bottom: 40px;
-		}
-
-		.password-quality {
-			display: flex;
-			margin-top: 10px;
-			width: 100%;
-			height: 6px;
-
-			&-block {
-				display: flex;
-				margin-right: 1px;
-				width: 24px;
-				height: 100%;
-				background: #eaeaea;
-
-				&-full {
-					width: 100%;
-					height: 100%;
-					background: #f3c652;
-				}
-			}
-		}
-
-		.change-password-margin {
-			margin-bottom: 15px;
-		}
-	}
-
-	// #endregion
+  display: flex;
+  margin: 40px auto;
+  width: 1440px;
+  height: 1020px;
+  background: $light;
+
+  // #region Registration page
+  .main {
+    position: absolute;
+    z-index: 1;
+    padding: 80px 100px;
+    width: 850px;
+    box-sizing: border-box;
+
+    // #region Already member
+    &-already-member {
+      display: flex;
+      justify-content: end;
+      margin-bottom: 50px;
+
+      &-text {
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+
+        img {
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+
+    // #endregion
+
+    // #region Main form
+    &-form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 650px;
+
+      // #region Title
+      &-title {
+        display: flex;
+        margin-bottom: 40px;
+        padding: 0 0 40px 0;
+
+        border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+
+        &-title {
+          width: 280px;
+          margin: 0;
+          margin-right: 60px;
+          color: $headers;
+          font-weight: bold;
+          font-size: 54px;
+          line-height: 68px;
+        }
+
+        &-terms {
+          width: 300px;
+          color: $secondary-text;
+          font-size: 14px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+      }
+      // #endregion
+
+      // #region Styles for labels
+      &-label {
+        display: block;
+
+        &-title {
+          display: inline-block;
+          margin: 0;
+          width: 55%;
+
+          color: $form-text;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+
+        &-left {
+          margin-right: 45px;
+        }
+
+        &-passwords-not-match {
+          display: none;
+          margin-left: -10px;
+          color: red;
+
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+
+        &-error {
+          display: none;
+          color: red;
+
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+      }
+
+      // Styles for inputs
+      &-input {
+        display: block;
+        width: 300px;
+        height: 50px;
+        margin-bottom: 25px;
+        padding: 15px 0 20px 15px;
+        border: 1px solid $form-input-border;
+        box-sizing: border-box;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      // Syles for optional section
+      &-optional {
+        display: flex;
+        margin: 15px 0 40px 0;
+
+        // #region Optional section
+        &-title {
+          display: inline-block;
+          font-size: 12px;
+          color: $form-text;
+        }
+
+        &-small {
+          color: rgba($color: $form-text, $alpha: 0.34);
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+
+        &-inputs {
+          display: flex;
+
+          &-btn {
+            width: 65px;
+            height: 50px;
+            margin-right: 10px;
+            background: $light;
+            border: 1px solid $form-input-border;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            color: rgba($color: $dark, $alpha: 0.5);
+          }
+
+          .active {
+            color: $blue;
+            border: 1px solid $blue;
+            box-shadow: 0 0 14px rgba($color: $blue, $alpha: 0.2);
+          }
+
+          &-list {
+            width: 90px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid $form-input-border;
+            color: rgba($color: $dark, $alpha: 0.4);
+
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.25px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          &-phone {
+            margin: 0;
+            padding: 20px 0 20px 20px;
+            width: 210px;
+            color: rgba($color: $dark, $alpha: 0.4);
+
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.25px;
+          }
+        }
+
+        // #endregion
+      }
+
+      &-passwords {
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+        border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+      }
+
+      // #endregion
+
+      // #region Lower register button
+      &-submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 99%;
+        margin-top: 30px;
+
+        &-checkbox {
+          display: flex;
+          align-items: center;
+
+          &-input {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            background: $light;
+            box-sizing: border-box;
+            border: 1px solid $form-input-border;
+          }
+
+          &-text {
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.25px;
+            color: $secondary-text;
+          }
+        }
+
+        &-button {
+          width: 100px;
+          height: 50px;
+          border: none;
+          background: $blue;
+          cursor: pointer;
+
+          color: $light;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.25px;
+        }
+      }
+      // #endregion
+    }
+
+    // #endregion
+  }
+
+  .image {
+    // #region Right-side image
+    display: block;
+    margin: 0 0 0 auto;
+    width: 590px;
+    background: $image-bg;
+
+    img {
+      position: absolute;
+      left: 49.65%;
+      top: 23.1%;
+    }
+    // #endregion
+  }
+  // #endregion
+
+  // #region Success-register page
+  // Main
+  .success-page-main {
+    padding: 80px 90px 0 0;
+    width: 100%;
+    text-align: center;
+
+    // #region Right-side button
+    &-right-close {
+      display: flex;
+      justify-content: end;
+      margin-bottom: 5px;
+
+      &-button {
+        cursor: pointer;
+      }
+    }
+    // #endregion
+
+    // #region Header
+    &-header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &-title {
+        margin: 0 0 20px 0;
+        color: $headers;
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 68px;
+      }
+
+      &-text {
+        margin: 0 0 90px 0;
+        width: 480px;
+        color: $secondary-text;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        opacity: 0.99;
+      }
+    }
+    // #endregion
+
+    // #region Email block
+    &-email {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &-text {
+        margin: 0 0 15px 0;
+        width: 480px;
+        color: $secondary-text;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        opacity: 0.99;
+      }
+
+      &-timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 51px;
+        height: 51px;
+        margin: 0 0 70px 0;
+        border: 1px solid rgba($color: $dark, $alpha: 0.2);
+        border-radius: 50%;
+        box-sizing: border-box;
+
+        &-done {
+          position: absolute;
+          width: 51px;
+          height: 51px;
+          border-top: 2px solid $blue;
+          border-left: 2px solid $blue;
+          border-right: 2px solid $blue;
+          border-bottom: 2px solid $blue;
+          border-radius: 50%;
+          box-sizing: border-box;
+          transform: rotate(45deg);
+        }
+
+        &-number {
+          font-weight: bold;
+          font-size: 14px;
+          text-align: center;
+          letter-spacing: 0.25px;
+          color: $blue;
+        }
+      }
+    }
+    // #endregion
+
+    // #region Close button
+    &-close {
+      &-button {
+        margin-top: 70px;
+        width: 100px;
+        height: 50px;
+        border: none;
+        background: $blue;
+        cursor: pointer;
+
+        color: $light;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.25px;
+      }
+    }
+    // #endregion
+
+    // #region Bottom images
+    &-bottom-images {
+      position: absolute;
+      top: 54.6%;
+
+      &-left {
+        position: absolute;
+        top: 14px;
+        left: 57.22%;
+      }
+
+      &-right {
+        position: absolute;
+        left: 949px;
+      }
+    }
+    // #endregion
+  }
+  // #endregion
+
+  // #region Log-in page
+  .log-in-main {
+    width: 480px;
+    padding: 170px 85px 50px 90px;
+    box-sizing: border-box;
+
+    // #region Form
+    &-form {
+      .main-form-label {
+        padding: 40px 0;
+        border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+        border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+      }
+
+      p {
+        margin: 0 0 10px 0;
+      }
+
+      input {
+        margin: 0;
+
+        &:nth-last-of-type(1) {
+          border-top: none;
+          margin-bottom: 15px;
+        }
+      }
+
+      &-forgot {
+        font-weight: normal;
+      }
+
+      &-lower {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+        &-checkbox {
+          width: 24px;
+          height: 24px;
+          margin-right: 15px;
+
+          border: 1px solid $form-input-border;
+          box-sizing: border-box;
+          cursor: pointer;
+
+          transition: 0.2s;
+
+          &:hover {
+            background: darken($color: $light, $amount: 5%);
+          }
+        }
+
+        &-remember {
+          margin-right: 70px;
+
+          font-size: 14px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+
+          color: $form-text;
+        }
+
+        &-button {
+          width: 100px;
+          height: 50px;
+          border: none;
+          background: $blue;
+
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+
+          color: $light;
+        }
+      }
+    }
+    // #endregion
+
+    // #region Footer
+    &-footer {
+      margin: 165px 0 0 0;
+      text-align: center;
+
+      &-title {
+        margin: 0 0 20px 0;
+
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+
+        color: rgba($color: $form-text, $alpha: 0.3);
+      }
+
+      &-link {
+        font-weight: normal;
+      }
+    }
+    // #endregion
+  }
+
+  // #region Right-side image
+  .log-in-image {
+    display: block;
+    width: 960px;
+    background: $image-bg;
+
+    img {
+      position: absolute;
+      bottom: -135px;
+      width: 960px;
+    }
+  }
+  // #endregion
+
+  // #endregion
+
+  // #region Forgot-password page
+  .forgot-password-main {
+    width: 480px;
+    padding: 170px 90px 50px 90px;
+    box-sizing: border-box;
+
+    // #region Header
+    &-header-description {
+      width: 300px;
+    }
+    // #endregion
+
+    // #region Form
+    &-form {
+      padding: 50px 0;
+      margin-bottom: 50px;
+      width: 300px;
+
+      border-top: 1px dashed rgba($color: $dark, $alpha: 0.2);
+      border-bottom: 1px dashed rgba($color: $dark, $alpha: 0.2);
+
+      &-input {
+        margin: 0;
+      }
+    }
+
+    &-button {
+      margin-bottom: 70px;
+      width: 100%;
+    }
+    // #endregion
+
+    // #region Footer
+    &-footer {
+      text-align: center;
+
+      &-title {
+        margin: 0 0 25px 0;
+        color: rgba($color: $form-text, $alpha: 0.3);
+      }
+
+      &-link {
+        font-weight: normal;
+      }
+    }
+    // #endregion
+  }
+
+  // #region Right-side image
+  .forgot-password-image {
+    display: block;
+    width: 960px;
+    background: $image-bg;
+
+    img {
+      position: absolute;
+      bottom: -131px;
+      width: 960px;
+    }
+  }
+  // #endregion
+  // #endregion
+
+  // #region Change-password page
+  .change-password-main {
+    width: 480px;
+    padding: 170px 90px 50px 90px;
+    box-sizing: border-box;
+
+    // #region Header
+    &-header-description {
+      width: 300px;
+    }
+    // #endregion
+
+    .change-password-first-label {
+      margin-bottom: 40px;
+    }
+
+    .password-quality {
+      display: flex;
+      margin-top: 10px;
+      width: 100%;
+      height: 6px;
+
+      &-block {
+        display: flex;
+        margin-right: 1px;
+        width: 24px;
+        height: 100%;
+        background: #eaeaea;
+
+        &-full {
+          width: 100%;
+          height: 100%;
+          background: #f3c652;
+        }
+      }
+    }
+
+    .change-password-margin {
+      margin-bottom: 15px;
+    }
+  }
+
+  // #endregion
 }
