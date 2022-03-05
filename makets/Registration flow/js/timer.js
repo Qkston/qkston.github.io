@@ -1,12 +1,12 @@
 (() => {
-  const timerBlock = document.getElementById("timer");
-  const timerNumber = document.getElementById("number");
-  const timerDoneLine = document.getElementById("done-timer");
+  window.addEventListener("DOMContentLoaded", () => {
+    const timerBlock = document.getElementById("timer"),
+      timerNumber = document.getElementById("number"),
+      timerDoneLine = document.getElementById("done-timer"),
+      resendLink = document.getElementById("resend-link");
 
-  const resendLink = document.getElementById("resend-link");
-  let timer = 30;
+    let timer = 30;
 
-  document.addEventListener("DOMContentLoaded", () => {
     setInterval(() => {
       if (timer === 0) {
         timerDoneLine.style.borderTop = "2px solid transparent";
