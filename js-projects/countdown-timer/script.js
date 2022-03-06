@@ -27,21 +27,13 @@ let hoursCount = 0,
 // #region Buttons
 // Start button
 startBtn.addEventListener("click", () => {
-  upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = true;
-  lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = true;
-
-  blockStartBtn.style.display = "none";
-  blockStopPauseBtn.style.display = "flex";
-
+  disableArrows(true);
+  showPauseStopButtons(true);
   timer = setInterval(() => {
     secondsDown();
     if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
-      upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
-      lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
-
-      blockStartBtn.style.display = "flex";
-      blockStopPauseBtn.style.display = "none";
-
+      disableArrows(false);
+      showPauseStopButtons(false);
       changeTitle();
       notification();
       clearInterval(timer);
@@ -58,12 +50,8 @@ stopBtn.addEventListener("click", () => {
 // Pause button
 pauseBtn.addEventListener("click", () => {
   clearInterval(timer);
-
-  upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
-  lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
-
-  blockStartBtn.style.display = "flex";
-  blockStopPauseBtn.style.display = "none";
+  disableArrows(false);
+  showPauseStopButtons(false);
 });
 // #endregion
 
@@ -238,5 +226,22 @@ function changeTitle() {
 // Notification
 function notification() {
   new Audio("notification/notification.mp3").play();
+}
+
+// Disabling the arrows that control the timer
+function disableArrows(bool) {
+  upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = bool;
+  lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = bool;
+}
+
+// Switching the display of the pause, stop and start buttons
+function showPauseStopButtons(bool) {
+  if (bool) {
+    blockStartBtn.style.display = "none";
+    blockStopPauseBtn.style.display = "flex";
+  } else if (!bool) {
+    blockStartBtn.style.display = "flex";
+    blockStopPauseBtn.style.display = "none";
+  }
 }
 // #endregion
