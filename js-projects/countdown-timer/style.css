@@ -1,80 +1,80 @@
 * {
-	font-family: "Moncerrat", sans-serif;
+  font-family: "Moncerrat", sans-serif;
 }
 
 .wrap {
-	display: grid;
-	justify-content: center;
-	align-items: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 /* #region Arrows */
 .upper-arrows,
 .lower-arrows {
-	display: flex;
+  display: flex;
 }
 
 button {
-	margin-left: 30px;
-	width: 200px;
-	border: none;
-	background: transparent;
-	box-sizing: border-box;
-	transition: 0.2s;
+  margin-left: 30px;
+  width: 200px;
+  border: none;
+  background: transparent;
+  box-sizing: border-box;
+  transition: 0.2s;
 }
 
 button:hover {
-	background: #bebdbd;
+  background: #bebdbd;
 }
 /* #endregion */
 
 /* #region Numbers */
 .numbers {
-	display: flex;
+  display: flex;
 }
 
 .numbers-hours,
 .numbers-minutes,
 .numbers-seconds {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 200px;
-	height: 200px;
-	margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
 }
 
 .numbers-hours-count,
 .numbers-minutes-count,
 .numbers-seconds-count {
-	margin: 0;
-	font-size: 72px;
-	text-align: center;
+  margin: 0;
+  font-size: 72px;
+  text-align: center;
 }
 /* #endregion */
 
 /* #region Buttons */
 .start-button {
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .stop-pause-buttons {
-	display: none;
-	justify-content: center;
-	margin-top: 50px;
+  display: none;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.button-for-contols {
-	width: 150px;
-	height: 50px;
+.button-for-controls {
+  width: 150px;
+  height: 50px;
 
-	cursor: pointer;
-	background: #bebdbd;
-	border: 1px solid #000;
+  cursor: pointer;
+  background: #bebdbd;
+  border: 1px solid #000;
 
-	font-weight: 700;
-	text-transform: uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 /* #endregion */

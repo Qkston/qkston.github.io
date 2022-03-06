@@ -1,242 +1,242 @@
 // Upper buttons
 const upperArrowHours = document.querySelector(".upper-arrows-hours"),
-	upperArrowMinutes = document.querySelector(".upper-arrows-minutes"),
-	upperArrowSeconds = document.querySelector(".upper-arrows-seconds"),
-	// Lower buttons
-	lowerArrowHours = document.querySelector(".lower-arrows-hours"),
-	lowerArrowMinutes = document.querySelector(".lower-arrows-minutes"),
-	lowerArrowSeconds = document.querySelector(".lower-arrows-seconds"),
-	// Number
-	hoursCountNumber = document.querySelector(".numbers-hours-count"),
-	minutesCountNumber = document.querySelector(".numbers-minutes-count"),
-	secondsCountNumber = document.querySelector(".numbers-seconds-count"),
-	// Buttons for controls
-	buttons = document.querySelectorAll(".button-for-contols"),
-	startBtn = buttons[0],
-	stopBtn = buttons[1],
-	pauseBtn = buttons[2],
-	// Block for buttons
-	blockStartBtn = document.querySelector(".start-button"),
-	blockStopPauseBtn = document.querySelector(".stop-pause-buttons");
+  upperArrowMinutes = document.querySelector(".upper-arrows-minutes"),
+  upperArrowSeconds = document.querySelector(".upper-arrows-seconds"),
+  // Lower buttons
+  lowerArrowHours = document.querySelector(".lower-arrows-hours"),
+  lowerArrowMinutes = document.querySelector(".lower-arrows-minutes"),
+  lowerArrowSeconds = document.querySelector(".lower-arrows-seconds"),
+  // Number
+  hoursCountNumber = document.querySelector(".numbers-hours-count"),
+  minutesCountNumber = document.querySelector(".numbers-minutes-count"),
+  secondsCountNumber = document.querySelector(".numbers-seconds-count"),
+  // Buttons for controls
+  buttons = document.querySelectorAll(".button-for-controls"),
+  startBtn = buttons[0],
+  stopBtn = buttons[1],
+  pauseBtn = buttons[2],
+  // Block for buttons
+  blockStartBtn = document.querySelector(".start-button"),
+  blockStopPauseBtn = document.querySelector(".stop-pause-buttons");
 
 let hoursCount = 0,
-	minutesCount = 0,
-	secondsCount = 0,
-	timer;
+  minutesCount = 0,
+  secondsCount = 0,
+  timer;
 
 // #region Buttons
 // Start button
 startBtn.addEventListener("click", () => {
-	upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = true;
-	lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = true;
+  upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = true;
+  lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = true;
 
-	blockStartBtn.style.display = "none";
-	blockStopPauseBtn.style.display = "flex";
+  blockStartBtn.style.display = "none";
+  blockStopPauseBtn.style.display = "flex";
 
-	timer = setInterval(() => {
-		secondsDown();
-		if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
-			upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
-			lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
+  timer = setInterval(() => {
+    secondsDown();
+    if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
+      upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
+      lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
 
-			blockStartBtn.style.display = "flex";
-			blockStopPauseBtn.style.display = "none";
+      blockStartBtn.style.display = "flex";
+      blockStopPauseBtn.style.display = "none";
 
-			changeTitle();
-			notification();
-			clearInterval(timer);
-		}
-	}, 1000);
+      changeTitle();
+      notification();
+      clearInterval(timer);
+    }
+  }, 1000);
 });
 // Stop button
 stopBtn.addEventListener("click", () => {
-	hoursCount = minutesCount = secondsCount = 0;
-	hoursDown();
-	minutesDown();
-	secondsDown();
+  hoursCount = minutesCount = secondsCount = 0;
+  hoursDown();
+  minutesDown();
+  secondsDown();
 });
 // Pause button
 pauseBtn.addEventListener("click", () => {
-	clearInterval(timer);
+  clearInterval(timer);
 
-	upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
-	lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
+  upperArrowHours.disabled = upperArrowMinutes.disabled = upperArrowSeconds.disabled = false;
+  lowerArrowHours.disabled = lowerArrowMinutes.disabled = lowerArrowSeconds.disabled = false;
 
-	blockStartBtn.style.display = "flex";
-	blockStopPauseBtn.style.display = "none";
+  blockStartBtn.style.display = "flex";
+  blockStopPauseBtn.style.display = "none";
 });
 // #endregion
 
 // #region Hours
 // Top button
 upperArrowHours.addEventListener("click", () => {
-	hoursCount = hoursUp();
+  hoursCount = hoursUp();
 });
 // Bottom button
 lowerArrowHours.addEventListener("click", () => {
-	hoursCount = hoursDown();
+  hoursCount = hoursDown();
 });
 // #endregion
 
 // #region Minutes
 // Top button
 upperArrowMinutes.addEventListener("click", () => {
-	minutesCount = minutesUp();
+  minutesCount = minutesUp();
 });
 // Bottom button
 lowerArrowMinutes.addEventListener("click", () => {
-	minutesCount = minutesDown();
+  minutesCount = minutesDown();
 });
 // #endregion
 
 // #region Seconds
 // Top button
 upperArrowSeconds.addEventListener("click", () => {
-	secondsCount = secondsUp();
+  secondsCount = secondsUp();
 });
 // Bottom button
 lowerArrowSeconds.addEventListener("click", () => {
-	secondsCount = secondsDown();
+  secondsCount = secondsDown();
 });
 // #endregion
 
 // #region Function of the hours
 function hoursUp() {
-	hoursCount++;
+  hoursCount++;
 
-	if (hoursCount < 10) {
-		hoursCountNumber.innerHTML = `0${hoursCount}`;
-	} else if (hoursCount >= 10 && hoursCount < 23) {
-		hoursCountNumber.innerHTML = `${hoursCount}`;
-	} else if (hoursCount >= 23) {
-		hoursCountNumber.innerHTML = `23`;
-		hoursCount = 23;
-	}
+  if (hoursCount < 10) {
+    hoursCountNumber.innerHTML = `0${hoursCount}`;
+  } else if (hoursCount >= 10 && hoursCount < 23) {
+    hoursCountNumber.innerHTML = `${hoursCount}`;
+  } else if (hoursCount >= 23) {
+    hoursCountNumber.innerHTML = `23`;
+    hoursCount = 23;
+  }
 
-	return hoursCount;
+  return hoursCount;
 }
 
 function hoursDown() {
-	hoursCount--;
+  hoursCount--;
 
-	if (hoursCount >= 0 && hoursCount < 10) {
-		hoursCountNumber.innerHTML = `0${hoursCount}`;
-	} else if (hoursCount >= 10) {
-		hoursCountNumber.innerHTML = `${hoursCount}`;
-	} else if (hoursCount <= 0) {
-		hoursCountNumber.innerHTML = `00`;
-		hoursCount = 0;
-	}
+  if (hoursCount >= 0 && hoursCount < 10) {
+    hoursCountNumber.innerHTML = `0${hoursCount}`;
+  } else if (hoursCount >= 10) {
+    hoursCountNumber.innerHTML = `${hoursCount}`;
+  } else if (hoursCount <= 0) {
+    hoursCountNumber.innerHTML = `00`;
+    hoursCount = 0;
+  }
 
-	return hoursCount;
+  return hoursCount;
 }
 // #endregion
 
 // #region Function of the minutes
 function minutesUp() {
-	minutesCount++;
+  minutesCount++;
 
-	if (minutesCount < 10) {
-		minutesCountNumber.innerHTML = `0${minutesCount}`;
-	} else if (minutesCount >= 10 && minutesCount < 60) {
-		minutesCountNumber.innerHTML = `${minutesCount}`;
-	} else if (minutesCount === 60) {
-		hoursUp();
-		minutesCount = 0;
-		minutesCountNumber.innerHTML = `00`;
-	}
+  if (minutesCount < 10) {
+    minutesCountNumber.innerHTML = `0${minutesCount}`;
+  } else if (minutesCount >= 10 && minutesCount < 60) {
+    minutesCountNumber.innerHTML = `${minutesCount}`;
+  } else if (minutesCount === 60) {
+    hoursUp();
+    minutesCount = 0;
+    minutesCountNumber.innerHTML = `00`;
+  }
 
-	return minutesCount;
+  return minutesCount;
 }
 
 function minutesDown() {
-	minutesCount--;
+  minutesCount--;
 
-	if (minutesCount >= 0 && minutesCount < 10) {
-		minutesCountNumber.innerHTML = `0${minutesCount}`;
-	} else if (minutesCount >= 10) {
-		minutesCountNumber.innerHTML = `${minutesCount}`;
-	} else if (minutesCount <= 0) {
-		if (hoursCount <= 0) {
-			minutesCountNumber.innerHTML = `00`;
-			minutesCount = 0;
-		} else {
-			hoursDown();
-			minutesCount = 59;
-			minutesCountNumber.innerHTML = `${minutesCount}`;
-		}
-	}
+  if (minutesCount >= 0 && minutesCount < 10) {
+    minutesCountNumber.innerHTML = `0${minutesCount}`;
+  } else if (minutesCount >= 10) {
+    minutesCountNumber.innerHTML = `${minutesCount}`;
+  } else if (minutesCount <= 0) {
+    if (hoursCount <= 0) {
+      minutesCountNumber.innerHTML = `00`;
+      minutesCount = 0;
+    } else {
+      hoursDown();
+      minutesCount = 59;
+      minutesCountNumber.innerHTML = `${minutesCount}`;
+    }
+  }
 
-	return minutesCount;
+  return minutesCount;
 }
 // #endregion
 
 // #region Functions of the seconds
 function secondsUp() {
-	secondsCount++;
+  secondsCount++;
 
-	if (secondsCount < 10) {
-		secondsCountNumber.innerHTML = `0${secondsCount}`;
-	} else if (secondsCount >= 10 && secondsCount < 60) {
-		secondsCountNumber.innerHTML = `${secondsCount}`;
-	} else if (secondsCount === 60) {
-		minutesUp();
-		secondsCount = 0;
-		secondsCountNumber.innerHTML = `00`;
-	}
+  if (secondsCount < 10) {
+    secondsCountNumber.innerHTML = `0${secondsCount}`;
+  } else if (secondsCount >= 10 && secondsCount < 60) {
+    secondsCountNumber.innerHTML = `${secondsCount}`;
+  } else if (secondsCount === 60) {
+    minutesUp();
+    secondsCount = 0;
+    secondsCountNumber.innerHTML = `00`;
+  }
 
-	return secondsCount;
+  return secondsCount;
 }
 
 function secondsDown() {
-	secondsCount--;
+  secondsCount--;
 
-	if (secondsCount >= 0 && secondsCount < 10) {
-		secondsCountNumber.innerHTML = `0${secondsCount}`;
-	} else if (secondsCount >= 10) {
-		secondsCountNumber.innerHTML = `${secondsCount}`;
-	} else if (secondsCount <= 0) {
-		if (minutesCount > 0) {
-			minutesDown();
-			secondsCount = 59;
-			secondsCountNumber.innerHTML = `${secondsCount}`;
-		} else if (hoursCount > 0 && minutesCount <= 0) {
-			hoursDown();
-			minutesDown();
-			secondsCount = 59;
-			minutesCount = 59;
-			secondsCountNumber.innerHTML = `${secondsCount}`;
-			minutesCountNumber.innerHTML = `${minutesCount}`;
-		} else {
-			secondsCountNumber.innerHTML = `00`;
-			secondsCount = 0;
-		}
-	}
+  if (secondsCount >= 0 && secondsCount < 10) {
+    secondsCountNumber.innerHTML = `0${secondsCount}`;
+  } else if (secondsCount >= 10) {
+    secondsCountNumber.innerHTML = `${secondsCount}`;
+  } else if (secondsCount <= 0) {
+    if (minutesCount > 0) {
+      minutesDown();
+      secondsCount = 59;
+      secondsCountNumber.innerHTML = `${secondsCount}`;
+    } else if (hoursCount > 0 && minutesCount <= 0) {
+      hoursDown();
+      minutesDown();
+      secondsCount = 59;
+      minutesCount = 59;
+      secondsCountNumber.innerHTML = `${secondsCount}`;
+      minutesCountNumber.innerHTML = `${minutesCount}`;
+    } else {
+      secondsCountNumber.innerHTML = `00`;
+      secondsCount = 0;
+    }
+  }
 
-	return secondsCount;
+  return secondsCount;
 }
 // #endregion
 
 // #region Other functions
 // Change title
 function changeTitle() {
-	let headerTitle;
-	for (const title of document.head.childNodes) {
-		if (title.nodeName === "TITLE") {
-			headerTitle = title;
-		}
-	}
-	headerTitle.innerHTML = "Timer is end";
+  let headerTitle;
+  for (const title of document.head.childNodes) {
+    if (title.nodeName === "TITLE") {
+      headerTitle = title;
+    }
+  }
+  headerTitle.innerHTML = "Timer is end";
 
-	document.querySelectorAll("button").forEach((button) => {
-		button.addEventListener("click", () => {
-			headerTitle.innerHTML = "Countdown timer";
-		});
-	});
+  document.querySelectorAll("button").forEach(button => {
+    button.addEventListener("click", () => {
+      headerTitle.innerHTML = "Countdown timer";
+    });
+  });
 }
 
 // Notification
 function notification() {
-	new Audio("notification/notification.mp3").play();
+  new Audio("notification/notification.mp3").play();
 }
 // #endregion
