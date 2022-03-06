@@ -22,7 +22,8 @@ const upperArrowHours = document.querySelector(".upper-arrows-hours"),
 let hoursCount = 0,
   minutesCount = 0,
   secondsCount = 0,
-  timer;
+  timer,
+  stopped = false;
 
 // #region Buttons
 // Start button
@@ -38,10 +39,12 @@ startBtn.addEventListener("click", () => {
     timer = setInterval(() => {
       secondsDown();
       if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
+        if (!stopped) {
+          notification();
+          changeTitle();
+        }
         disableArrows(false);
         showPauseStopButtons(false);
-        changeTitle();
-        notification();
         clearInterval(timer);
       }
     }, 1000);
@@ -49,6 +52,7 @@ startBtn.addEventListener("click", () => {
 });
 // Stop button
 stopBtn.addEventListener("click", () => {
+  stopped = true;
   hoursCount = minutesCount = secondsCount = 0;
   hoursDown();
   minutesDown();
