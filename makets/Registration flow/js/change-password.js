@@ -1,7 +1,8 @@
 (() => {
   window.addEventListener("DOMContentLoaded", () => {
     const newPasswordInput = document.querySelector(".new-password"),
-      confirmPasswordInput = document.querySelector(".confirm-password");
+      confirmPasswordInput = document.querySelector(".confirm-password"),
+      button = document.querySelector(".change-password-button");
 
     newPasswordInput.addEventListener("input", () => {
       if (newPasswordInput.value.length <= 0) {
@@ -15,11 +16,17 @@
       }
     });
 
-    confirmPasswordInput.addEventListener("blur", () => {
-      if (newPasswordInput.value !== confirmPasswordInput.value) {
-        confirmPasswordInput.style.border = "1px solid red";
+    button.addEventListener("click", () => {
+      if (!newPasswordInput.value) {
+        styleErrorInputs([newPasswordInput], button, "red");
+      } else if (!confirmPasswordInput.value) {
+        styleErrorInputs([confirmPasswordInput], button, "red");
+      } else if (newPasswordInput.value !== confirmPasswordInput.value) {
+        styleErrorInputs([confirmPasswordInput], button, "red");
+      } else if (newPasswordInput.value.length < 6) {
+        styleErrorInputs([newPasswordInput], button, "red");
       } else {
-        confirmPasswordInput.style.border = "";
+        styleErrorInputs([newPasswordInput, confirmPasswordInput], button, "#60ff30");
       }
     });
 
@@ -35,6 +42,16 @@
           qualityBlock[i].innerHTML += `<span class='password-quality-block-full' style='background: ${color}'></span>`;
         }
       }
+    }
+
+    function styleErrorInputs(inputSelector, buttonSelector, color) {
+      inputSelector.forEach(element => (element.style.border = `1px solid ${color}`));
+      buttonSelector.style.backgroundColor = color;
+
+      setTimeout(() => {
+        inputSelector.forEach(element => (element.style.border = ""));
+        buttonSelector.style.backgroundColor = "";
+      }, 1500);
     }
   });
 })();
