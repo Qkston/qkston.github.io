@@ -27,18 +27,25 @@ let hoursCount = 0,
 // #region Buttons
 // Start button
 startBtn.addEventListener("click", () => {
-  disableArrows(true);
-  showPauseStopButtons(true);
-  timer = setInterval(() => {
-    secondsDown();
-    if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
-      disableArrows(false);
-      showPauseStopButtons(false);
-      changeTitle();
-      notification();
-      clearInterval(timer);
-    }
-  }, 1000);
+  if (secondsCount <= 0) {
+    document.querySelector(".error-message").textContent = "You need to choose a time";
+    setTimeout(() => {
+      document.querySelector(".error-message").textContent = "";
+    }, 3000);
+  } else {
+    disableArrows(true);
+    showPauseStopButtons(true);
+    timer = setInterval(() => {
+      secondsDown();
+      if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
+        disableArrows(false);
+        showPauseStopButtons(false);
+        changeTitle();
+        notification();
+        clearInterval(timer);
+      }
+    }, 1000);
+  }
 });
 // Stop button
 stopBtn.addEventListener("click", () => {

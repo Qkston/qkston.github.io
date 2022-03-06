@@ -103,3 +103,10 @@ button:hover {
   text-transform: uppercase;
 }
 /* #endregion */
+
+.error-message {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #f00;
+}
