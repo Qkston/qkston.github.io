@@ -1,8 +1,25 @@
 * {
-  font-family: "Moncerrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #ececec;
 }
 
 .wrap {
+  margin: 200px auto auto auto;
+  padding: 40px;
+
+  width: 800px;
+  height: 500px;
+
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #adadad;
+}
+
+.main {
   display: grid;
   justify-content: center;
   align-items: center;

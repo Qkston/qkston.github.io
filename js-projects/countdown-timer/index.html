@@ -19,52 +19,55 @@
   </head>
   <body>
     <div class="wrap">
-      <!-- Top buttons for add hours, minutes and seconds -->
-      <section class="upper-arrows">
-        <button class="upper-arrows-hours">
-          <img src="img/up-arrow.png" alt="" width="48" />
-        </button>
-        <button class="upper-arrows-minutes">
-          <img src="img/up-arrow.png" alt="" width="48" />
-        </button>
-        <button class="upper-arrows-seconds">
-          <img src="img/up-arrow.png" alt="" width="48" />
-        </button>
+      <div class="main">
+        <!-- Top buttons for add hours, minutes and seconds -->
+        <section class="upper-arrows">
+          <button class="upper-arrows-hours">
+            <img src="img/up-arrow.png" alt="" width="48" />
+          </button>
+          <button class="upper-arrows-minutes">
+            <img src="img/up-arrow.png" alt="" width="48" />
+          </button>
+          <button class="upper-arrows-seconds">
+            <img src="img/up-arrow.png" alt="" width="48" />
+          </button>
+        </section>
+        <!-- Numbers for hours, minutes and seconds -->
+        <section class="numbers">
+          <div class="numbers-hours">
+            <p class="numbers-hours-count">00</p>
+          </div>
+          <div class="numbers-minutes">
+            <p class="numbers-minutes-count">00</p>
+          </div>
+          <div class="numbers-seconds">
+            <p class="numbers-seconds-count">00</p>
+          </div>
+        </section>
+        <!-- Bottom buttons for add hours, minutes and seconds -->
+        <section class="lower-arrows">
+          <button class="lower-arrows-hours">
+            <img src="img/down-arrow.png" alt="" width="48" />
+          </button>
+          <button class="lower-arrows-minutes">
+            <img src="img/down-arrow.png" alt="" width="48" />
+          </button>
+          <button class="lower-arrows-seconds">
+            <img src="img/down-arrow.png" alt="" width="48" />
+          </button>
+        </section>
+      </div>
+      <!-- Button for start timer -->
+      <section class="start-button">
+        <button class="button-for-controls">Start</button>
       </section>
-      <!-- Numbers for hours, minutes and seconds -->
-      <section class="numbers">
-        <div class="numbers-hours">
-          <p class="numbers-hours-count">00</p>
-        </div>
-        <div class="numbers-minutes">
-          <p class="numbers-minutes-count">00</p>
-        </div>
-        <div class="numbers-seconds">
-          <p class="numbers-seconds-count">00</p>
-        </div>
-      </section>
-      <!-- Bottom buttons for add hours, minutes and seconds -->
-      <section class="lower-arrows">
-        <button class="lower-arrows-hours">
-          <img src="img/down-arrow.png" alt="" width="48" />
-        </button>
-        <button class="lower-arrows-minutes">
-          <img src="img/down-arrow.png" alt="" width="48" />
-        </button>
-        <button class="lower-arrows-seconds">
-          <img src="img/down-arrow.png" alt="" width="48" />
-        </button>
+      <!-- Button for stop and pause timer -->
+      <section class="stop-pause-buttons">
+        <button class="button-for-controls">Stop</button>
+        <button class="button-for-controls">Pause</button>
       </section>
     </div>
-    <!-- Button for start timer -->
-    <section class="start-button">
-      <button class="button-for-controls">Start</button>
-    </section>
-    <!-- Button for stop and pause timer -->
-    <section class="stop-pause-buttons">
-      <button class="button-for-controls">Stop</button>
-      <button class="button-for-controls">Pause</button>
-    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
