@@ -41,7 +41,7 @@ startBtn.addEventListener("click", () => {
       if (hoursCount <= 0 && minutesCount <= 0 && secondsCount <= 0) {
         if (!stopped) {
           notification();
-          changeTitle();
+          checkActivePage();
         }
         disableArrows(false);
         showPauseStopButtons(false);
@@ -218,20 +218,38 @@ function secondsDown() {
 
 // #region Other functions
 // Change title
-function changeTitle() {
-  let headerTitle;
-  for (const title of document.head.childNodes) {
-    if (title.nodeName === "TITLE") {
-      headerTitle = title;
+function changeTitle(activeWindow) {
+  document.head.childNodes.forEach(item => {
+    if (item.nodeName === "TITLE") {
+      if (activeWindow) {
+        item.innerHTML = "Countdown timer";
+      } else if (!activeWindow) {
+        setInterval(() => {
+          switch (item.innerHTML) {
+            case "Countdown timer":
+              item.innerHTML = "Timer is end";
+              break;
+            case "Timer is end":
+              item.innerHTML = "Countdown timer";
+              break;
+          }
+        }, 1000);
+      }
     }
-  }
-  headerTitle.innerHTML = "Timer is end";
-
-  document.querySelectorAll("button").forEach(button => {
-    button.addEventListener("click", () => {
-      headerTitle.innerHTML = "Countdown timer";
-    });
   });
+}
+
+// Check when page is active
+function checkActivePage() {
+  let isActive;
+
+  if (document.visibilityState === "visible") {
+    isActive = true;
+  } else if (document.visibilityState === "hidden") {
+    isActive = false;
+  }
+
+  changeTitle(isActive);
 }
 
 // Notification
