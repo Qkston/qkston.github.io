@@ -4,7 +4,9 @@ import './search-panel.css';
 
 const SearchPanel = () => {
    return (
-      <input/>
+      <input 
+         className='search-input'
+         placeholder='Search by location'/>
    )
 }
 

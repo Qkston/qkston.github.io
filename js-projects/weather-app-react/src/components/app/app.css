@@ -1,0 +1,15 @@
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	margin: 10% auto;
+
+	width: 700px;
+	height: 400px;
+
+	border-radius: 10px;
+	box-shadow: 0px -3px 33px 15px rgba(0, 0, 0, 0.3);
+	background: #fff;
+}
