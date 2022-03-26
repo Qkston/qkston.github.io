@@ -6,7 +6,7 @@ export default class SearchPanel extends Component {
    constructor(props) {
       super(props);
       this.state = {
-         location: "Kyiv"
+         location: ""
       }
 
       this.onUpdateLocation = (event) => {
@@ -28,7 +28,13 @@ export default class SearchPanel extends Component {
             type="text"
             placeholder='Search by location'
             onChange={this.onUpdateLocation}
-            onBlur={this.onUpdateWeather}/>
+            onBlur={this.onUpdateWeather}
+            onKeyDown={(event) => {
+               if(event.key === "Enter") {
+                  this.onUpdateWeather()
+               }
+            }
+         }/>
       )
    }
 }
