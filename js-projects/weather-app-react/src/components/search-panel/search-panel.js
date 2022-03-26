@@ -6,13 +6,17 @@ export default class SearchPanel extends Component {
    constructor(props) {
       super(props);
       this.state = {
-         location: ""
+         location: "Kyiv"
       }
 
       this.onUpdateLocation = (event) => {
          const location = event.target.value;
          this.setState({location: location});
          this.props.onUpdateLocation(location);
+      }
+
+      this.onUpdateWeather = () => {
+         this.props.onUpdateWeather(this.state.location);
       }
    }
    
@@ -23,7 +27,8 @@ export default class SearchPanel extends Component {
             className='search-input'
             type="text"
             placeholder='Search by location'
-            onChange={this.onUpdateLocation}/>
+            onChange={this.onUpdateLocation}
+            onBlur={this.onUpdateWeather}/>
       )
    }
 }
