@@ -1,10 +1,6 @@
 .main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-
 	margin: 10% auto;
+	padding: 40px;
 
 	width: 700px;
 	height: 400px;

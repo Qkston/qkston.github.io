@@ -7,13 +7,13 @@ const WeatherInfo = ({data}) => {
       <div className='info'>
          {data.cod === 200 ?
             <div>
-               <h3>
+               <p className='weather-country'>{data.name}, {data.sys.country}</p>
+               <div className='weather-main'>
                   <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt=""/>
-                  {Math.floor(data.main.temp - 273)} &deg;C
+                  <span>{Math.floor(data.main.temp - 273)} &deg;C</span>
                   <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt=""/>
-               </h3>
-               <p>{data.weather[0].main}</p>
-               <p>{data.name}, {data.sys.country}</p>
+               </div>
+               <p className='weather-info'>{data.weather[0].main}</p>
             </div>
          : null}
       </div>
