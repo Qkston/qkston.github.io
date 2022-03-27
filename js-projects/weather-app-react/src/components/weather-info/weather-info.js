@@ -12,7 +12,8 @@ const WeatherInfo = ({data}) => {
                   {Math.floor(data.main.temp - 273)} &deg;C
                   <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt=""/>
                </h3>
-               <small>{data.weather[0].main}</small>
+               <p>{data.weather[0].main}</p>
+               <p>{data.name}, {data.sys.country}</p>
             </div>
          : null}
       </div>
