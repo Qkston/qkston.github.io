@@ -86,7 +86,7 @@ window.addEventListener("DOMContentLoaded", () => {
 				} else {
 					languageBlock.classList.remove("show");
 				}
-			} else if (e.target.textContent === "Русский" || e.target.textContent === "Russian") {
+			} else if (e.target.textContent === "Українська" || e.target.textContent === "Ukrainian") {
 				if (location.href !== "https://qkston.github.io/") {
 					location.href = "https://qkston.github.io/";
 				} else {

@@ -276,20 +276,40 @@ textarea:focus {
   width: 100%;
 }
 
+.main .my-skills-block-rectangles .perc90 {
+  width: 90%;
+}
+
 .main .my-skills-block-rectangles .perc80 {
   width: 80%;
+}
+
+.main .my-skills-block-rectangles .perc70 {
+  width: 70%;
 }
 
 .main .my-skills-block-rectangles .perc60 {
   width: 60%;
 }
 
+.main .my-skills-block-rectangles .perc50 {
+  width: 50%;
+}
+
 .main .my-skills-block-rectangles .perc40 {
   width: 40%;
 }
 
+.main .my-skills-block-rectangles .perc30 {
+  width: 30%;
+}
+
 .main .my-skills-block-rectangles .perc20 {
   width: 20%;
+}
+
+.main .my-skills-block-rectangles .perc10 {
+  width: 10%;
 }
 
 .main .working {
